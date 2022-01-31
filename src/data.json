@@ -1,0 +1,56 @@
+{
+    "landing": {
+        "taller": {
+            "name": "Taller Creativo",
+            "description": "Talleres. Lettering.\nEncuadernación artesanal. \nCuadros. Box.",
+            "fotos": [
+                "/assets/img/taller-creativo/taller-creativo-1.jpg",
+                "/assets/img/taller-creativo/taller-creativo-2.jpg",
+                "/assets/img/taller-creativo/taller-creativo-3.jpg"
+            ]
+        },
+        "estudio": {
+            "name": "ESTUDIO DISEÑO",
+            "description": "Branding. Editorial.\nContenido para redes sociales.\nPackaging. Lettering.\nDiseño UX/UI.\nEdición de videos.",
+            "fotos": [
+                "/assets/img/estudio-de-diseno/estudio-de-diseno-1.jpg",
+                "/assets/img/estudio-de-diseno/estudio-de-diseno-2.jpg",
+                "/assets/img/estudio-de-diseno/estudio-de-diseno-3.jpg"
+            ]
+        }
+    },
+    "about_me": {
+        "img": "/assets/img/about-me/about-me-1.jpg",
+        "name": "SOBRE Mí",
+        "description": "¡Hola soy Clara! Creadora de Krunica. Soy diseñadora gráfica recibida en la UBA. Hace más de 15 años que me dedico al diseño. En estos años trabajé y sigo trabajando de manera freelance para diferentes empresas.\n\nSoy una persona muy activa, si bien mi trabajo es bastante sedentario porque paso horas frente a la computadora mi cabeza trabaja a 220v. Amo el mundo digital, es por eso que siempre sigo estudiando porque la tecnología avanza de manera muy veloz y uno tiene que estar siempre a la vanguardia. Estudié diseño UX/UI y conocí un mundo increíble el cual me abrió puertas para seguir creciendo en lo mío. También amo el mundo manual, el lettering es una de mis pasiones... dibujar letras me divierte y relaja. \n    \nSoy encuadernadora artesanal hace muchos años, doy talleres y también hago producciones para empresas o pedidos personalizados. Encuadernar es mi cable a tierra. Me gusta mucho escapar un rato de la compu y crear desde otro lugar, el diseño está en todos lados y sobretodo en mis venas jeje.",
+        "description_bold": "Te invito a conocer mis trabajos y a contactarme si te gusta lo que hago.\n¡Gracias por estar acá!"
+    },
+    "servicios": [
+        {
+            "icono": "/assets/img/servicios/planificacion.svg",
+            "nombre": "PLANIFICACIÓN",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tellus egestas proin habitasse nulla pharetra."
+        },
+        {
+            "icono": "/assets/img/servicios/desarrollo.svg",
+            "nombre": "DISEÑO & DESARROLLO",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tellus egestas proin habitasse nulla pharetra."
+        },
+        {
+            "icono": "/assets/img/servicios/prototipado.svg",
+            "nombre": "PROTOTIPADO",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tellus egestas proin habitasse nulla pharetra."
+        }
+    ],
+    "clientes": [
+        "assets/img/clientes/modo.svg",
+        "assets/img/clientes/cliente2.png",
+        "assets/img/clientes/cliente3.png",
+        "assets/img/clientes/cliente4.png",
+        "assets/img/clientes/cliente5.png",
+        "assets/img/clientes/cliente6.png",
+        "assets/img/clientes/cliente7.png",
+        "assets/img/clientes/cliente8.png",
+        "assets/img/clientes/cliente9.png"
+    ]
+}
