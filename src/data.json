@@ -4,18 +4,19 @@
             "name": "Taller Creativo",
             "description": "Talleres. Lettering.\nEncuadernación artesanal. \nCuadros. Box.",
             "fotos": [
-                "/assets/img/taller-creativo/taller-creativo-1.jpg",
-                "/assets/img/taller-creativo/taller-creativo-2.jpg",
-                "/assets/img/taller-creativo/taller-creativo-3.jpg"
+                "home/landing/cuaderno-cosido-krunica-taller-creativo-8.jpg",
+                "home/landing/lettering-1.jpg",
+                "home/landing/IBM-bluemix-1.jpg"
             ]
         },
         "estudio": {
             "name": "ESTUDIO DISEÑO",
             "description": "Branding. Editorial.\nContenido para redes sociales.\nPackaging. Lettering.\nDiseño UX/UI.\nEdición de videos.",
             "fotos": [
-                "/assets/img/estudio-de-diseno/estudio-de-diseno-1.jpg",
-                "/assets/img/estudio-de-diseno/estudio-de-diseno-2.jpg",
-                "/assets/img/estudio-de-diseno/estudio-de-diseno-3.jpg"
+                "home/landing/portada.png",
+                "home/landing/presentacion-meetart-1.jpg",
+                "home/landing/0-tapa.jpg"
+
             ]
         }
     },
@@ -43,14 +44,282 @@
         }
     ],
     "clientes": [
-        "assets/img/clientes/modo.svg",
-        "assets/img/clientes/cliente2.png",
-        "assets/img/clientes/cliente3.png",
-        "assets/img/clientes/cliente4.png",
-        "assets/img/clientes/cliente5.png",
-        "assets/img/clientes/cliente6.png",
-        "assets/img/clientes/cliente7.png",
-        "assets/img/clientes/cliente8.png",
-        "assets/img/clientes/cliente9.png"
-    ]
+        "clientes/modo.png",
+        "clientes/ibm.png",
+        "clientes/inclusion.png",
+        "clientes/laboratorio-mayors.png",
+        "clientes/muni-almirante-brown.jpg",
+        "clientes/dell-argentina.png",
+        "clientes/lg.png",
+        "clientes/alfonso-lugo.png",
+        "clientes/uifra.png",
+        "clientes/firma-landru.png",
+        "clientes/laboratorio-de-idiomas.png"
+    ],
+    "trabajos": {
+        "taller": {
+            "titulo": "Todos los trabajos realizados en el taller son hechos a mano con mucha dedicación, esfuerzo y amor. Me encantan los detalles y estoy detrás de cada uno de ellos para que cada producto sea único. ",
+            "tarjetas": [
+                {
+                    "titulo": "",
+                    "img": "taller-creativo/taller-creativo-1.jpg",
+                    "size": "tall"
+                },
+                {
+                    "titulo": "Lettering personalizados",
+                    "img": "taller-creativo/taller-creativo-2.jpg"
+                },
+                {
+                    "titulo": "Cuadernos Artesanales para IBM",
+                    "img": "taller-creativo/taller-creativo-3.jpg"
+                },
+                {
+                    "titulo": "Cuadernos artesanales 80 hojas anillados",
+                    "descripcion": "Regalos empresariales. Cuadernos  anillados a pedido. Personalizados.\n\nCuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador.",
+                    "img": "taller-creativo/taller-creativo-4.jpg"
+                },
+                {
+                    "titulo": "VIDEOOOOO",
+                    "img": "taller-creativo/video.mp4",
+                    "size": "large"
+                },
+                {
+                    "titulo": "Talleres de encuadernación artesanal",
+                    "descripcion": "Desde 2013 brindamos talleres para todo aquel que quiera aprender el hermoso oficio de la encuadernación y de lettering.",
+                    "img": "taller-creativo/taller-creativo-5.jpg",
+                    "size": "large"
+                },
+                {
+                    "titulo": "Lettering para cocina de un dulce hogar",
+                    "img": "taller-creativo/taller-creativo-6.jpg",
+                    "size": "tall"
+                },
+                {
+                    "titulo": "Encuadernación de Tesis",
+                    "descripcion": "Tesis encuadernadas para presentaciones  finales. Tamaño A3, impresas, cosidas a mano y forradas en tela.",
+                    "img": "taller-creativo/taller-creativo-7.jpg"
+                },
+                {
+                    "titulo": "Kit de prensa para la UIFRA, Unión de Industriales Fideeros de la República Argentina",
+                    "descripcion": "El kit era para un congreso en Córdoba. Constaba de 1 cuaderno artesanal, un tarjetero metalizado y una bolsa de lienzo serigrafiada. Todo con el  logo de “Los fideos van con todo”.",
+                    "img": "taller-creativo/taller-creativo-8.jpg",
+                    "size": "large"
+                },
+                {
+                    "titulo": "Cuadernos artesanales 80 hojas cosidos a mano",
+                    "descripcion": "Regalos empresariales. Cuadernos realizados 100% a mano a pedido. Personalizados con bajo relieve en la tapa.\n\nCuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador.",
+                    "img": "taller-creativo/taller-creativo-9.jpg",
+                    "size": "tall"
+                },
+                {
+                    "titulo": "Cuadernos artesanales ilustrados",
+                    "descripcion": "Realización de cuadernos artesanales para los ilustradores: Nico Lasalle, Emilio Rubione, Eva Mastrogiulio, Yanina G. Fernández, Florencia Gavilán y Victoria Franco. ",
+                    "img": "taller-creativo/taller-creativo-10.jpg",
+                    "size": "tall"
+                },
+                {
+                    "titulo": "Cuadernos artesanales para IBM",
+                    "descripcion": "Los cuadernos fueron realizados para la promoción de Bluemix, la plataforma de desarrollo de  IBM en la nube para construir, ejecutar y administrar aplicaciones.",
+                    "img": "taller-creativo/taller-creativo-11.jpg"
+                },
+                {
+                    "titulo": "Cuadernos artesanales para IBM",
+                    "descripcion": "En esta ocasión se desarrollaron cuadernos artesanales para la iniciativa IBM Think. \n\nCuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador.",
+                    "img": "taller-creativo/taller-creativo-12.jpg"
+                },
+                {
+                    "titulo": "Cajas y cuadernos artesanales para la empresa Inclusion Services",
+                    "descripcion": "Cajas artesanales con 3 estantes deslizables - interiores con goma espuma cortada - logo en bajo relieve en la parte superior.\n\nCuadernos artesanales 15x21cm hojas lisas con logo en la tapa.",
+                    "img": "taller-creativo/taller-creativo-13.jpg",
+                    "size": "tall"
+                },
+                {
+                    "titulo": "Cajas artesanales para Dell Argentina",
+                    "descripcion": "Cajas 100% hechas a mano para premios de la empresa Dell Argentina. Forradas en papel, en los interiores tiene  cuerina y cinta señaladora.",
+                    "img": "taller-creativo/taller-creativo-14.jpg",
+                    "size": "big"
+                },
+                {
+                    "titulo": "Cuadernos personalizados. \nDiseños varios.",
+                    "img": "taller-creativo/taller-creativo-15.jpg"
+                },
+                {
+                    "titulo": "Carpetas de presentación de artistas y cuaderno personalizado para la Municipalidad de Alte. Brown",
+                    "descripcion": "Cuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador. Carpeta A3 con hojas impresas.",
+                    "img": "taller-creativo/taller-creativo-16.jpg"
+                },
+                {
+                    "titulo": "Sobres para fotografía",
+                    "descripcion": "Sobres en papel kraft para fotos con filmina al frente y sobre texturado para CD al dorso. Detalle de cintas y logo.\n\nCarpetas encuadernadas para CDs.",
+                    "img": "taller-creativo/taller-creativo-17.jpg"
+                },
+                {
+                    "titulo": "Carpeta de presentación para la Fundación Landú",
+                    "descripcion": "Hojas impresas y encuadernadas tamaño A3  con bajo relieve en la tapa para presentación de proyecto para Mecenazgo.",
+                    "img": "taller-creativo/taller-creativo-18.jpg"
+                }
+            ]
+        },
+        "estudio": {
+            "titulo": "Estudio integral. Realizamos lo que necesites de diseño desde branding, papelería, diseño UX/UI, generación de contenido para redes sociales, editorial, lettering, packaging y mucho más!",
+            "tarjetas": [
+                {
+                    "img": [
+                        ""
+                    ],
+                    "size": "large"
+                },
+                {
+                    "titulo": "Propuesta de diseño e implementaciòn gráfica para oficinas MODO",
+                    "descripcion": "Desarrollo de diseño para oficinas Modo basado en los lineamientos gráficos del manual de marca de la empresa. Se plantearon estrategias de comunicación para los diferentes sectores de las oficinas.",
+                    "img": [
+                        "estudio/estudio-2.jpg"
+                    ],
+                    "size": "large"
+                },
+                {
+                    "titulo": "Generación de contenido para redes sociales para el Laboratorio Veterinario Mayors",
+                    "img": [
+                        "estudio/mayors/presentacion-1.jpg",
+                        "estudio/mayors/presentacion-2.jpg",
+                        "estudio/mayors/presentacion-3.jpg"
+                    ]
+                },
+                {
+                    "titulo": "Branding para El Foco Restaurante Bar Barcelona",
+                    "img": [
+                        "estudio/el-foco.jpg"
+                    ]
+                },
+                {
+                    "titulo": "Anuario 2020 para la UIFRA",
+                    "descripcion": "Participación en la realización del lettering para el Anuario de la Unión de Industriales Fideeros de la República Argentina.",
+                    "img": [
+                        "estudio/uifra-2020/0-tapa.jpg",
+                        "estudio/uifra-2020/1.1-indice.jpg",
+                        "estudio/uifra-2020/1-portada.jpg",
+                        "estudio/uifra-2020/2-notatapa.jpg",
+                        "estudio/uifra-2020/3-especialcovid.jpg",
+                        "estudio/uifra-2020/4-especialcovid.jpg",
+                        "estudio/uifra-2020/5-especialcovid.jpg",
+                        "estudio/uifra-2020/6-especialcovid.jpg",
+                        "estudio/uifra-2020/7-especialcovid.jpg",
+                        "estudio/uifra-2020/8-especialcovid.jpg",
+                        "estudio/uifra-2020/9-marcoregulatorio.jpg",
+                        "estudio/uifra-2020/10-marcoregulatorio.jpg",
+                        "estudio/uifra-2020/11-mercadosinternacionales.jpg",
+                        "estudio/uifra-2020/12-testimonio.jpg"
+                    ],
+                    "size": "tall"
+                },
+                {
+                    "titulo": "Diseño de estación Callao Línea B para Fundación Landrú",
+                    "descripcion": "Encargada del diseño, la planificación y el desarrollo de la estación de subte Callao de la Línea B, con dibujos del humorista gráfico Landrú.",
+                    "img": [
+                        "estudio/callao-linea-b/callao-linea-b-1.jpg",
+                        "estudio/callao-linea-b/callao-linea-b-2.jpg",
+                        "estudio/callao-linea-b/callao-linea-b-3.jpg",
+                        "estudio/callao-linea-b/callao-linea-b-4.jpg",
+                        "estudio/callao-linea-b/callao-linea-b-5.jpg"
+                    ],
+                    "size": "large"
+                },
+                {
+                    "titulo": "Anuario 2021 para UIFRA (Unión de Industriales Fideeros de la Rep. Argentina",
+                    "descripcion": "Diseño editorial y desarrollo de la revista interactiva para la Unión de Industriales Fideeros de la República Argentina. Un anuario innovador.",
+                    "img": [
+                        ""
+                    ],
+                    "size": "tall"
+                },
+                {
+                    "titulo": "Generación de contenido para redes sociales para Los Fideos van con Todo.",
+                    "img": [
+                        "estudio/fideos-van-con-todo/van-con-todo-presentacion-1.jpg",
+                        "estudio/fideos-van-con-todo/van-con-todo-presentacion-2.jpg",
+                        "estudio/fideos-van-con-todo/van-con-todo-presentacion-3.jpg",
+                        "estudio/fideos-van-con-todo/van-con-todo-presentacion-4.jpg"
+                    ],
+                    "size": "large"
+                },
+                {
+                    "titulo": "Diseño de packaging para Kine Sport",
+                    "descripcion": "Packaging para bolsas de hielo y agua caliente.",
+                    "img": [
+                        "estudio/kine-sport/kine-1.jpg",
+                        "estudio/kine-sport/kine-2.jpg"
+                    ]
+                },
+                {
+                    "titulo": "Branding para Centro Auditivo",
+                    "descripcion": "Diseño de logotipo y papelería impresa. Carpetas de presentación, tarjetas personales, sobres, hojas membretadas, recetarios, stickers, entre otros.",
+                    "img": [
+                        "estudio/branding-centro-auditivo.jpg"
+                    ],
+                    "size": "tall"
+                },
+                {
+                    "titulo": "Branding para Kajuna Burger",
+                    "descripcion": "Diseño de logo, cartelería, menú, cajas para hamburguesas, lata de cerveza, bolsas, papeles para la comida, stickers, entre otros.",
+                    "img": "estudio/estudio-11.jpg",
+                    "size": "big"
+                },
+                {
+                    "titulo": "Proyecto - Diseño UX/UI Aplicación MEETART",
+                    "descripcion": "Proyecto de diseño para comunidad de artistas.",
+                    "img": "estudio/estudio-12.jpg",
+                    "size": "big"
+                },
+                {
+                    "titulo": "GCU - Gente Como Uno - Landrú",
+                    "descripcion": "Diseño de cuadernos. Redibujo de los chistes de landrù con tableta digital (wacom). Generación de contenido para redes sociales. Diseño de vidriera para librería, y más...",
+                    "img": "estudio/estudio-13.jpg"
+                },
+                {
+                    "titulo": "Branding para la empresa Rainland",
+                    "descripcion": "Diseño de logo, folletos, tarjetas personales, carteles para obra, stickers, gorras, cuadernos, entre otros.",
+                    "img": "estudio/estudio-14.jpg",
+                    "size": "large"
+                },
+                {
+                    "titulo": "Lettering para Pasta Argentina",
+                    "descripcion": "Realización de Lettering para la web de Pasta Argentina.",
+                    "img": "estudio/estudio-15.jpg",
+                    "size": "large"
+                },
+                {
+                    "titulo": "Branding para la empresa Wink - Skate Shoes",
+                    "descripcion": "Diseño de logo, stickers, cajas para zapatos, zapatillas, entre otros.",
+                    "img": "estudio/estudio-16.jpg",
+                    "size": "large"
+                },
+                {
+                    "titulo": "Diseño de tarjetería y contenido digital para Seimi",
+                    "descripcion": "Diseño de tarjetería, trato con el cliente. Generación de contenido para redes sociales, newsletter, google adwords, entre otros.",
+                    "img": "estudio/estudio-17.jpg",
+                    "size": "big"
+                },
+                {
+                    "titulo": "Campaña Buenos Hábitos para Fundación Landrú en el Subte de Buenos Aires",
+                    "descripcion": "Encargada del diseño de todo el sistema de señalética para la campaña de buenos hábitos en la estación de subte Callao Línea B. Se implementaron gráficas tanto en las paredes y pisos de la estación como dentro de algunos vagones de los subtes.",
+                    "img": "estudio/estudio-18.jpg",
+                    "size": "large"
+                },
+                {
+                    "titulo": "Generación de contenido para redes sociales Odontopediatría - Dra. Luciana Mata",
+                    "img": "estudio/estudio-19.jpg"
+                },
+                {
+                    "titulo": "Diseño para piezas gráficas y generación de contenido para redes sociales - Laboratorio de Idiomas Adrogué",
+                    "img": "estudio/estudio-20.jpg"
+                },
+                {
+                    "titulo": "Diseños  para All Method  - All Alternative Language Learning",
+                    "descripcion": "Diseños online y offline. Avisos mailing. Folletos. Diseño de portada de libros. Diseño de E-books. Banners y mucho más!",
+                    "img": "estudio/estudio-21.jpg",
+                    "size": "big"
+                }
+            ]
+        }
+    }
 }

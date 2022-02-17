@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.1.5",
+    "@types/styled-components": "^5.1.22",
     "vite": "^2.7.2"
   }
 }

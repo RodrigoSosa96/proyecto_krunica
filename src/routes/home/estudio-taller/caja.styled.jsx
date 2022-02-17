@@ -1,12 +1,13 @@
 import { useState } from 'preact/hooks';
 import styled from 'styled-components'
-import { CenterDiv } from "../../../components/styles/Wrapper";
+import { CenterDiv } from "../../../components/styled/Wrapper.styled";
 
 
 export const BoxContainer = styled(CenterDiv)`
     gap : 2rem;
 	margin-bottom: 10rem;
 	padding:1rem;
+	
 `
 
 const Box = styled(CenterDiv)`
@@ -18,10 +19,9 @@ const Box = styled(CenterDiv)`
 	transition: all 0.5s ease-in-out;
 	
 	h2 {
-		//regullar
-		font-weight: 100;
+		font-family: ${props => props.theme.font.title};
+		font-weight: 400;	
 		strong {
-			//semibold
 			font-weight: 600;
 		}
 		white-space: pre-wrap;

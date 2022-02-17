@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CenterDiv } from "../../../components/styles/Wrapper";
+import { CenterDiv } from "../../../components/styled/Wrapper.styled";
 
 export const Card = styled(CenterDiv)`
     position: relative;
@@ -28,7 +28,7 @@ export const TextDiv = styled.div`
 export const Text = styled.p`
     font-size: ${props => props.theme.fontSize.paragraph};
     font-family: 'Raleway', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 33px;
     text-align: justify;
     white-space: pre-wrap;

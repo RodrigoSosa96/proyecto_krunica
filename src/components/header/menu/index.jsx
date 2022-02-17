@@ -1,11 +1,10 @@
 import { Link } from 'preact-router/match';
 import { Container, MenuLinks, Social, SocialImg } from './styles';
+import Face from "../../../assets/img/face.svg";
+import Insta from "../../../assets/img/insta.svg";
 
 
 const Navbar = () => {
-
-    const face = "/assets/icons/face.svg";
-    const insta = "/assets/icons/insta.svg";
 
     return (
         <Container>
@@ -17,8 +16,8 @@ const Navbar = () => {
 
             </MenuLinks>
             <Social>
-                <SocialImg href="https://www.instagram.com" src={insta} />
-                <SocialImg href="https://www.facebook.com" src={face} />
+                <SocialImg href="https://www.instagram.com" src={Insta} />
+                <SocialImg href="https://www.facebook.com" src={Face} />
             </Social>
         </Container>
     )

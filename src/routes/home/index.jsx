@@ -3,16 +3,28 @@ import Landing from "./estudio-taller";
 import Servicios from "./servicios";
 import SobreMi from "./sobre-mi";
 import Prensa from "./prensa";
+import Contacto from "./contacto";
+import Separator from "../../components/styled/Separator.styled";
 
-const Home = () => {
+function Home() {
 
 	return (
 		<>
 			<Landing />
-			<SobreMi/>
+			<Separator />
+			<SobreMi />
+			<Separator />
+
 			<Servicios />
-			<Clientes/>
-			<Prensa/>
+			<Separator />
+
+			<Clientes />
+			<Separator />
+
+			<Prensa />
+			<Separator />
+
+			<Contacto/>
 		</>
 	);
 

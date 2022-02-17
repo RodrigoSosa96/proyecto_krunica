@@ -1,5 +1,5 @@
 import {Card, Picture, TextDiv, Text, BoldText } from "./styles"
-import { Title } from "../../../components/styles/Title.styled";
+import { Title } from "../../../components/styled/Title.styled";
 
 function SobreMi({ text }) {
     const titulo = "Sobre mi";

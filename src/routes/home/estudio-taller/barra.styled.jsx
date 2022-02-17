@@ -21,19 +21,21 @@ const VerMas = styled.a`
     font-family: 'Montserrat', sans-serif;
     color: ${props => props.theme.color.lines};
 `
-
+function getImageUrl(name) {
+    return new URL(`../../../assets/img/${name}`, import.meta.url).href
+}
 
 function FotosContainer({ fotos }) {
     return (
         <>
             <ImgFlex gap="2rem">
                 {fotos.map((item, index) => (
-                    <Imagen src={item} key={index} />
+                    <Imagen src={getImageUrl(item)} key={index} />
                 ))}
 
             </ImgFlex>
             <VerMas href="#">
-
+                    VER +
             </VerMas>
         </>
     );

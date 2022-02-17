@@ -35,9 +35,9 @@ export const MenuLinks = styled.div`
             width: 120px;
             height: 100%;
             line-height: 19px;
-            font-weight: 200;
+            font-weight: 500;
             &.active {
-                font-weight: bold;
+                font-weight: 600;
                 /* ::after{
                     opacity: 1;
                 } */
@@ -57,7 +57,7 @@ export const MenuLinks = styled.div`
 
             }
             :hover {
-                font-weight: bold;
+                font-weight: 600;
             }
             :hover::after {
                 opacity: 1;
