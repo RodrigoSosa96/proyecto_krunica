@@ -1,9 +1,9 @@
-import Clientes from "./clientes";
-import Landing from "./estudio-taller";
-import Servicios from "./servicios";
-import SobreMi from "./sobre-mi";
-import Prensa from "./prensa";
-import Contacto from "./contacto";
+import Clientes from "../../components/clientes";
+import Landing from "../../components/estudio-taller";
+import Servicios from "../../components/servicios";
+import SobreMi from "../../components/sobre-mi";
+import Prensa from "../../components/prensa";
+import Contacto from "../../components/contacto";
 import Separator from "../../components/styled/Separator.styled";
 
 function Home() {
@@ -11,18 +11,18 @@ function Home() {
 	return (
 		<>
 			<Landing />
-			<Separator />
+			{/* <Separator /> */}
 			<SobreMi />
-			<Separator />
+			{/* <Separator /> */}
 
 			<Servicios />
-			<Separator />
+			{/* <Separator /> */}
 
 			<Clientes />
-			<Separator />
+			{/* <Separator /> */}
 
 			<Prensa />
-			<Separator />
+			{/* <Separator /> */}
 
 			<Contacto/>
 		</>

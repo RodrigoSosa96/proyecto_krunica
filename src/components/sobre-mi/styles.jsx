@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CenterDiv } from "../../../components/styled/Wrapper.styled";
+import { CenterDiv } from "../styled/Wrapper.styled";
 
 export const Card = styled(CenterDiv)`
     position: relative;

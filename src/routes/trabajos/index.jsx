@@ -1,9 +1,10 @@
-import styled from "styled-components";
-import { Title } from "../../components/styled/Title.styled";
-import GridLayout from "./GridLayout.styled";
-import { trabajos } from "../../data.json"
-import Separator from "../../components/styled/Separator.styled";
 import { useState } from "preact/hooks";
+import styled from "styled-components";
+import { trabajos } from "../../data.json"
+import { Title } from "../../components/styled/Title.styled";
+import GridLayout from "../../components/trabajos/GridLayout.styled";
+import Separator from "../../components/styled/Separator.styled";
+import FlexGrid from "../../components/trabajos/FlexGrid";
 
 const Wrapper = styled.div`
     display: flex;
@@ -27,26 +28,10 @@ const TrabajosTitle = styled(Title)`
 
 `
 function Trabajos() {
-    const [category, setCategory] = useState("estudio");//taller
-    // const [categoria, setCategoria] = useState({
-    //     //toggle estudio y trabajo
-    //     estudio: true,
-    //     trabajo: false
-    // });
-
-    // const handleClick = (e) => {
-    //     const { mssg } = e.target.dataset;
-    //     console.log(mssg);
-    //     setCategoria({
-    //         ...categoria,
-    //         [mssg]: !categoria[mssg]
-    //     })
-    //     console.log(categoria)
-    // }
+    const [category, setCategory] = useState("taller");//taller
     const handleClick = (e) => {
         const { mssg } = e.target.dataset;
         setCategory(mssg);
-        console.log(category)
     }
 
 
@@ -59,13 +44,13 @@ function Trabajos() {
                 <TrabajosTitle onClick={handleClick} data-mssg="estudio" >TRABAJOS ESTUDIO</TrabajosTitle>
             </Categories>
             <Separator />
+            <FlexGrid/>
             {/* <GridLayout data={
                 category === "taller" ?
                     trabajos.taller
                     :
                     trabajos.estudio
             } /> */}
-            <GridLayout data={trabajos.estudio} />
         </Wrapper>
 
     );

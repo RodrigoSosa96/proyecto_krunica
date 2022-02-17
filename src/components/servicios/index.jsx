@@ -1,7 +1,7 @@
-import { Title } from "../../../components/styled/Title.styled";
-import { servicios } from '../../../data.json'
-
 import styled from "styled-components";
+
+import { Title } from "../styled/Title.styled";
+
 
 const Container = styled.div`
     display: flex;

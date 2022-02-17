@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Title } from "../../../components/styled/Title.styled";
+import { Title } from "../styled/Title.styled";
 
 const Form = styled.form`
     display: flex;

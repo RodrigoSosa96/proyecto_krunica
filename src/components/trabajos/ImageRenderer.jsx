@@ -1,5 +1,5 @@
 import { useRef, useState } from 'preact/hooks';
-import { useIntersection } from './intersectionObserver';
+import { useIntersection } from '../../hooks/IntersectionObserver';
 import styled from 'styled-components';
 
 const ImageContainer = styled.div`

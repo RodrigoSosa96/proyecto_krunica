@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     padding: 0 5%;
     margin: 100px 0;
-
 `
 const Notfound = () => {
     return (

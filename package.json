@@ -7,13 +7,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "preact": "^10.5.15",
     "preact-router": "^4.0.1",
+    "react-spring": "^8.0.25",
+    "resize-observer-polyfill": "^1.5.1",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.1.5",
-    "@types/styled-components": "^5.1.22",
     "vite": "^2.7.2"
   }
 }

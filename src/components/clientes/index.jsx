@@ -1,6 +1,6 @@
-import { Title } from "../../../components/styled/Title.styled";
+import { Title } from "../styled/Title.styled";
 import styled from "styled-components";
-import { clientes } from "../../../data.json"
+import { clientes } from "../../data.json"
 
 
 
