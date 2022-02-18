@@ -11,7 +11,6 @@ import { Main } from './components/styled/Wrapper.styled';
 import Footer from './components/footer';
 import Trabajos from './routes/trabajos';
 
-
 const App = () => {
 	return (
 		<div id="preact_root">
@@ -21,11 +20,11 @@ const App = () => {
 				<Main >
 					<Router>
 						<Route path="/" component={Home} />
-						<Route path="/trabajos" component={Trabajos}  />
+						<Route path="/trabajos" component={Trabajos} />
 						<NotFoundPage default />
 					</Router>
 				</Main>
-				<Footer/>
+				<Footer />
 			</ThemeProvider>
 		</div>
 	);

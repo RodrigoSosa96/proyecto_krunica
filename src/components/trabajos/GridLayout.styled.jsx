@@ -83,10 +83,10 @@ const Card = styled.div`
 function GridLayout({ data }) {
 
     const imgURL = getImageUrl("../assets/img/trabajos");
-
+    
     return (
         <StyledTrabajos>
-            {/* {data.tarjetas.map((item, index) => {
+            {data.tarjetas.map((item, index) => {
                 return (
                     <Card   background={imgURL(item.img[0])} key={index} className={item.size ? `grid-span-${item.size}` : ""}>
                             <h3>{item.titulo}</h3>
@@ -100,7 +100,7 @@ function GridLayout({ data }) {
                     //     height={1000}
                     // />
                 );
-            })} */}
+            })}
         </StyledTrabajos>
     )
 }
