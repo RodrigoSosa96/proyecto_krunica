@@ -9,7 +9,7 @@ import { home } from "../../data.json"
 import styled from "styled-components";
 
 
-const normalUrl = new URL("/assets/img/insta.svg", import.meta.env.BASE_URL);
+
 // const absoluteUrl = new URL("/src/assets/img/insta.svg", import.meta.url);
 // const test = new URL("./src/assets/img/insta.svg", import.meta.url);
 // const build = new URL("./build/assets/img/insta.svg", import.meta.url);
@@ -18,10 +18,11 @@ const TestImg = styled.img`
 	width: 100px;
 	height: 100px;
 	background-color: ${props => props.color};
-`
+	`
 
 function Home() {
-
+	const test = new URL(import.meta.env.BASE_URL, import.meta.url);
+	const normalUrl = new URL("/src/assets/img/insta.svg", test);
 	return (
 		<>
 			<TestImg color="red" src={normalUrl} />
@@ -33,8 +34,8 @@ function Home() {
 
 			<Landing data={home.landing} />
 			<SobreMi data={home.about_me} />
-			<Servicios data=""/>
-			<Clientes data={home.clientes}/>
+			<Servicios data="" />
+			<Clientes data={home.clientes} />
 			<Prensa />
 			<Contacto />
 		</>
