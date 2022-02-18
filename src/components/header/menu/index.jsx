@@ -5,7 +5,6 @@ import Insta from "../../../assets/img/insta.svg";
 
 
 const Navbar = () => {
-
     return (
         <Container>
             <MenuLinks>

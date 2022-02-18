@@ -6,11 +6,33 @@ import Prensa from "../../components/prensa";
 import Contacto from "../../components/contacto";
 
 import { home } from "../../data.json"
+import styled from "styled-components";
+
+
+const normalUrl = new URL("../../assets/img/insta.svg", import.meta.url);
+// const absoluteUrl = new URL("/src/assets/img/insta.svg", import.meta.url);
+// const test = new URL("./src/assets/img/insta.svg", import.meta.url);
+// const build = new URL("./build/assets/img/insta.svg", import.meta.url);
+const buildTest = new URL("/build/assets/img/insta.svg", import.meta.url);
+console.log(import.meta.url);
+
+const TestImg = styled.img`
+	width: 100px;
+	height: 100px;
+	background-color: ${props => props.color};
+`
 
 function Home() {
 
 	return (
 		<>
+			<TestImg color="red" src={normalUrl} />
+			{/* <TestImg color="blue" src={absoluteUrl} /> */}
+			{/* <TestImg color="green" src={test} /> */}
+			{/* <TestImg color="yellow" src={build} /> */}
+			<TestImg color="purple" src={buildTest} />
+
+
 			<Landing data={home.landing} />
 			<SobreMi data={home.about_me} />
 			<Servicios data=""/>
