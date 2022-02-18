@@ -23,7 +23,7 @@ const VerMas = styled.a`
 
 
 function FotosContainer({ fotos }) {
-    const urlImg = getImageUrl("../assets/img/");
+    const urlImg = getImageUrl("/assets/img/");
 
     return (
         <>

@@ -84,7 +84,7 @@ const Texto = styled.div`
 `
 
 function Review() {
-    const urlImg = getImageUrl("../assets/img/")
+    const urlImg = getImageUrl("/assets/img/")
 
     return (
         <Tarjeta  >

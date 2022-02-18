@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "preact": "^10.5.15",
+    "preact": "^10.6.6",
     "preact-router": "^4.0.1",
     "react-spring": "^8.0.25",
     "resize-observer-polyfill": "^1.5.1",

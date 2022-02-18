@@ -10,7 +10,7 @@ import getImageUrl from "../../utils/getImageUrl";
 
 function SobreMi({ data }) {
     const { name, description, description_bold, img, video } = data;
-    const imgUrl = getImageUrl("../assets/img/");
+    const imgUrl = getImageUrl("/assets/img/");
     
     return (
         <Card>

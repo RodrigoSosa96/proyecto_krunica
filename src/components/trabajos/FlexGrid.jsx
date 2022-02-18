@@ -16,7 +16,7 @@ function FlexGrid() {
   // Hook3: Hold items
   const [items, set] = useState(data)
   // Hook4: shuffle data every 2 seconds
-  // useEffect(() => void setInterval(() => set(shuffle), 2000), [])
+  useEffect(() => void setInterval(() => set(shuffle), 2000), [])
   // Hook5: Form a grid of stacked items using width & columns we got from hooks 1 & 2
   const [heights, gridItems] = useMemo(() => {
     let heights = new Array(columns).fill(0) // Each column gets a height starting with zero
@@ -28,14 +28,14 @@ function FlexGrid() {
     return [heights, gridItems]
   }, [columns, items, width])
   // Hook6: Turn the static grid values into animated transitions, any addition, removal or change will be animated
-  const transitions = useTransition(gridItems, (item) => item.css, {
-    from: ({ xy, width, height }) => ({ xy, width, height, opacity: 0 }),
-    enter: ({ xy, width, height }) => ({ xy, width, height, opacity: 1 }),
-    update: ({ xy, width, height }) => ({ xy, width, height }),
-    leave: { height: 0, opacity: 0 },
-    config: { mass: 5, tension: 500, friction: 100 },
-    trail: 25
-  })
+  // const transitions = useTransition(gridItems, (item) => item.css, {
+  //   from: ({ xy, width, height }) => ({ xy, width, height, opacity: 0 }),
+  //   enter: ({ xy, width, height }) => ({ xy, width, height, opacity: 1 }),
+  //   update: ({ xy, width, height }) => ({ xy, width, height }),
+  //   leave: { height: 0, opacity: 0 },
+  //   config: { mass: 5, tension: 500, friction: 100 },
+  //   trail: 25
+  // })
   return (
     <div {...bind} class="list" style={{ height: Math.max(...heights) }}>
       {transitions.map(({ item, props: { xy, ...rest }, key }) => (

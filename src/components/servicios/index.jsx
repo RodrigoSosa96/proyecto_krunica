@@ -39,7 +39,7 @@ const Texto = styled.p`
     } */
 `
 
-function Servicios() {
+function Servicios({data}) {
     return (
         <Container>
             <Title>SERVICIOS</Title>
