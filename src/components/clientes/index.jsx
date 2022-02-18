@@ -1,6 +1,6 @@
 import { Title } from "../styled/Title.styled";
 import styled from "styled-components";
-import getImageUrl from "../../utils/getImageUrl";
+import getImageUrl from "../../assets/getImageUrl";
 import { Wrapper } from "../styled/Wrapper.styled";
 
 const GridContainer = styled.div`
@@ -39,7 +39,6 @@ const Imagen = styled.img`
 
 
 function Clientes({ data }) {
-    const imageUrl = getImageUrl("assets/img/home/");
     return (
         <Wrapper>
             <Title>CLIENTES</Title>
@@ -48,7 +47,7 @@ function Clientes({ data }) {
                     data.map((cliente, index) => {
                         return (
                             <DivImg>
-                                <Imagen key={index} src={imageUrl(cliente)} alt="" />
+                                <Imagen key={index} src={getImageUrl(cliente)} alt="" />
                             </DivImg>
                         )
                     })

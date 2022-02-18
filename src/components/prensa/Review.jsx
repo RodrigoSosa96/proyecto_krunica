@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import Star from "./Star"
 
-import getImageUrl from "../../utils/getImageUrl"
+import getImageUrl from "../../assets/getImageUrl"
 
 const Tarjeta = styled.div`
     display: flex;
@@ -84,12 +84,11 @@ const Texto = styled.div`
 `
 
 function Review() {
-    const urlImg = getImageUrl("assets/img/")
 
     return (
         <Tarjeta  >
             <CardReview className="card-review">
-                <Imagen className="img-review" src={urlImg("home/prensa/revista.jpg")} />
+                <Imagen className="img-review" src={getImageUrl("home/prensa/revista.jpg")} />
                 <Texto >
                     <div className="review-title">
                         <h4 >Almacén de ideas</h4>

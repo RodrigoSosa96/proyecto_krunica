@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import getImageUrl from '../../utils/getImageUrl';
+import getImageUrl from '../../assets/getImageUrl';
 
 const ImgFlex = styled.div`
     display: flex;
@@ -23,14 +23,12 @@ const VerMas = styled.a`
 
 
 function FotosContainer({ fotos }) {
-    const urlImg = getImageUrl("assets/img/");
-
     return (
         <>
             <ImgFlex gap="2rem">
 
                 {fotos.map((item, index) => (
-                    <Imagen src={urlImg(item)} key={index} />
+                    <Imagen src={getImageUrl(item)} key={index} />
                 ))}
 
             </ImgFlex>
