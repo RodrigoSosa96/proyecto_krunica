@@ -78,20 +78,17 @@ const Card = styled.div`
 `
 
 
-function getImageUrl(name) {
-    if(name === "") return "";
-    return new URL(`../../assets/img/trabajos/${name}`, import.meta.url).href
-}
+
 
 function GridLayout({ data }) {
 
-
+    const imgURL = getImageUrl("../assets/img/trabajos");
 
     return (
         <StyledTrabajos>
-            {data.tarjetas.map((item, index) => {
+            {/* {data.tarjetas.map((item, index) => {
                 return (
-                    <Card   background={getImageUrl(item.img[0])} key={index} className={item.size ? `grid-span-${item.size}` : ""}>
+                    <Card   background={imgURL(item.img[0])} key={index} className={item.size ? `grid-span-${item.size}` : ""}>
                             <h3>{item.titulo}</h3>
                             {item.descripcion ? <p>{item.descripcion}</p> : null}
 
@@ -103,7 +100,7 @@ function GridLayout({ data }) {
                     //     height={1000}
                     // />
                 );
-            })}
+            })} */}
         </StyledTrabajos>
     )
 }

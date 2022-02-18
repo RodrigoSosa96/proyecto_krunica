@@ -39,7 +39,7 @@ const Imagen = styled.img`
 
 
 function Clientes({ data }) {
-    const imageUrl = getImageUrl("/assets/img/home/");
+    const imageUrl = getImageUrl("assets/img/home/");
     return (
         <Wrapper>
             <Title>CLIENTES</Title>
