@@ -71,7 +71,7 @@ const Card = styled.div`
     width: 100%;
     height: 100%;
     padding: 1rem;
-    margin: 1rem;
+    margin-top: 7rem;
     div {
         width: 590px;
     }
@@ -110,27 +110,25 @@ const ContactTitle = styled(Title)`
 
 function Contacto() {
     return (
-        <>
-            <Card >
-                <div>
-                    <Info>
+        <Card >
+            <div>
+                <Info>
                     <ContactTitle>ESCRIBÍNOS</ContactTitle>
-                        <p className="italic">Si tenés alguna consulta no dudes en contactarnos!</p>
-                        <p><b>Teléfono: </b>(011) 6127-1692</p>
-                        <p><b>Mail: </b>clara@krunica.com.ar / info@krunica.com.ar </p>
-                    </Info>
-                </div>
-                <div>
-                    <Form action="" method="post">
-                        <input type="text" name="nombre" placeholder="Nombre" />
-                        <input type="text" name="email" placeholder="Email" />
-                        <input type="text" name="tel" placeholder="Tel" />
-                        <textarea name="mensaje" placeholder="Contame de tu proyecto" />
-                        <input type="submit" value="ENVIAR" />
-                    </Form>
-                </div>
-            </Card>
-        </>
+                    <p className="italic">Si tenés alguna consulta no dudes en contactarnos!</p>
+                    <p><b>Teléfono: </b>(011) 6127-1692</p>
+                    <p><b>Mail: </b>clara@krunica.com.ar / info@krunica.com.ar </p>
+                </Info>
+            </div>
+            <div>
+                <Form action="" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre" />
+                    <input type="text" name="email" placeholder="Email" />
+                    <input type="text" name="tel" placeholder="Tel" />
+                    <textarea name="mensaje" placeholder="Contame de tu proyecto" />
+                    <input type="submit" value="ENVIAR" />
+                </Form>
+            </div>
+        </Card>
     )
 }
 export default Contacto;

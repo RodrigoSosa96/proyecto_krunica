@@ -5,6 +5,7 @@ export const Card = styled(CenterDiv)`
     position: relative;
     gap: 70px;
     height: 742px;
+    width: 100%;
 `
 
 export const Picture = styled.img`
@@ -40,3 +41,10 @@ export const BoldText = styled(Text)`
     font-weight: bolder;
     width: 100%;
 `
+
+export const GifVideo = styled.video`
+    width: 676px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+`;

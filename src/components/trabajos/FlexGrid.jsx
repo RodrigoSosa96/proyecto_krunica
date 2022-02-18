@@ -10,6 +10,7 @@ import './styles.css'
 function FlexGrid() {
   // Hook1: Tie media queries to the number of columns
   const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'], [5, 4, 3], 2)
+  console.log(columns)
   // Hook2: Measure the width of the container element
   const [bind, { width }] = useMeasure()
   // Hook3: Hold items
@@ -35,7 +36,6 @@ function FlexGrid() {
     config: { mass: 5, tension: 500, friction: 100 },
     trail: 25
   })
-  // Render the grid
   return (
     <div {...bind} class="list" style={{ height: Math.max(...heights) }}>
       {transitions.map(({ item, props: { xy, ...rest }, key }) => (

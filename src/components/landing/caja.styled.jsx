@@ -12,6 +12,7 @@ export const BoxContainer = styled(CenterDiv)`
 
 const Box = styled(CenterDiv)`
 	background-color: ${props => props.theme.color.primary};
+	position: relative;
 	width: 716px;
 	height: 540px;
 	border-radius: 4.93px;
@@ -28,7 +29,7 @@ const Box = styled(CenterDiv)`
 		text-align: center;
 	}
 	p{
-		font-size: ${props => props.theme.fontSize.paragraph};
+		font-size: 20px;
 		word-break:break-all;
 		white-space: pre-wrap;
 		text-align: center;
@@ -69,12 +70,19 @@ function useHover() {
 	return [hovering, onHoverProps]
 }
 
-
+const CajaInvisible = styled.div`
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	
+`
 
 export const BoxWithText = ({ name, description }) => {
 	const [showText, setShowProperties] = useHover()
 	const titulo = name.split(" ")
-
+	
 	return (
 		<Box {...setShowProperties} >
 			<h2 className={showText ? "hide" : "show"}>
@@ -86,6 +94,7 @@ export const BoxWithText = ({ name, description }) => {
 				{description}
 			</p>
 
+			<CajaInvisible/>
 		</Box>
 	)
 }

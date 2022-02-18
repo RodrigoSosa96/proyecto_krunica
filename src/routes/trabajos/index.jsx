@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { trabajos } from "../../data.json"
 import { Title } from "../../components/styled/Title.styled";
 import GridLayout from "../../components/trabajos/GridLayout.styled";
-import Separator from "../../components/styled/Separator.styled";
 import FlexGrid from "../../components/trabajos/FlexGrid";
 
 const Wrapper = styled.div`
@@ -43,7 +42,6 @@ function Trabajos() {
                 <TrabajosTitle onClick={handleClick} data-mssg="taller" >TRABAJOS TALLER</TrabajosTitle>
                 <TrabajosTitle onClick={handleClick} data-mssg="estudio" >TRABAJOS ESTUDIO</TrabajosTitle>
             </Categories>
-            <Separator />
             <FlexGrid/>
             {/* <GridLayout data={
                 category === "taller" ?

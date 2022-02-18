@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Title = styled.h2`
     font-family: ${props => props.theme.font.menu};
+    width: fit-content;
+    align-self: center;
     font-weight: 500;
     position: relative;
     text-align: center;

@@ -1,8 +1,7 @@
 import { Title } from "../styled/Title.styled";
 import styled from "styled-components";
-import { clientes } from "../../data.json"
-
-
+import getImageUrl from "../../utils/getImageUrl";
+import { Wrapper } from "../styled/Wrapper.styled";
 
 const GridContainer = styled.div`
     display: flex;
@@ -39,28 +38,23 @@ const Imagen = styled.img`
 
 
 
-function getImageUrl(name) {
-    if (name === "") return "";
-    return new URL(`../../../assets/img/home/${name}`, import.meta.url).href
-}
-function Clientes() {
-    console.log(clientes)
+function Clientes({ data }) {
+    const imageUrl = getImageUrl("../assets/img/home/");
     return (
-        <>
+        <Wrapper>
             <Title>CLIENTES</Title>
             <GridContainer>
-                {/* <Imagen src={clientes[0]} alt="" /> */}
                 {
-                    clientes.map((cliente, index) => {
+                    data.map((cliente, index) => {
                         return (
                             <DivImg>
-                                <Imagen key={index} src={getImageUrl(cliente)} alt="" />
+                                <Imagen key={index} src={imageUrl(cliente)} alt="" />
                             </DivImg>
                         )
                     })
                 }
             </GridContainer>
-        </>
+        </Wrapper>
     )
 }
 

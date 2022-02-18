@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import getImageUrl from '../../utils/getImageUrl';
 
 const ImgFlex = styled.div`
     display: flex;
@@ -10,7 +10,6 @@ const ImgFlex = styled.div`
     padding: 0.75rem;
 `
 const Imagen = styled.img`
-    /* background-image: url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131"); */
     background-size: cover;
     width: 217px;
     height: 171px;
@@ -21,21 +20,22 @@ const VerMas = styled.a`
     font-family: 'Montserrat', sans-serif;
     color: ${props => props.theme.color.lines};
 `
-function getImageUrl(name) {
-    return new URL(`../../../assets/img/${name}`, import.meta.url).href
-}
+
 
 function FotosContainer({ fotos }) {
+    const urlImg = getImageUrl("../assets/img/");
+
     return (
         <>
             <ImgFlex gap="2rem">
+
                 {fotos.map((item, index) => (
-                    <Imagen src={getImageUrl(item)} key={index} />
+                    <Imagen src={urlImg(item)} key={index} />
                 ))}
 
             </ImgFlex>
             <VerMas href="#">
-                    VER +
+                VER +
             </VerMas>
         </>
     );

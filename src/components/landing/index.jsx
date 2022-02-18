@@ -1,14 +1,9 @@
 import FotosContainer from './barra.styled';
 import { BoxContainer, BoxWithText } from "./caja.styled";
 import { CenterDiv } from '../styled/Wrapper.styled';
-import { landing } from "../../data.json"
 
+const Landing = ({data}) => {
 
-const Landing = () => {
-
-
-
-	const data = landing
 	return (
 		<CenterDiv>
 			<BoxContainer direction="column" >

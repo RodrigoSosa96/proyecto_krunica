@@ -1,61 +1,63 @@
 {
-    "landing": {
-        "taller": {
-            "name": "Taller Creativo",
-            "description": "Talleres. Lettering.\nEncuadernación artesanal. \nCuadros. Box.",
-            "fotos": [
-                "home/landing/cuaderno-cosido-krunica-taller-creativo-8.jpg",
-                "home/landing/lettering-1.jpg",
-                "home/landing/IBM-bluemix-1.jpg"
-            ]
+    "home": {
+        "landing": {
+            "taller": {
+                "name": "Taller Creativo",
+                "description": "Talleres. Lettering.\nEncuadernación artesanal. \nCuadros. Box.",
+                "fotos": [
+                    "home/landing/cuaderno-cosido-krunica-taller-creativo-8.jpg",
+                    "home/landing/lettering-1.jpg",
+                    "home/landing/IBM-bluemix-1.jpg"
+                ]
+            },
+            "estudio": {
+                "name": "ESTUDIO DISEÑO",
+                "description": "Branding. Editorial.\nContenido para redes sociales.\nPackaging. Lettering.\nDiseño UX/UI.\nEdición de videos.",
+                "fotos": [
+                    "home/landing/portada.png",
+                    "home/landing/presentacion-meetart-1.jpg",
+                    "home/landing/0-tapa.jpg"
+                ]
+            }
         },
-        "estudio": {
-            "name": "ESTUDIO DISEÑO",
-            "description": "Branding. Editorial.\nContenido para redes sociales.\nPackaging. Lettering.\nDiseño UX/UI.\nEdición de videos.",
-            "fotos": [
-                "home/landing/portada.png",
-                "home/landing/presentacion-meetart-1.jpg",
-                "home/landing/0-tapa.jpg"
-
-            ]
-        }
+        "about_me": {
+            "video": "home/sobre-mi/sobre-mi.webm",
+            "img": "home/sobre-mi/thumbnail.png",
+            "name": "SOBRE MÍ",
+            "description": "¡Hola soy Clara! Creadora de Krunica. Soy diseñadora gráfica recibida en la UBA. Hace más de 15 años que me dedico al diseño. En estos años trabajé y sigo trabajando de manera freelance para diferentes empresas.\n\nSoy una persona muy activa, si bien mi trabajo es bastante sedentario porque paso horas frente a la computadora mi cabeza trabaja a 220v. Amo el mundo digital, es por eso que siempre sigo estudiando porque la tecnología avanza de manera muy veloz y uno tiene que estar siempre a la vanguardia. Estudié diseño UX/UI y conocí un mundo increíble el cual me abrió puertas para seguir creciendo en lo mío. También amo el mundo manual, el lettering es una de mis pasiones... dibujar letras me divierte y relaja. \n    \nSoy encuadernadora artesanal hace muchos años, doy talleres y también hago producciones para empresas o pedidos personalizados. Encuadernar es mi cable a tierra. Me gusta mucho escapar un rato de la compu y crear desde otro lugar, el diseño está en todos lados y sobretodo en mis venas jeje.",
+            "description_bold": "Te invito a conocer mis trabajos y a contactarme si te gusta lo que hago.\n¡Gracias por estar acá!"
+        },
+        "servicios": [
+            {
+                "icono": "/assets/img/servicios/planificacion.svg",
+                "nombre": "PLANIFICACIÓN",
+                "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tellus egestas proin habitasse nulla pharetra."
+            },
+            {
+                "icono": "/assets/img/servicios/desarrollo.svg",
+                "nombre": "DISEÑO & DESARROLLO",
+                "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tellus egestas proin habitasse nulla pharetra."
+            },
+            {
+                "icono": "/assets/img/servicios/prototipado.svg",
+                "nombre": "PROTOTIPADO",
+                "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tellus egestas proin habitasse nulla pharetra."
+            }
+        ],
+        "clientes": [
+            "clientes/modo.png",
+            "clientes/ibm.png",
+            "clientes/inclusion.png",
+            "clientes/laboratorio-mayors.png",
+            "clientes/muni-almirante-brown.jpg",
+            "clientes/dell-argentina.png",
+            "clientes/lg.png",
+            "clientes/alfonso-lugo.png",
+            "clientes/uifra.png",
+            "clientes/firma-landru.png",
+            "clientes/laboratorio-de-idiomas.png"
+        ]
     },
-    "about_me": {
-        "img": "/assets/img/about-me/about-me-1.jpg",
-        "name": "SOBRE Mí",
-        "description": "¡Hola soy Clara! Creadora de Krunica. Soy diseñadora gráfica recibida en la UBA. Hace más de 15 años que me dedico al diseño. En estos años trabajé y sigo trabajando de manera freelance para diferentes empresas.\n\nSoy una persona muy activa, si bien mi trabajo es bastante sedentario porque paso horas frente a la computadora mi cabeza trabaja a 220v. Amo el mundo digital, es por eso que siempre sigo estudiando porque la tecnología avanza de manera muy veloz y uno tiene que estar siempre a la vanguardia. Estudié diseño UX/UI y conocí un mundo increíble el cual me abrió puertas para seguir creciendo en lo mío. También amo el mundo manual, el lettering es una de mis pasiones... dibujar letras me divierte y relaja. \n    \nSoy encuadernadora artesanal hace muchos años, doy talleres y también hago producciones para empresas o pedidos personalizados. Encuadernar es mi cable a tierra. Me gusta mucho escapar un rato de la compu y crear desde otro lugar, el diseño está en todos lados y sobretodo en mis venas jeje.",
-        "description_bold": "Te invito a conocer mis trabajos y a contactarme si te gusta lo que hago.\n¡Gracias por estar acá!"
-    },
-    "servicios": [
-        {
-            "icono": "/assets/img/servicios/planificacion.svg",
-            "nombre": "PLANIFICACIÓN",
-            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tellus egestas proin habitasse nulla pharetra."
-        },
-        {
-            "icono": "/assets/img/servicios/desarrollo.svg",
-            "nombre": "DISEÑO & DESARROLLO",
-            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tellus egestas proin habitasse nulla pharetra."
-        },
-        {
-            "icono": "/assets/img/servicios/prototipado.svg",
-            "nombre": "PROTOTIPADO",
-            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tellus egestas proin habitasse nulla pharetra."
-        }
-    ],
-    "clientes": [
-        "clientes/modo.png",
-        "clientes/ibm.png",
-        "clientes/inclusion.png",
-        "clientes/laboratorio-mayors.png",
-        "clientes/muni-almirante-brown.jpg",
-        "clientes/dell-argentina.png",
-        "clientes/lg.png",
-        "clientes/alfonso-lugo.png",
-        "clientes/uifra.png",
-        "clientes/firma-landru.png",
-        "clientes/laboratorio-de-idiomas.png"
-    ],
     "trabajos": {
         "taller": {
             "titulo": "Todos los trabajos realizados en el taller son hechos a mano con mucha dedicación, esfuerzo y amor. Me encantan los detalles y estoy detrás de cada uno de ellos para que cada producto sea único. ",
