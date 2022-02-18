@@ -13,11 +13,11 @@ function Home() {
 	return (
 		<>
 			<Landing data={home.landing} />
-			<SobreMi data={home.about_me} />
+			{/* <SobreMi data={home.about_me} />
 			<Servicios data=""/>
 			<Clientes data={home.clientes}/>
 			<Prensa />
-			<Contacto />
+			<Contacto /> */}
 		</>
 	);
 

@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [preact()],
   build: {
     target: "esnext"
+    
   }
 })
