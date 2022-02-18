@@ -9,7 +9,7 @@ import { home } from "../../data.json"
 import styled from "styled-components";
 
 
-const normalUrl = new URL("/src/assets/img/insta.svg", import.meta.url);
+const normalUrl = new URL("/src/assets/img/insta.svg", import.meta.env.BASE_URL);
 // const absoluteUrl = new URL("/src/assets/img/insta.svg", import.meta.url);
 // const test = new URL("./src/assets/img/insta.svg", import.meta.url);
 // const build = new URL("./build/assets/img/insta.svg", import.meta.url);
