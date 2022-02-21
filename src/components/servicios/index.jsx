@@ -30,6 +30,9 @@ const Texto = styled.p`
     line-height: 37px;
     color: white;
     padding: 10px 12px 10px 12px;
+    :hover {
+        cursor: pointer;   
+    }
     /* ::before {
         content: "↗";
         font-family: ${props => props.theme.font.title};

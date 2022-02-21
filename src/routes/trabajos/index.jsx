@@ -21,8 +21,14 @@ const TrabajosTitle = styled(Title)`
     font-weight: 400;
     font-size: 26px;
     line-height: 32px;
+    user-select: none;
     :hover {
         cursor: pointer;
+        font-weight: 500;
+    }
+    :hover::after {
+        opacity: 1;
+        /* transform: scalex(1); */
     }
 
 `
@@ -30,6 +36,7 @@ function Trabajos() {
     const [category, setCategory] = useState("taller");//taller
     const handleClick = (e) => {
         const { mssg } = e.target.dataset;
+        console.log(mssg);
         setCategory(mssg);
     }
 

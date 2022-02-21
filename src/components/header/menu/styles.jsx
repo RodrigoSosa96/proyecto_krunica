@@ -1,38 +1,54 @@
 import styled from "styled-components"
 
-export const Social = styled.div`
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 86px;
-        height: 34px;
+
+export const Container = styled.nav`
+    display: ${props => props.toggleMenu ? "flex" : "none"};
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+    flex-direction: column;
+    background-color: ${props => props.toggleMenu ? "red" : ""};
+
+
+    /* max-height: ${({isOpen}) =>(isOpen ? "300px" : "0px")}; */
+
+    
+    @media (min-width: 768px) {
+        gap: 1rem;
+        flex-direction: row;
+        
+        
+    }
+    @media(min-width: 992px) {
+        gap: 2rem;
+        
+    }
+
+    
 `
 
-export const SocialImg = styled.a`
-        background-image: url(${props => props.src});
-        background-size: cover;
-        background-position: center;
-        width: 34px;
-        height: 34px;
-`
+
 export const MenuLinks = styled.div`
         display: flex;
+        
         align-items: center;
         justify-content: space-between;
-        width: 488px;
+        /* width: 488px; */
         height: 27px;
         font-family: ${props => props.theme.font.mainText}, sans-serif;
-        /* Children links */
         a {
             position: relative;
             display: flex;
+
             justify-content: center;
             align-items: center;
             font-size: ${props => props.theme.fontSize.mainText};
             color: ${props => props.theme.color.text};
             text-decoration: none;
-            width: 120px;
+            width: 100px;
             height: 100%;
             line-height: 19px;
             font-weight: 500;
@@ -69,11 +85,41 @@ export const MenuLinks = styled.div`
         a+a {
             border-left: 2px solid ${props => props.theme.color.lines};
         }
+        @media(min-width: 992px) {
+            a{
+                width: 120px;
+            }
+        }
+        @media(min-width: 768px) {
+            
+        }
 `
-export const Container = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 604px;
-    height: auto;
+
+
+export const Social = styled.div`
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .5rem;
+        @media (min-width: 992px) {
+            gap: 1rem;
+
+        }
 `
+
+export const SocialImg = styled.a`
+        background-image: url(${props => props.src});
+        background-size: cover;
+        background-position: center;
+        width: 27px;
+        height: 27px;
+
+        @media (min-width: 992px) {
+            width: 34px;
+            height: 34px;
+
+        }
+`
+
+

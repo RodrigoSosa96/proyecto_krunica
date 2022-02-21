@@ -7,12 +7,14 @@ const Container = styled(Link)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 235px;
-    height: 42px;
-    gap:10px;
+    /* width: 235px; */
+    gap: .7rem;
+
 
     h1 {
-        font-size: ${props => props.theme.fontSize.title};
+        
+        font-size: 1.7rem;
+        
         font-family: ${props => props.theme.font.title};
         color: ${props => props.theme.color.text};
         line-height: 34px;
@@ -21,7 +23,15 @@ const Container = styled(Link)`
     svg {
         fill: ${props => props.theme.color.text};
         height: 40px;
-        width: 46px;
+        /* width: 46px; */
+        
+
+
+    }
+    @media (min-width: 992px) {
+        h1 {
+            font-size: ${props => props.theme.fontSize.title};
+        }
     }
 `
 

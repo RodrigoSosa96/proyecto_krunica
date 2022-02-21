@@ -45,17 +45,17 @@
             }
         ],
         "clientes": [
-            "clientes/modo.png",
-            "clientes/ibm.png",
-            "clientes/inclusion.png",
-            "clientes/laboratorio-mayors.png",
-            "clientes/muni-almirante-brown.jpg",
-            "clientes/dell-argentina.png",
-            "clientes/lg.png",
-            "clientes/alfonso-lugo.png",
-            "clientes/uifra.png",
-            "clientes/firma-landru.png",
-            "clientes/laboratorio-de-idiomas.png"
+            "home/clientes/modo.png",
+            "home/clientes/ibm.png",
+            "home/clientes/inclusion.png",
+            "home/clientes/laboratorio-mayors.png",
+            "home/clientes/muni-almirante-brown.jpg",
+            "home/clientes/dell-argentina.png",
+            "home/clientes/lg.png",
+            "home/clientes/alfonso-lugo.png",
+            "home/clientes/uifra.png",
+            "home/clientes/firma-landru.png",
+            "home/clientes/laboratorio-de-idiomas.png"
         ]
     },
     "trabajos": {

@@ -33,9 +33,11 @@ const Box = styled(CenterDiv)`
 		word-break:break-all;
 		white-space: pre-wrap;
 		text-align: center;
+
 	}
 	:hover {
 		background-color: ${props => props.theme.color.secondary};
+		cursor: pointer;
 	}
 	.hide {
 		display: none;
@@ -71,7 +73,8 @@ function useHover() {
 }
 
 const CajaInvisible = styled.div`
-	display: none;
+	/* display: none; */
+	opacity: 0;
 	position: absolute;
 	width: 100%;
 	height: 100%;
