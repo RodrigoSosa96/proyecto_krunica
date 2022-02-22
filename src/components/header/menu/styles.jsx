@@ -3,22 +3,27 @@ import styled from "styled-components"
 
 export const Container = styled.nav`
     display: ${props => props.toggleMenu ? "flex" : "none"};
+    /* display: flex; */
 
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
-    overflow: hidden;
     flex-direction: column;
-    background-color: ${props => props.toggleMenu ? "red" : ""};
 
 
-    /* max-height: ${({isOpen}) =>(isOpen ? "300px" : "0px")}; */
 
-    
+    transition: all 500ms ease-in-out;
+    height: calc(100vh - 90px);
+
+    //show font from white to black when menu is open
+
     @media (min-width: 768px) {
+        display: flex;
         gap: 1rem;
         flex-direction: row;
+        overflow: hidden;
+
+        height: unset;
         
         
     }
@@ -36,17 +41,25 @@ export const MenuLinks = styled.div`
         
         align-items: center;
         justify-content: space-between;
-        /* width: 488px; */
-        height: 27px;
         font-family: ${props => props.theme.font.mainText}, sans-serif;
+
+
+        flex-direction: column;
+        width: 100vw;
+        gap: 3rem;
+
+
         a {
             position: relative;
             display: flex;
 
             justify-content: center;
             align-items: center;
+            transition: all 1000ms ease-in-out;
             font-size: ${props => props.theme.fontSize.mainText};
-            color: ${props => props.theme.color.text};
+            color: ${props => props.toggleLinks ? "black" : "white"}; //! no anda
+
+
             text-decoration: none;
             width: 100px;
             height: 100%;
@@ -82,26 +95,48 @@ export const MenuLinks = styled.div`
             }
             
         }
-        a+a {
-            border-left: 2px solid ${props => props.theme.color.lines};
+
+        @media(min-width: 768px) {
+            flex-direction: row;
+            width: unset;
+            height: 27px;
+            gap: 0;
+            a {
+                color: ${props => props.theme.color.text};
+
+            }
+            a+a {
+                border-left: 2px solid ${props => props.theme.color.lines};
+            }
+            
         }
         @media(min-width: 992px) {
             a{
                 width: 120px;
             }
         }
-        @media(min-width: 768px) {
-            
-        }
 `
 
 
 export const Social = styled.div`
-        position: relative;
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: .5rem;
+        margin-top: 4rem;
+        gap: 1.5rem;
+
+        bottom: 4rem;
+
+        @media(min-width: 768px) {
+            position: relative;
+            gap: .5rem;
+            margin-top: 0;
+            bottom: unset;
+            
+
+        }
+
         @media (min-width: 992px) {
             gap: 1rem;
 
@@ -112,9 +147,12 @@ export const SocialImg = styled.a`
         background-image: url(${props => props.src});
         background-size: cover;
         background-position: center;
-        width: 27px;
-        height: 27px;
-
+        width: 40px;
+        height: 40px;
+        @media(min-width: 768px) {
+            width: 27px;
+            height: 27px;
+        }
         @media (min-width: 992px) {
             width: 34px;
             height: 34px;

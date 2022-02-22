@@ -14,8 +14,7 @@ export const StyledHeader = styled.header`
 	font-family: ${props => props.theme.font.menu};
 	z-index: 1000;
 	transition: all 500ms ease-in-out;
-	height: 90px;
-
+	
 	@media(min-width: 992px) {
 	
 		height: ${props => props.shrunk ? "110px" : "174px"};
@@ -33,12 +32,18 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-	/* flex-wrap: wrap; */
-	
+	flex-wrap: wrap;
 	gap: 2rem;
-
     width: min(95vw, 1480px);
-    height: 100%;	
+
+
+
+	
+	/* height: 90px; */
+	height: 100%;
+	@media(min-width: 768px) {
+	}
+
 `
 
 
@@ -46,6 +51,11 @@ export const Container = styled.div`
 export const StyledHamburger = styled.div`
 	display: flex;
 	flex-direction: column;
+
+	height: 90px;
+	//align items center 
+	justify-content: center;
+
 	cursor: pointer;
 	span {
 		height: 2px;

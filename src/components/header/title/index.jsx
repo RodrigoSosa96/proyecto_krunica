@@ -9,6 +9,8 @@ const Container = styled(Link)`
     align-items: center;
     /* width: 235px; */
     gap: .7rem;
+    height: 90px;
+    
 
 
     h1 {

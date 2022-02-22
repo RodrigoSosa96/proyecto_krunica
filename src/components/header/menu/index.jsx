@@ -13,7 +13,6 @@ const Navbar = ({toggle}) => {
                 <Link activeClassName="active" href="/trabajos">TRABAJOS</Link>
                 <Link activeClassName="active" href="/servicios">SERVICIOS</Link>
                 <Link activeClassName="active" href="/contacto">CONTACTO</Link>
-
             </MenuLinks>
 
             <Social toggleSocial={toggle}>
