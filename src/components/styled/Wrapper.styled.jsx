@@ -9,10 +9,14 @@ export const Wrapper = styled.div`
 `
 
 export const CenterDiv = styled.div`
+    position: relative;
     display: flex;
     flex-direction: ${props => props.direction || "row"};
     align-items: center;
     justify-content: center;
+
+    
+    width: 100%;
 `
 //main with 1400px max-width
 export const Main = styled.main`

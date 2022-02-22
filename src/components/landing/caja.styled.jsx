@@ -3,21 +3,20 @@ import styled from 'styled-components'
 import { CenterDiv } from "../styled/Wrapper.styled";
 
 
-export const BoxContainer = styled(CenterDiv)`
-    gap : 2rem;
-	margin-bottom: 10rem;
-	padding:1rem;
-	
-`
+
 
 const Box = styled(CenterDiv)`
 	background-color: ${props => props.theme.color.primary};
 	position: relative;
-	width: 716px;
-	height: 540px;
+	/* width: max(716px); */
 	border-radius: 4.93px;
-	font-size: ${props => props.theme.fontSize.backgroundTextBig};
+	font-size: 1.3rem;
 	transition: all 0.5s ease-in-out;
+	
+	width: 77%;
+	height: 100%;
+
+	
 	
 	h2 {
 		font-family: ${props => props.theme.font.title};
@@ -27,9 +26,10 @@ const Box = styled(CenterDiv)`
 		}
 		white-space: pre-wrap;
 		text-align: center;
+		
 	}
 	p{
-		font-size: 20px;
+		font-size: 1rem;
 		word-break:break-all;
 		white-space: pre-wrap;
 		text-align: center;
@@ -53,6 +53,19 @@ const Box = styled(CenterDiv)`
 			animation: fadeOut 0.5s;
 		}
 	}
+	@media (min-width: 768px) {
+		height: min(29vw, 540px);
+		width:100%;
+	}
+	@media(min-width: 992px) {
+		font-size: ${props => props.theme.fontSize.backgroundTextBig};
+		p{ 
+			font-size: 20px;
+		}
+	}
+
+
+
 	@keyframes fadeIn {
 	0% {opacity:0;}
 	100% {opacity:1;}
@@ -61,33 +74,34 @@ const Box = styled(CenterDiv)`
 	0% {opacity:1;}
 	100% {opacity:0;}
 	}
+	.caja-invisible {
+		/* display: none; */
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: red;
 
+	}
 `
 function useHover() {
 	const [hovering, setHovering] = useState(false)
 	const onHoverProps = {
 		onMouseEnter: () => setHovering(true),
 		onMouseLeave: () => setHovering(false),
+		
 	}
 	return [hovering, onHoverProps]
 }
 
-const CajaInvisible = styled.div`
-	/* display: none; */
-	opacity: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: red;
-	
-`
 
-export const BoxWithText = ({ name, description }) => {
+
+const BoxWithText = ({ name, description }) => {
 	const [showText, setShowProperties] = useHover()
 	const titulo = name.split(" ")
 	
 	return (
-		<Box {...setShowProperties} >
+		<Box {...setShowProperties}  >
 			<h2 className={showText ? "hide" : "show"}>
 				<strong>{titulo[0].toUpperCase()}</strong><br />
 				{titulo[1]}
@@ -96,8 +110,9 @@ export const BoxWithText = ({ name, description }) => {
 			<p className={showText ? "show" : "hide"}>
 				{description}
 			</p>
-
-			<CajaInvisible/>
+			<div className='caja-invisible'/>
 		</Box>
 	)
 }
+
+export default BoxWithText
