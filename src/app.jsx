@@ -17,22 +17,14 @@ const App = () => {
 			<GlobalStyle />
 			<ThemeProvider theme={theme} >
 				<Header />
-				<div
-					style={{
-						height: "200vh",
-						backgroundColor: "black"
-					}}
-				>
-
-				</div>
-				{/* <Main >
+				<Main >
 					<Router>
 						<Route path="/" component={Home} />
 						<Route path="/trabajos" component={Trabajos} />
 						<NotFoundPage default />
 					</Router>
-				</Main> */}
-				{/* <Footer /> */}
+				</Main>
+				<Footer />
 			</ThemeProvider>
 		</div>
 	);
