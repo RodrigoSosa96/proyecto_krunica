@@ -7,8 +7,7 @@ export const Title = styled.h2`
     font-weight: 500;
     position: relative;
     text-align: center;
-    font-size: 2.25rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     
     padding: 0 0.5rem 0 0.5rem;
     :hover::after {
@@ -24,5 +23,12 @@ export const Title = styled.h2`
         bottom: -10px;
         left: 0;
         background-color: ${props => props.theme.color.blue};
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 1.5rem;
+
+        font-size: 2.25rem;
+
     }
 `
