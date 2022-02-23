@@ -11,7 +11,12 @@ export const Title = styled.h2`
     margin-bottom: 1.5rem;
     
     padding: 0 0.5rem 0 0.5rem;
+    :hover::after {
+        opacity: 1;
+    }
+
     :after {
+        opacity: 0;
         content: '';
         position: absolute;
         width: 100%;
