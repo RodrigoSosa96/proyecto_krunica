@@ -9,6 +9,7 @@ export const Card = styled.div`
     align-items: center;
     width: 100%;
     padding: 1rem;
+    padding-bottom: 0;
     @media (min-width: 768px) {
         display: block;
         position: relative;

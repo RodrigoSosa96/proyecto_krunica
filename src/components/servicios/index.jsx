@@ -8,7 +8,17 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 1rem;
     /* height: 520px; */
+    @media (min-width: 768px) {
+        padding-top: 2rem;
+
+    }
+
+    @media(min-width: 992px) {
+        padding-top: 90px;
+
+    }
 `
 const CardContainer = styled.div`
     display: flex;

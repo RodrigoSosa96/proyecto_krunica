@@ -34,7 +34,7 @@ const BoxContainer = styled.div`
 	@media (min-width: 768px) {
 		flex-direction: column;
 		width: 50%;
-		margin-bottom: 2rem;
+		/* margin-bottom: 2rem; */
 		height: unset;
 		gap: 1rem;
 	}
@@ -42,7 +42,7 @@ const BoxContainer = styled.div`
 	@media (min-width: 992px) {
 		gap : 2rem;
 		padding:1rem;
-		margin-bottom: 8rem;
+		/* margin-bottom: 8rem; */
 
 	}
 	
