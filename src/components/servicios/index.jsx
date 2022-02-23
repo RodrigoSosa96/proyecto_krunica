@@ -41,11 +41,11 @@ const Texto = styled.p`
 
     font-weight: 800;
     text-align: center;
-    line-height: 1.3rem;
+    line-height: 1rem;
     color: white;
     padding: 3px 3px 3px 3px;
     text-indent: .7rem;
-    width: 30%;
+    max-width: 30%;
 
     :hover {
         cursor: pointer;   

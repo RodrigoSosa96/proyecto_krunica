@@ -24,9 +24,10 @@ const BoxContainer = styled.div`
 	justify-content: center;
 	
 	flex-wrap: wrap;
+
+	height: 80vw;
     
 	width: 100%;
-	height: 45vh;
 	/* width: 500px; */
 	padding: .5rem;
 	flex-direction: row;
