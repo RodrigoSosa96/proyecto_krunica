@@ -8,7 +8,7 @@ const Tarjeta = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 414px;
+    height: 25vw;
     background-color: #E8E8E8;
 
 `
@@ -19,13 +19,21 @@ const CardReview = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    width: 90%;
-    height: 80%;
-    padding: 0 35px 0 35px;
+    width: 95%;
+    height: 90%;
+    padding: 0 1.5rem 0 1.5rem;
     background-color: #ffffff;
     border-radius: 1rem;
-    gap: 2rem;
+    @media (min-width: 768px) {
+        
+    }
+    @media (min-width: 992px) {
+        padding: 0 2rem 0 2rem;
+        gap: 2rem;
+        height: 80%;
+        width: 90%;
 
+    }
 `
 
 const Imagen = styled.div`
@@ -45,18 +53,25 @@ const Texto = styled.div`
     flex-direction: column;
 
     width: 50%;
-    gap: 4rem;
-    padding: 0 2rem 0 2rem;
+    gap: 1rem;
+    padding: 0 0rem 0 1rem;
+    color: rgba(49, 50, 55, 1);
     .review-title {
-        font-family: bitter;
-        font-weight: bold;
+        font-family: Bitter;
+        font-weight: 400;
         font-style: italic;
         line-height: 45px;
         h4 {
-            font-size: 1rem;
+            font-weight: 400;
+            font-size: 0.5rem;
+            font-size: clamp(0.5rem, 2.4vw, 1rem);
+
         }
         p {
-            font-size: 35px;
+            font-weight: 400;
+            font-size: 0.5rem;
+            font-size: clamp(0.9rem, -0.27rem + 4.25vw, 2.2rem);
+            
         }
     }
     .review-rate {
@@ -66,21 +81,46 @@ const Texto = styled.div`
         padding-right: 3rem;
         font-family: ${props => props.theme.font.menu};
          h3 {
-            font-weight: 100;
+            font-weight: 400;
+            font-size: clamp(0.5rem, 2.4vw, 1rem);
+
         }
         p {
-            color: #718797;
+            color: rgba(113, 135, 151, 1);
+            
             line-height: 28px;
             font-size: 1.125rem;
+            
+            font-size: 0.5rem;
+            font-size: clamp(0.5rem, -0.25rem + 8vw, 1.25rem);
         }
 
         .rate {
             display: flex;
             gap: 0.4rem;
+            svg {
+                width: 1.438rem;
+                height: 1.313rem;
+            }
         }
 
     }
-    
+    @media (min-width: 768px) {
+
+    }
+    @media (min-width: 992px) {
+        gap: 4rem;
+        padding: 0 2rem 0 2rem;
+        .review-rate {
+            .rate {
+                svg {
+                    width: 1.625rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+
+    }
 `
 
 function Review() {

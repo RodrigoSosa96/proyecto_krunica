@@ -16,9 +16,9 @@ function Home() {
 			{/* <Landing data={home.landing} />
 			<SobreMi data={home.about_me} />
 			<Servicios data="" /> */}
-			<Clientes data={home.clientes} />
-			{/* <Prensa />
-			<Contacto /> */}
+			{/* <Clientes data={home.clientes} /> */}
+			<Prensa />
+			{/* <Contacto /> */}
 		</>
 	);
 
