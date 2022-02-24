@@ -1,106 +1,76 @@
 import { Title } from "../styled/Title.styled";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import getImageUrl from "../../assets/getImageUrl";
 import { Wrapper } from "../styled/Wrapper.styled";
-// import { Slider } from "./test";
 
+const GridContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
+    justify-items: center;
+    width: 100%;
 
-const scroll = (size) => keyframes`
+    @media (min-width: 768px) {
+        gap: 1rem;
 
-	0% { transform: translateX(0); }
-	/* 100% { transform: translateX(calc(-250px * 7))} */
-	100% { transform: translateX(calc(-250px * ${(size / 2)}))}
-`
-const Slider = styled.div`
-    background: white;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-    height: 100px;
-    margin: auto;
-    overflow:hidden;
-    position: relative;
-    /* width: 960px; */
-    width:100%;
-
-    &::before,
-    &::after {
-        background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-        content: "";
-        height: 100px;
-        position: absolute;
-        width: 100px;
-        z-index: 2;
     }
-    &::after {
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
+    @media(min-width: 992px) {
+        gap: 1.5rem;
     }
-    &::before {
-        left: 0;
-        top: 0;
-    }
+
 
 `;
-const SlideTrack = styled.div`
+const DivImg = styled.div`
     display: flex;
-    /* width: calc(250px * 14); */
-    width: calc(250px * ${props => props.size});
-    animation: ${props => scroll(props.size)} ${props => props.speed}s linear infinite;
-    /* gap: 1rem; */
-    &:hover {
-        animation-play-state: paused;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    max-width: 100px;
+    
+    @media(min-width: 768px) {
+        height: 100px;
 
     }
-`
-const Slide = styled.div`
-    height: 100px;
-    width: 250px;
-    img {
-        //image centered and cover
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
+    @media(min-width: 992px) {
+        height: 120px;
+        max-width: 250px;
         
+    }
+`
+const Imagen = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    :hover {
+        opacity: 1;
     }
 `
 
 
 
 function Clientes({ data }) {
-    let doubleData = data.concat(data);
-    const slideData = data.map((cliente, index) => {
-        return (
-            <Slide>
-                <img key={index} src={getImageUrl(cliente)} alt="" />
-            </Slide>
-        )
-    })
-
     return (
-        // <Wrapper>
-        //     <Title>CLIENTES</Title>
-        //     <GridContainer>
-        //         {
-        //             data.map((cliente, index) => {
-        //                 return (
-        //                     <DivImg>
-        //                         <Imagen key={index} src={getImageUrl(cliente)} alt="" />
-        //                     </DivImg>
-        //                 )
-        //             })
-        //         }
-        //     </GridContainer>
-        // </Wrapper>
-        <>
-            <Slider  >
-                <SlideTrack size={data.length * 2} speed="10" >
-                    {
-                        slideData.concat(slideData)
-                    }
-                </SlideTrack>
-            </Slider>
-        </>
+        <Wrapper>
+            <Title>CLIENTES</Title>
+            <GridContainer>
+                {
+                    data.map((cliente, index) => {
+                        return (
+                            <DivImg>
+                                <Imagen key={index} src={getImageUrl(cliente)} alt="" />
+                            </DivImg>
+                        )
+                    })
+                }
+            </GridContainer>
+        </Wrapper>
     )
 }
 
