@@ -1,7 +1,7 @@
 import { Link } from "preact-router"
 import styled from "styled-components"
 import Logo from "./Logo"
-
+import { animateScroll as scroll } from "react-scroll";    
 
 const Container = styled(Link)`
     display: flex;
@@ -45,7 +45,7 @@ const Container = styled(Link)`
 const Title = () => {
 
     return (
-        <Container href="/" >
+        <Container href="/" onClick={() => scroll.scrollToTop()} >
             <Logo />
             <h1>KRUNICA</h1>
         </Container>

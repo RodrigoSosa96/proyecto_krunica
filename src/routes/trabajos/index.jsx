@@ -47,13 +47,7 @@ function Trabajos() {
                 <TrabajosTitle onClick={handleClick} data-mssg="taller" >TRABAJOS TALLER</TrabajosTitle>
                 <TrabajosTitle onClick={handleClick} data-mssg="estudio" >TRABAJOS ESTUDIO</TrabajosTitle>
             </Categories>
-            {/* <FlexGrid/> */}
-            <GridLayout data={
-                category === "taller" ?
-                    trabajos.taller
-                    :
-                    trabajos.estudio
-            } />
+
         </Wrapper>
 
     );

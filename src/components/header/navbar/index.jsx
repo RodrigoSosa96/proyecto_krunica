@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { Link } from 'preact-router/match';
+import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
+
 import { Container, MenuLinks, Social, SocialImg } from './styles';
 import Face from "../../../assets/img/face.svg";
 import Insta from "../../../assets/img/insta.svg";
@@ -40,7 +42,7 @@ const Navbar = () => {
                             scrollTo(document.documentElement, element.offsetTop, 100);
                         }}
                     >SOBRE MÍ</Link>
-                    <Link activeClassName="active" href="/">TRABAJOS</Link>
+                    <Link activeClassName="active" href="/trabajos">TRABAJOS</Link>
                     <Link
                         activeClassName="active"
                         to="/servicios"

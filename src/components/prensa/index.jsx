@@ -6,7 +6,7 @@ import Review from "./Review";
 function Prensa() {
     return (
         <Wrapper >
-            <Title>Prensa</Title>
+            <Title>PRENSA</Title>
             <Review />
         </Wrapper>
     )

@@ -40,7 +40,7 @@ export const Container = styled.nav`
 `
 
 
-export const MenuLinks = styled.div`
+export const MenuLinks = styled.nav`
         display: flex;
         
         align-items: center;
@@ -74,6 +74,9 @@ export const MenuLinks = styled.div`
                 /* ::after{
                     opacity: 1;
                 } */
+                :after {
+                    opacity: 1;
+                }
             }
             :after {
                 transition: ease-in-out all 0.5s;
@@ -91,6 +94,7 @@ export const MenuLinks = styled.div`
             }
             :hover {
                 font-weight: 600;
+                cursor: pointer;
             }
             :hover::after {
                 opacity: 1;
