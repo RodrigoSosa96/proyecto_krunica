@@ -12,7 +12,7 @@ const WeirdTitle = styled(Title)`
         left: min(63vw, 68%);
     }
 `
-function SobreMi({ data }) {
+function    SobreMi({ data }) {
 
     const { name, description, description_bold, img, video } = data;
 

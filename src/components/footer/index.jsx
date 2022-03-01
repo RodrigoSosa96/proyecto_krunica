@@ -1,12 +1,15 @@
 import styled from "styled-components";
+import Navbar from "../header/menu";
 
 const StyledFooter = styled.footer`
     display: flex;
-    background-color: ${props => props.theme.color.primary};
+    background-color: var(--color-primary);
     height: 90px;
     width: 100%;
     align-items: center;
-    font-family: ${props => props.theme.font.title};
+    justify-content: space-between;
+
+    font-family: var(--font-title);
 
     h2 {
         font-size: 1.5rem;
@@ -36,6 +39,7 @@ function Footer() {
     return (
         <StyledFooter>
             <h2>KRUNICA</h2>
+            <Navbar/>
         </StyledFooter>
     )
 }

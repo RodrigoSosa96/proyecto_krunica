@@ -8,15 +8,14 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 1rem;
-    /* height: 520px; */
+    /* padding-top: 1rem; */
     @media (min-width: 768px) {
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
 
     }
 
     @media(min-width: 992px) {
-        padding-top: 90px;
+        /* padding-top: 90px; */
 
     }
 `
@@ -27,10 +26,10 @@ const CardContainer = styled.div`
     align-items: center;
     width: 100%;
     gap: .5rem;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     @media(min-width: 768px) {
-        gap: .9rem;
-        padding: 0 2rem;
+        gap: .7rem;
+        /* padding: 0 2rem; */
 
     }
     
@@ -45,20 +44,24 @@ const arrow = getImageUrl("arrow.svg");
 
 const Texto = styled.p`
     position: relative;
+
+
     font-size: max(.5rem, 1vw);
-    font-family: ${props => props.theme.font.title};
-    background-color: ${props => props.color ? props.theme.color.secondary : props.theme.color.primary};
+    font-family: var(--font-title);
+    background-color: ${props => props.color ? "var(--color-secondary)": "var(--color-primary)"};
 
     font-weight: 800;
     text-align: center;
     line-height: 1rem;
     color: white;
     padding: 3px 3px 3px 3px;
-    text-indent: .7rem;
-    max-width: 30%;
 
+    text-indent: .7rem;
+    /* max-width: 30%; */
+    /* filter: grayscale(100%); */
     :hover {
         cursor: pointer;   
+        /* filter: grayscale(0%); */
     }
     ::before {
         content: "";

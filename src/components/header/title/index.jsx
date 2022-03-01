@@ -17,13 +17,13 @@ const Container = styled(Link)`
         
         font-size: 1.7rem;
         
-        font-family: ${props => props.theme.font.title};
-        color: ${props => props.theme.color.text};
+        font-family: var(--font-title);
+        color: var(--color-text);
         line-height: 34px;
         letter-spacing: 0.075em;
     }
     svg {
-        fill: ${props => props.theme.color.text};
+        fill: black;
         height: 40px;
         /* width: 46px; */
         
@@ -32,7 +32,7 @@ const Container = styled(Link)`
     }
     @media (min-width: 992px) {
         h1 {
-            font-size: ${props => props.theme.fontSize.title};
+            font-size: var(--font-size-title);
         }
     }
 `

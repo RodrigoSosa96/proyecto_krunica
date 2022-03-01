@@ -20,41 +20,37 @@ export const CenterDiv = styled.div`
 `
 //main with 1400px max-width
 export const Main = styled.main`
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
     margin: 110px auto;
-    max-width: 1654px;
+    margin: 0 auto;
+    /* max-width: 1654px; */
+    width: 95%;
     
-    & > * + * {
-        position: relative;
-        /* border-top: 3px solid #C4C4C4;
-        padding-top: 2rem; */
-        margin-top: 50px;
-        ::after {
-            content: "";
-            position: absolute;
-            width: 90%;
-            top: -3px;
-            left: calc(50% - 45%);
-            height: 3px;
-            background-color: #C4C4C4;
-            overflow: hidden;
-            /* margin-top: -2rem; */
-            
-            z-index: 2;
-            
-        }
-        
+    hr {
+        width: 100%;
+        border: none;
+        border-top: 2px solid #C4C4C4;
+        margin: 1rem 0 1rem 0;
+        opacity: .3;
     }
     @media(min-width: 768px) {
-        & > * + * {
-            margin-top: 75px;
+        width: min(95vw, 1654px);
+        hr {
+            opacity: 1;
+            border-top: 3px solid #C4C4C4;
+            margin: 2rem 0 2rem 0;
         }
+
     }
     @media (min-width: 992px) {
         margin: 174px auto 2rem;
+        hr {
+            margin: 4rem 0 4rem 0;
+        }
     }
     `

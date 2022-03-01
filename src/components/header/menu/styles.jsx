@@ -41,7 +41,7 @@ export const MenuLinks = styled.div`
         
         align-items: center;
         justify-content: space-between;
-        font-family: ${props => props.theme.font.mainText}, sans-serif;
+        font-family: var(--font-menu);
 
 
         flex-direction: column;
@@ -56,7 +56,7 @@ export const MenuLinks = styled.div`
             justify-content: center;
             align-items: center;
             transition: all 1000ms ease-in-out;
-            font-size: ${props => props.theme.fontSize.mainText};
+            font-size: var(--font-size-main-text);
             color: ${props => props.toggleLinks ? "black" : "white"}; //! no anda
 
 
@@ -79,7 +79,7 @@ export const MenuLinks = styled.div`
                 width: 80%;
                 height: 5px;
                 bottom: -5px;
-                background-color: ${props => props.theme.color.blue};
+                background-color: var(--color-primary);
 
                 /* transition: 0.25s ease;
                 transform: scalex(0); */
@@ -102,11 +102,11 @@ export const MenuLinks = styled.div`
             height: 27px;
             gap: 0;
             a {
-                color: ${props => props.theme.color.text};
+                color: var(--color-text);
 
             }
             a+a {
-                border-left: 2px solid ${props => props.theme.color.lines};
+                border-left: 2px solid var(--color-lines);
             }
             
         }

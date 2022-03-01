@@ -2,19 +2,23 @@ import styled from "styled-components"
 
 export const StyledHeader = styled.header`
 	position: fixed;
+	/* position: sticky; */
 	width: 100%;
 	top:0;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
+	/* margin-bottom: 2rem; */
 
 
-
-	background-color: ${props => props.theme.color.background};
-	font-family: ${props => props.theme.font.menu};
+	background-color: var(--color-background);
+	font-family: var(--font-menu);
 	z-index: 1000;
 	transition: all 500ms ease-in-out;
 	
+	@media(min-width: 768px) {
+		
+	}
 	@media(min-width: 992px) {
 	
 		height: ${props => props.shrunk ? "110px" : "174px"};
@@ -22,9 +26,6 @@ export const StyledHeader = styled.header`
 		box-shadow: ${props => props.shrunk ? "0 2px 10px 0 rgba(0, 0, 0, 0.1)" : "none"};
 		border-bottom: 1px solid white;
 
-	}
-	@media(min-width: 768px) {
-		
 	}
 
 `

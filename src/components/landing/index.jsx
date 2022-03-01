@@ -7,12 +7,17 @@ const Container = styled.div`
     display: flex;
 	flex-direction: column;
     align-items: center;
-    justify-content: center;
+	justify-content: space-between;
+
+
     width: 100%;
 	gap: 3rem;
 	@media (min-width: 768px) {
 		flex-direction: row;
 		gap: unset;
+	}
+	@media (min-width: 992px) {
+		
 	}
 `
 
@@ -29,19 +34,22 @@ const BoxContainer = styled.div`
     
 	width: 100%;
 	/* width: 500px; */
-	padding: .5rem;
+	/* padding: .5rem; */
 	flex-direction: row;
 	@media (min-width: 768px) {
+		width: calc(50% - .5rem);
+
 		flex-direction: column;
-		width: 50%;
+		/* width: 50%; */
 		/* margin-bottom: 2rem; */
 		height: unset;
 		gap: 1rem;
 	}
 
 	@media (min-width: 992px) {
+		width: calc(50% - 1rem);
 		gap : 2rem;
-		padding:1rem;
+		/* padding:1rem; */
 		/* margin-bottom: 8rem; */
 
 	}

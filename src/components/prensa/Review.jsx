@@ -57,7 +57,7 @@ const Texto = styled.div`
     padding: 0 0rem 0 1rem;
     color: rgba(49, 50, 55, 1);
     .review-title {
-        font-family: Bitter;
+        font-family: var(--font-bitter);
         font-weight: 400;
         font-style: italic;
         line-height: 45px;
@@ -79,7 +79,7 @@ const Texto = styled.div`
         flex-direction: row;
         justify-content: space-between;
         padding-right: 3rem;
-        font-family: ${props => props.theme.font.menu};
+        font-family: var(--font-menu);
          h3 {
             font-weight: 400;
             font-size: clamp(0.5rem, 2.4vw, 1rem);

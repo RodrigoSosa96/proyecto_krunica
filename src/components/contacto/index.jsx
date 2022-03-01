@@ -22,7 +22,7 @@ const Form = styled.form`
         font-size: 1.4rem;
         text-indent: 2rem;
         line-height: 26px;
-        font-family: Helvetica, sans-serif;
+        font-family: var(--font-helvetica);
         ::placeholder {
             color: #898A8D;
         }
@@ -87,12 +87,12 @@ const Info = styled.div`
     height: 462px;
     h3{
         align-self: center;
-        font-size: ${props => props.theme.fontSize.title};
+        font-size: var(--font-size-title);
         margin-bottom: 2.5rem;
     }
 
     p {
-        font-size: ${props => props.theme.fontSize.backgroundTextSmall};
+        font-size: var(--font-size-background-text-small);
         line-height: 28px;   
         margin-top: 1rem;
         margin-bottom : .5rem;

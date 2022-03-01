@@ -6,7 +6,7 @@ import { CenterDiv } from "../styled/Wrapper.styled";
 
 
 const Box = styled(CenterDiv)`
-	background-color: ${props => props.theme.color.primary};
+	background-color: var(--color-primary);
 	position: relative;
 	/* width: max(716px); */
 	border-radius: 4.93px;
@@ -19,13 +19,15 @@ const Box = styled(CenterDiv)`
 	
 	
 	h2 {
-		font-family: ${props => props.theme.font.title};
+		font-size: 30px;
+		font-family: var(--font-title);
 		font-weight: 400;	
+		white-space: pre-wrap;
+		text-align: center;
+		line-height: 36px;
 		strong {
 			font-weight: 600;
 		}
-		white-space: pre-wrap;
-		text-align: center;
 		
 	}
 	p{
@@ -36,7 +38,7 @@ const Box = styled(CenterDiv)`
 
 	}
 	:hover {
-		background-color: ${props => props.theme.color.secondary};
+		background-color: var(--color-secondary);
 		cursor: pointer;
 	}
 	.hide {
@@ -58,7 +60,7 @@ const Box = styled(CenterDiv)`
 		width:100%;
 	}
 	@media(min-width: 992px) {
-		font-size: ${props => props.theme.fontSize.backgroundTextBig};
+		font-size: 30px;
 		p{ 
 			font-size: 20px;
 		}
@@ -67,12 +69,12 @@ const Box = styled(CenterDiv)`
 
 
 	@keyframes fadeIn {
-	0% {opacity:0;}
-	100% {opacity:1;}
+		0% {opacity:0;}
+		100% {opacity:1;}
 	}
 	@keyframes fadeOut {
-	0% {opacity:1;}
-	100% {opacity:0;}
+		0% {opacity:1;}
+		100% {opacity:0;}
 	}
 	.caja-invisible {
 		/* display: none; */
@@ -80,7 +82,6 @@ const Box = styled(CenterDiv)`
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background-color: red;
 
 	}
 `

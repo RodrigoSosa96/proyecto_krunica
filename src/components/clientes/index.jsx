@@ -6,7 +6,7 @@ import { Wrapper } from "../styled/Wrapper.styled";
 const GridContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
 
@@ -28,11 +28,11 @@ const DivImg = styled.div`
     justify-items: center;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    /* height: 50px; */
     max-width: 100px;
     
     @media(min-width: 768px) {
-        height: 100px;
+        /* height: 100px; */
 
     }
     @media(min-width: 992px) {

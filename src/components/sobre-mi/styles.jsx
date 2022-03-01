@@ -8,13 +8,13 @@ export const Card = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     padding-bottom: 0;
     @media (min-width: 768px) {
         display: block;
         position: relative;
         height: 100%;
-        width: 90%;       
+        /* width: 90%;        */
         
     }
 
@@ -46,8 +46,8 @@ export const GifVideo = styled.video`
 
 
 export const Text = styled.p`
-    font-size: ${props => props.theme.fontSize.paragraph};
-    font-family: 'Raleway', sans-serif;
+    font-size: var(--font-size-paragraph);
+    font-family: var(--font-menu);
     font-weight: 400;
     line-height: 33px;
     line-height: 30px;
@@ -57,7 +57,7 @@ export const Text = styled.p`
     font-size: 0.8rem;
     font-size: clamp(0.8rem, 0.7350000000000001rem + 0.32499999999999996vw, 1.125rem);
     
-    
+    padding: 0 1rem 0 1rem;
     @media (min-width: 768px) {
         line-height: 33px;
         padding: 3rem 1rem 0 1rem;

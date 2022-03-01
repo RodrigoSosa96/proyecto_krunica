@@ -14,10 +14,14 @@ function Home() {
 	return (
 		<>
 			<Landing data={home.landing} />
+			<hr />
 			<SobreMi data={home.about_me} />
+			<hr />
 			<Servicios data="" />
+			<hr />
 			<Clientes data={home.clientes} />
-			<Prensa />
+			<hr />
+			{/* <Prensa /> */}
 			{/* <Contacto /> */}
 		</>
 	);
