@@ -9,7 +9,7 @@ const Container = styled(Link)`
     align-items: center;
     /* width: 235px; */
     gap: .7rem;
-    height: 90px;
+    height: 60px;
     
 
 
@@ -28,6 +28,11 @@ const Container = styled(Link)`
         /* width: 46px; */
         
 
+
+    }
+    @media (min-width: 768px) {
+        height: 90px;
+        
 
     }
     @media (min-width: 992px) {

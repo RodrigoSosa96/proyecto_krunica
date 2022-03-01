@@ -18,7 +18,7 @@ function    SobreMi({ data }) {
 
 
     return (
-        <Card >
+        <Card id="about-me" >
             {/* <Picture src={imgUrl(img)} /> */}
             <GifVideo src={getImageUrl(video)} autoPlay loop muted />
             <WeirdTitle>{name}</WeirdTitle>

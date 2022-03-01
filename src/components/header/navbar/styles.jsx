@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 export const Container = styled.nav`
     display: ${props => props.toggleMenu ? "flex" : "none"};
+    
     /* display: flex; */
 
     align-items: center;
@@ -13,7 +14,9 @@ export const Container = styled.nav`
 
 
     transition: all 500ms ease-in-out;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 60px - 2rem);
+    width: 100%;
+
 
     //show font from white to black when menu is open
 
@@ -22,7 +25,8 @@ export const Container = styled.nav`
         gap: 1rem;
         flex-direction: row;
         overflow: hidden;
-
+        
+        width: unset;
         height: unset;
         
         
@@ -119,14 +123,15 @@ export const MenuLinks = styled.div`
 
 
 export const Social = styled.div`
-        position: absolute;
+        /* position: absolute; */
+        position: fixed;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin-top: 4rem;
+        /* justify-content: space-between; */
+        /* margin-top: 4rem; */
         gap: 1.5rem;
 
-        bottom: 4rem;
+        bottom: 2rem;
 
         @media(min-width: 768px) {
             position: relative;

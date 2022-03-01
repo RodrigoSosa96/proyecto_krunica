@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Navbar from "../header/menu";
 
 const StyledFooter = styled.footer`
     display: flex;
@@ -11,15 +10,16 @@ const StyledFooter = styled.footer`
 
     font-family: var(--font-title);
 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     h2 {
         font-size: 1.5rem;
-        padding-left: 1.5rem;
         font-weight: 700;
     }
     @media(min-width: 768px) {
+        padding-left: 2rem;
         h2 {
             font-size: 2rem;
-            padding-left: 2rem;
         }
     }
     @media(min-width: 992px) {
@@ -27,8 +27,8 @@ const StyledFooter = styled.footer`
         
         /* justify-content: center; */
         height: 276px;
+        padding-left: 5rem;
         h2 {
-            padding-left: 5rem;
             font-size: 40px;
         }
 
@@ -39,7 +39,6 @@ function Footer() {
     return (
         <StyledFooter>
             <h2>KRUNICA</h2>
-            <Navbar/>
         </StyledFooter>
     )
 }

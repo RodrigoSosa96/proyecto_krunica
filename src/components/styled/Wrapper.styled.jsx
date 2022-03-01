@@ -26,8 +26,7 @@ export const Main = styled.main`
     align-items: center;
     justify-content: center;
     
-    margin: 110px auto;
-    margin: 0 auto;
+    margin: 1rem auto;
     /* max-width: 1654px; */
     width: 95%;
     
@@ -48,7 +47,7 @@ export const Main = styled.main`
 
     }
     @media (min-width: 992px) {
-        margin: 174px auto 2rem;
+        /* margin: 2rem auto 2rem; */
         hr {
             margin: 4rem 0 4rem 0;
         }

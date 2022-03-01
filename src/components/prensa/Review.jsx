@@ -21,14 +21,15 @@ const CardReview = styled.div`
 
     width: 95%;
     height: 90%;
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 .8rem;
     background-color: #ffffff;
     border-radius: 1rem;
     @media (min-width: 768px) {
+        padding: 0 1.5rem 0 1.5rem;
         
     }
     @media (min-width: 992px) {
-        padding: 0 2rem 0 2rem;
+        padding: 0 2rem;
         gap: 2rem;
         height: 80%;
         width: 90%;
@@ -53,14 +54,13 @@ const Texto = styled.div`
     flex-direction: column;
 
     width: 50%;
-    gap: 1rem;
+    gap : .2rem;
     padding: 0 0rem 0 1rem;
     color: rgba(49, 50, 55, 1);
     .review-title {
         font-family: var(--font-bitter);
         font-weight: 400;
         font-style: italic;
-        line-height: 45px;
         h4 {
             font-weight: 400;
             font-size: 0.5rem;
@@ -70,7 +70,7 @@ const Texto = styled.div`
         p {
             font-weight: 400;
             font-size: 0.5rem;
-            font-size: clamp(0.9rem, -0.27rem + 4.25vw, 2.2rem);
+            font-size: clamp(0.8rem, -0.27rem + 4.25vw, 2.2rem);
             
         }
     }
@@ -78,35 +78,66 @@ const Texto = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-right: 3rem;
+        align-items: center;
+
         font-family: var(--font-menu);
          h3 {
             font-weight: 400;
-            font-size: clamp(0.5rem, 2.4vw, 1rem);
+            font-size: clamp(0.2rem, 2.4vw, 1rem);
 
         }
         p {
             color: rgba(113, 135, 151, 1);
-            
-            line-height: 28px;
-            font-size: 1.125rem;
-            
-            font-size: 0.5rem;
-            font-size: clamp(0.5rem, -0.25rem + 8vw, 1.25rem);
+            font-size: .7rem;
+
         }
 
         .rate {
             display: flex;
-            gap: 0.4rem;
+            gap: 0.1rem;
             svg {
-                width: 1.438rem;
-                height: 1.313rem;
+                width: .7rem;
+                height: .7rem;
             }
         }
 
     }
+    @media (min-width: 576px) {
+        .review-title {
+            line-height: 35px;
+        }
+        .review-rate {
+            p {
+                line-height: 28px;
+                font-size: 0.5rem;
+                font-size: clamp(0.5rem, -0.25rem + 8vw, 1.25rem);
+            }
+            .rate {
+                svg {
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+        }
+        
+    }
     @media (min-width: 768px) {
+        gap: 1rem;
+        .review-title {
+            line-height: 45px;
 
+        }
+        .review-rate {
+            padding-right: 3rem;
+
+            .rate {
+                gap: 0.4rem;
+                svg {
+                    width: 1.438rem;
+                    height: 1.313rem;
+                }
+            }
+        }
     }
     @media (min-width: 992px) {
         gap: 4rem;

@@ -21,8 +21,10 @@ function Home() {
 			<hr />
 			<Clientes data={home.clientes} />
 			<hr />
-			{/* <Prensa /> */}
-			{/* <Contacto /> */}
+			<Prensa />
+			<hr />
+
+			<Contacto />
 		</>
 	);
 

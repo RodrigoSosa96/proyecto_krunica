@@ -17,7 +17,6 @@ const Categories = styled.div`
     gap: 5rem;
 `
 const TrabajosTitle = styled(Title)`
-    font-family: ${props => props.theme.font.title};
     font-weight: 400;
     font-size: 26px;
     line-height: 32px;
@@ -45,17 +44,16 @@ function Trabajos() {
     return (
         <Wrapper>
             <Categories >
-
                 <TrabajosTitle onClick={handleClick} data-mssg="taller" >TRABAJOS TALLER</TrabajosTitle>
                 <TrabajosTitle onClick={handleClick} data-mssg="estudio" >TRABAJOS ESTUDIO</TrabajosTitle>
             </Categories>
             {/* <FlexGrid/> */}
-            {/* <GridLayout data={
+            <GridLayout data={
                 category === "taller" ?
                     trabajos.taller
                     :
                     trabajos.estudio
-            } /> */}
+            } />
         </Wrapper>
 
     );

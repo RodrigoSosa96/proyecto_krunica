@@ -48,6 +48,10 @@ const VerMas = styled.a`
         padding-top: 0;
         width: unset;
     }
+    :hover {
+        filter: brightness(45%);
+        text-shadow: 1px 1px 10px #c4c4c4;
+    }
 `
 
 

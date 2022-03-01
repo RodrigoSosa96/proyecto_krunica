@@ -9,9 +9,8 @@ const Container = styled.div`
     align-items: center;
 	justify-content: space-between;
 
-
     width: 100%;
-	gap: 3rem;
+	gap: 1rem;
 	@media (min-width: 768px) {
 		flex-direction: row;
 		gap: unset;
@@ -25,12 +24,12 @@ const Container = styled.div`
 const BoxContainer = styled.div`
 	position: relative;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	/* align-items: center;
+	justify-content: center; */
+
 	
 	flex-wrap: wrap;
 
-	height: 80vw;
     
 	width: 100%;
 	/* width: 500px; */

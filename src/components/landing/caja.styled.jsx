@@ -14,7 +14,7 @@ const Box = styled(CenterDiv)`
 	transition: all 0.5s ease-in-out;
 	
 	width: 77%;
-	height: 100%;
+	/* height: 100%; */
 
 	
 	

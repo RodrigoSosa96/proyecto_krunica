@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 export const StyledHeader = styled.header`
-	position: fixed;
-	/* position: sticky; */
+	position: sticky;
 	width: 100%;
 	top:0;
 	display: flex;
@@ -21,11 +20,12 @@ export const StyledHeader = styled.header`
 	}
 	@media(min-width: 992px) {
 	
-		height: ${props => props.shrunk ? "110px" : "174px"};
+		/* height: ${props => props.shrunk ? "100px" : "174px"}; */
+		height: ${props => props.shrunk ? "90px" : "124px"};
 		border-bottom: ${props => props.shrunk ? "1px solid rgb(231, 231, 233)" : "none"};
 		box-shadow: ${props => props.shrunk ? "0 2px 10px 0 rgba(0, 0, 0, 0.1)" : "none"};
 		border-bottom: 1px solid white;
-
+		
 	}
 
 `
@@ -53,7 +53,7 @@ export const StyledHamburger = styled.div`
 	display: flex;
 	flex-direction: column;
 
-	height: 90px;
+    height: 60px;
 	//align items center 
 	justify-content: center;
 
@@ -66,6 +66,8 @@ export const StyledHamburger = styled.div`
 		border-radius: 5px;
 	}
 	@media(min-width: 768px) {
+		height: 90px;
+		
 		display: none;
 		span {
 			height: 2px;

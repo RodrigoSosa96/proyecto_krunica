@@ -51,6 +51,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html {
         // font-family: 'Roboto', sans-serif;
+        scroll-behavior: smooth;
     }
     body {
         -webkit-font-smoothing: antialiased;

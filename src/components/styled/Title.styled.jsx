@@ -15,12 +15,12 @@ export const Title = styled.h2`
     }
 
     :after {
-        opacity: 0;
+        opacity: 1;
         content: '';
         position: absolute;
         width: 100%;
-        height: 5px;
-        bottom: -10px;
+        height: 4px;
+        bottom: -7px;
         left: 0;
         background-color: var(--color-primary);
     }
@@ -29,6 +29,12 @@ export const Title = styled.h2`
         margin-bottom: 1.5rem;
 
         font-size: 2.25rem;
+        :after {
+            opacity: 0;
+            bottom: -10px;
 
+            height: 5px;
+            
+        }
     }
 `
