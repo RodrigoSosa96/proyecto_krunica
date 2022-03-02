@@ -68,12 +68,13 @@ export const Text = styled.p`
 `
 export const BoldText = styled(Text)`
     margin-top: 2rem;
-    font-weight: bolder;
+    font-weight: 600;
     width: 100%;
     text-align: center;
+    text-align: left;
 
     @media (min-width: 992px) {
-        text-align: left;
+        
     }
 `
 
