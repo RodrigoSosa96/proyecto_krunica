@@ -42,66 +42,56 @@ const CardContainer = styled.div`
 `
 const arrow = getImageUrl("arrow.svg");
 
-const Texto = styled.p`
+const TextBox = styled.div`
     position: relative;
-
-
-    font-size: max(.5rem, 1vw);
-    font-family: var(--font-title);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: ${props => props.color ? "var(--color-secondary)": "var(--color-primary)"};
-
-    font-weight: 800;
-    text-align: center;
-    line-height: 1rem;
-    color: white;
-    padding: 3px 3px 3px 3px;
-
-    text-indent: .7rem;
-    /* max-width: 30%; */
-    /* filter: grayscale(100%); */
     :hover {
         cursor: pointer;   
-        /* filter: grayscale(0%); */
     }
-    ::before {
-        content: "";
-        display: block;
-        position: absolute;
-        //svg 
-        background-image: url(${arrow});
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        width: .6rem;
-        height: .6rem;
-        top: 50%;
-        transform: translateY(-50%);
+    p {
+        position: relative;
+        display: flex;
+        font-size: max(.5rem, 1vw);
+        font-family: var(--font-title);
+        padding: .2rem .5rem .2rem 0rem;
+
+        font-weight: 800;
+        text-align: center;
+        line-height: 1rem;
+        color: white;
+        /* padding: 3px 3px 3px 3px; */
+        text-indent: .7rem;
+
+        ::before {
+            content: url(${arrow}); 
+
+            /* width: auto;
+            height: auto; */
+            transform: scale(0.6);
+
+        }
 
     }
     @media (min-width: 768px) {
-        line-height: 37px;
+        padding: .5rem .8rem .5rem 0rem;
+        p {
+            line-height: 37px;
 
-        width: unset;
-        padding: 10px 12px 10px 12px;
-
-        font-size:1.5rem;
-        text-indent: 1.7rem;
-        ::before {
-            width: 1.5rem;
-            height: 1.5rem;
+            font-size:1.5rem;
+            text-indent: 1.7rem;
         }
     }
     @media (min-width: 992px) {
-
-        font-size: 2rem;
-        text-indent: 2.2rem;
-
-        ::before {
-            width: 2rem;
-            height: 2rem;
-
+        padding: .7rem 1rem .7rem 0rem;
+        p {
+            font-size: 2rem;
+            text-indent: 2.2rem;
         }
     }
+
 `
 
 function Servicios({ data }) {
@@ -110,20 +100,48 @@ function Servicios({ data }) {
         <Container id="servicios">
             <Title>SERVICIOS</Title>
             <CardContainer>
-                <Texto>BRANDING</Texto>
-                <Texto color> DISEÑO UX/UI</Texto>
-                <Texto>EDITORIAL</Texto>
-                <Texto color>REDES SOCIALES</Texto>
-                <Texto>PACKAGING</Texto>
-                <Texto color>EDICIÓN DE VIDEOS</Texto>
-                <Texto>ILUSTRACIÓN</Texto>
-                <Texto color>DISEÑO WEB</Texto>
-                <Texto>LETTERING</Texto>
-                <Texto color>BOX</Texto>
-                <Texto>ENCUADERNACIÓN ARTESANAL</Texto>
-                <Texto color>CUADROS</Texto>
-                <Texto>TALLERES</Texto>
-                <Texto color>PAPELERÍA</Texto>
+                <TextBox>
+                    <p>BRANDING</p>
+                </TextBox>
+                <TextBox color>
+                    <p>DISEÑO UX/UI</p>
+                </TextBox>
+                <TextBox>
+                    <p>EDITORIAL</p>
+                </TextBox>
+                <TextBox color>
+                    <p>REDES SOCIALES</p>
+                </TextBox>
+                <TextBox>
+                    <p>PACKAGING</p>
+                </TextBox>
+                <TextBox color>
+                    <p>EDICIÓN DE VIDEOS</p>
+                </TextBox>
+                <TextBox>
+                    <p>ILUSTRACIÓN</p>
+                </TextBox>
+                <TextBox color>
+                    <p>DISEÑO WEB</p>
+                </TextBox>
+                <TextBox>
+                    <p>LETTERING</p>
+                </TextBox>
+                <TextBox color>
+                    <p>BOX</p>
+                </TextBox>
+                <TextBox>
+                    <p>ENCUADERNACIÓN ARTESANAL</p>
+                </TextBox>
+                <TextBox color>
+                    <p>CUADROS</p>
+                </TextBox>
+                <TextBox>
+                    <p>TALLERES</p>
+                </TextBox>
+                <TextBox color>
+                    <p>PAPELERÍA</p>
+                </TextBox>
             </CardContainer>
         </Container>
     )
