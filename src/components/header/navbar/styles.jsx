@@ -1,5 +1,5 @@
-import { Link as L} from "preact-router/match";
 import styled from "styled-components"
+import { HashLink as L } from 'react-router-hash-link';
 
 
 export const Container = styled.nav`
@@ -15,8 +15,6 @@ export const Container = styled.nav`
     transition: all 500ms ease-in-out;
     height: calc(100vh - 60px - 2rem);
     width: 100%;
-
-
 
     @media (min-width: 768px) {
         display: flex;

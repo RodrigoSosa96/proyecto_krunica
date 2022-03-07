@@ -49,7 +49,7 @@ const BoxContainer = styled.div`
 `
 function Landing({ data }) {
 	return (
-		<Container  onFocus={() => console.log("testt")} onClick={() => console.log("clickkk")}>
+		<Container  id="test">
 			<BoxContainer  >
 				<BoxWithText name={data.taller.name} description={data.taller.description} />
 				<FotosContainer fotos={data.taller.fotos} />

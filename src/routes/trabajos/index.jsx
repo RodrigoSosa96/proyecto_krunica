@@ -1,9 +1,8 @@
-import { useState } from "preact/hooks";
 import styled from "styled-components";
-import { trabajos } from "../../data.json"
+
 import { Title } from "../../components/styled/Title.styled";
-import GridLayout from "../../components/trabajos/GridLayout.styled";
-// import FlexGrid from "../../components/trabajos/FlexGrid";
+
+import { Link, Outlet } from "react-router-dom";
 
 const Wrapper = styled.div`
     display: flex;
@@ -32,22 +31,17 @@ const TrabajosTitle = styled(Title)`
 
 `
 function Trabajos() {
-    const [category, setCategory] = useState("taller");//taller
-    const handleClick = (e) => {
-        const { mssg } = e.target.dataset;
-        console.log(mssg);
-        setCategory(mssg);
-    }
+
 
 
 
     return (
         <Wrapper>
             <Categories >
-                <TrabajosTitle onClick={handleClick} data-mssg="taller" >TRABAJOS TALLER</TrabajosTitle>
-                <TrabajosTitle onClick={handleClick} data-mssg="estudio" >TRABAJOS ESTUDIO</TrabajosTitle>
+                <Link to="taller" >TRABAJOS TALLER</Link>
+                <Link to="estudio" >TRABAJOS ESTUDIO</Link>
             </Categories>
-
+            <Outlet/>
         </Wrapper>
 
     );

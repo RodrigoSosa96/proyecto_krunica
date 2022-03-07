@@ -1,9 +1,9 @@
-import { Link } from "preact-router"
+import { HashLink } from "react-router-hash-link";
 import styled from "styled-components"
-import Logo from "./Logo"
-import { animateScroll as scroll } from "react-scroll";    
 
-const Container = styled(Link)`
+import Logo from "./Logo"
+
+const Container = styled(HashLink)`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@ const Container = styled(Link)`
 const Title = () => {
 
     return (
-        <Container href="/" onClick={() => scroll.scrollToTop()} >
+        <Container to="/#">
             <Logo />
             <h1>KRUNICA</h1>
         </Container>
