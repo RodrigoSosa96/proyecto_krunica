@@ -2,23 +2,8 @@ import styled from "styled-components";
 
 import { Title } from "../styled/Title.styled";
 import getImageUrl from "../../assets/getImageUrl";
+import { Container } from "../styled/Wrapper.styled";
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* padding-top: 1rem; */
-    @media (min-width: 768px) {
-        /* padding-top: 2rem; */
-
-    }
-
-    @media(min-width: 992px) {
-        /* padding-top: 90px; */
-
-    }
-`
 const CardContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -48,47 +33,61 @@ const TextBox = styled.div`
     align-items: center;
     justify-content: center;
     background-color: ${props => props.color ? "var(--color-secondary)": "var(--color-primary)"};
+    /* padding: 12px; */
+
     :hover {
         cursor: pointer;   
+        box-shadow:0px 0px 0px 3px ${props => props.color ? "var(--color-primary)": "var(--color-secondary)"} inset;
+        p {
+            /* text-shadow: 0px 0px 0px 10px black;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+
+        }
+    
     }
     p {
         position: relative;
         display: flex;
         font-size: max(.5rem, 1vw);
         font-family: var(--font-title);
-        padding: .2rem .5rem .2rem 0rem;
+        padding: .2rem .5rem .2rem .2rem;
 
         font-weight: 800;
         text-align: center;
         line-height: 1rem;
         color: white;
-        /* padding: 3px 3px 3px 3px; */
-        text-indent: .7rem;
 
         ::before {
             content: url(${arrow}); 
-
-            /* width: auto;
-            height: auto; */
-            transform: scale(0.6);
+            position: relative;
+            height: .5rem;
+            width: .5rem;
 
         }
 
     }
     @media (min-width: 768px) {
-        padding: .5rem .8rem .5rem 0rem;
+        padding: .7rem .7rem .9rem .9rem;
         p {
             line-height: 37px;
-
             font-size:1.5rem;
-            text-indent: 1.7rem;
+            ::before {
+                height: 1rem;
+                width: 1rem;
+
+            }
         }
     }
     @media (min-width: 992px) {
-        padding: .7rem 1rem .7rem 0rem;
+        padding: 1rem 1.2rem 1.2rem 0rem;
+        
         p {
             font-size: 2rem;
-            text-indent: 2.2rem;
+            text-indent: 2rem;
+            ::before {
+                width: 1.5rem;
+                height:1.5rem;
+            }
         }
     }
 

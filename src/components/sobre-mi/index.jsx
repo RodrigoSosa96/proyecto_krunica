@@ -1,31 +1,22 @@
-import { Card, Text, BoldText, GifVideo } from "./styles"
+import { Container, Text, BoldText, GifVideo } from "./styles"
 import { Title } from "../styled/Title.styled";
 
 import getImageUrl from "../../assets/getImageUrl";
-import styled from "styled-components";
 
 
 
-const WeirdTitle = styled(Title)`
-    @media (min-width: 768px) {
-        position: absolute;
-        left: min(63vw, 68%);
-    }
-`
 function    SobreMi({ data }) {
 
     const { name, description, description_bold, img, video } = data;
 
 
     return (
-        <Card id="about-me"  onFocus={() => console.log("testt")} onClick={() => console.log("clickkk")}>
-            {/* <Picture src={imgUrl(img)} /> */}
+        <Container id="about-me">
             <GifVideo src={getImageUrl(video)} autoPlay loop muted />
-            <WeirdTitle>{name}</WeirdTitle>
+            <h2><Title as="span">{name} </Title> </h2>
             <Text>{description}</Text>
             <BoldText>{description_bold}</BoldText>
-
-        </Card >
+        </Container>
     )
 }
 

@@ -1,30 +1,25 @@
 import styled from "styled-components";
-import { CenterDiv } from "../styled/Wrapper.styled";
+import {Container as C} from "../styled/Wrapper.styled";
 
-
-export const Card = styled.div`
-    display: flex;    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* padding: 1rem; */
-    padding-bottom: 0;
+export const Container = styled(C)`
+    h2 {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        span {
+            position: relative;
+        }
+    }
     @media (min-width: 768px) {
         display: block;
         position: relative;
         height: 100%;
-        /* width: 90%;        */
         
     }
 
 `
 
-// export const Picture = styled.img`
-//     width: 676px;
-//     height: 100%;
-//     object-fit: cover;
-// `
 
 export const GifVideo = styled.video`
     height: 100%;
@@ -37,8 +32,7 @@ export const GifVideo = styled.video`
     @media (min-width: 768px) {
         width: min(50vw, 676px);
         float: left;
-        margin-right: 4rem;
-
+        margin-right: min(5rem, 4vw);
     }
 `;
 

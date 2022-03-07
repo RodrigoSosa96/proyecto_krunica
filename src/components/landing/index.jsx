@@ -1,22 +1,15 @@
 import styled from "styled-components";
 import BoxWithText from "./caja.styled";
 import FotosContainer from './barra.styled';
+import { Container as C } from "../styled/Wrapper.styled";
 
-const Container = styled.div`
-    position: relative;
-    display: flex;
-	flex-direction: column;
-    align-items: center;
+const Container = styled(C)`
 	justify-content: space-between;
-
     width: 100%;
 	gap: 1rem;
 	@media (min-width: 768px) {
 		flex-direction: row;
 		gap: unset;
-	}
-	@media (min-width: 992px) {
-		
 	}
 `
 

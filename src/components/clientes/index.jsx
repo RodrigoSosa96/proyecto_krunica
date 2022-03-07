@@ -1,7 +1,7 @@
 import { Title } from "../styled/Title.styled";
 import styled from "styled-components";
 import getImageUrl from "../../assets/getImageUrl";
-import { Wrapper } from "../styled/Wrapper.styled";
+import { Container } from "../styled/Wrapper.styled";
 
 const GridContainer = styled.div`
     display: flex;
@@ -57,7 +57,7 @@ const Imagen = styled.img`
 
 function Clientes({ data }) {
     return (
-        <Wrapper>
+        <Container>
             <Title>CLIENTES</Title>
             <GridContainer>
                 {
@@ -70,7 +70,7 @@ function Clientes({ data }) {
                     })
                 }
             </GridContainer>
-        </Wrapper>
+        </Container>
     )
 }
 

@@ -19,22 +19,29 @@ export const Title = styled.h2`
         content: '';
         position: absolute;
         width: 100%;
-        height: 4px;
-        bottom: -7px;
+        height: 3px;
+        bottom: -5px;
         left: 0;
         background-color: var(--color-primary);
     }
 
     @media (min-width: 768px) {
         margin-bottom: 1.5rem;
-
-        font-size: 2.25rem;
+        font-size: 1.5rem;
         :after {
             opacity: 0;
-            bottom: -10px;
+            bottom: -6px;
 
-            height: 5px;
+            height: 4px;
             
         }
+    }
+    @media (min-width: 992px) {
+        margin-bottom: 4rem;
+        font-size: 2.25rem;
+        :after {
+            height: 5px;
+        }
+
     }
 `

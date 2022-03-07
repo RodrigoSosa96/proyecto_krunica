@@ -1,27 +1,15 @@
 import styled from "styled-components";
 import { Title } from "../styled/Title.styled";
+import { Container as C } from "../styled/Wrapper.styled";
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+const Container = styled(C)`
     gap: 1rem;
-    /* gap: 130px; */
-    
-    
-    @media (min-width: 768px) {
-        
-    }
     @media (min-width: 992px) {
         gap: min(6vw, 130px);
         flex-direction: row;
-
     }
-    
 `
+
 const Info = styled.div`
     display: flex;
     flex-direction: column;

@@ -1,13 +1,12 @@
+import { Link as L} from "preact-router/match";
 import styled from "styled-components"
 
 
 export const Container = styled.nav`
     display: ${props => props.toggleMenu ? "flex" : "none"};
     
-    /* display: flex; */
 
     align-items: center;
-    /* justify-content: space-between; */
 
     flex-direction: column;
 
@@ -18,7 +17,6 @@ export const Container = styled.nav`
     width: 100%;
 
 
-    //show font from white to black when menu is open
 
     @media (min-width: 768px) {
         display: flex;
@@ -53,75 +51,26 @@ export const MenuLinks = styled.nav`
         gap: 3rem;
 
 
-        a {
-            position: relative;
-            display: flex;
 
-            justify-content: center;
-            align-items: center;
-            transition: all 1000ms ease-in-out;
-            font-size: var(--font-size-main-text);
-            color: ${props => props.toggleLinks ? "black" : "white"}; //! no anda
-
-
-            text-decoration: none;
-            width: 100px;
-            height: 100%;
-            line-height: 19px;
-            font-weight: 500;
-            &.active {
-                font-weight: 600;
-                /* ::after{
-                    opacity: 1;
-                } */
-                :after {
-                    opacity: 1;
-                }
-            }
-            :after {
-                transition: ease-in-out all 0.5s;
-                content: '';
-                opacity: 0;
-                position: absolute;
-                width: 80%;
-                height: 5px;
-                bottom: -5px;
-                background-color: var(--color-primary);
-
-                /* transition: 0.25s ease;
-                transform: scalex(0); */
-
-            }
-            :hover {
-                font-weight: 600;
-                cursor: pointer;
-            }
-            :hover::after {
-                opacity: 1;
-                /* transform: scalex(1); */
-                
-            }
-            
-        }
 
         @media(min-width: 768px) {
             flex-direction: row;
             width: unset;
             height: 27px;
             gap: 0;
-            a {
+            /* a {
                 color: var(--color-text);
 
-            }
+            } */
             a+a {
                 border-left: 2px solid var(--color-lines);
             }
             
         }
         @media(min-width: 992px) {
-            a{
+            /* a{
                 width: 120px;
-            }
+            } */
         }
 `
 
@@ -170,3 +119,61 @@ export const SocialImg = styled.a`
 `
 
 
+export const Link = styled(L)`
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    transition: all 1000ms ease-in-out;
+    font-size: var(--font-size-main-text);
+    color: var(--color-text);
+
+    text-decoration: none;
+    width: 100px;
+    height: 100%;
+    line-height: 19px;
+    font-weight: 500;
+    &.active {
+        font-weight: 600;
+        /* ::after{
+            opacity: 1;
+        } */
+        :after {
+            opacity: 1;
+        }
+    }
+    :after {
+        transition: ease-in-out all 0.5s;
+        content: '';
+        opacity: 0;
+        position: absolute;
+        width: 80%;
+        height: 5px;
+        bottom: -5px;
+        background-color: var(--color-primary);
+
+        /* transition: 0.25s ease;
+        transform: scalex(0); */
+
+    }
+    :hover {
+        font-weight: 600;
+        cursor: pointer;
+    }
+    :hover::after {
+        opacity: 1;
+        /* transform: scalex(1); */
+        
+    }
+    @media(min-width: 768px) {
+        color: var(--color-text);
+
+            
+    }
+    @media(min-width: 992px) {
+        width: 120px;
+    }
+    
+
+`

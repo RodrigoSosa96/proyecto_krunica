@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'preact/hooks';
-import { Link } from 'preact-router/match';
-import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
+// import { Link as LinkScroll, animateScroll as scroll } from "react-scroll";
 
-import { Container, MenuLinks, Social, SocialImg } from './styles';
+import { Container, MenuLinks, Social, SocialImg, Link } from './styles';
 import Face from "../../../assets/img/face.svg";
 import Insta from "../../../assets/img/insta.svg";
 import { StyledHamburger } from '../styled';
 
-//smooth scroll to element
 const scrollTo = (element, to, duration) => {
     if (duration <= 0) return;
     var difference = to - element.scrollTop;
@@ -19,6 +17,8 @@ const scrollTo = (element, to, duration) => {
         scrollTo(element, to, duration - 10);
     }, 10);
 }
+
+
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -32,8 +32,8 @@ const Navbar = () => {
                 <span></span>
             </StyledHamburger>
 
-            <Container toggleMenu={menu} >
-                <MenuLinks toggleLinks={menu} onClick={() => setMenu(!menu)}  >
+            <Container toggleMenu={menu} onDoubleClick={() => setMenu(!menu)} >
+                <MenuLinks onClick={() => setMenu(!menu)}  >
                     <Link
                         activeClassName="active"
                         to="/about-me"

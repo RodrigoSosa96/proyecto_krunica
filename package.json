@@ -10,6 +10,7 @@
     "lodash": "^4.17.21",
     "preact": "^10.6.6",
     "preact-router": "^4.0.1",
+    "react-router-hash-link": "^2.4.3",
     "react-scroll": "^1.8.5",
     "react-spring": "^8.0.25",
     "react-visibility-sensor": "^5.1.1",
