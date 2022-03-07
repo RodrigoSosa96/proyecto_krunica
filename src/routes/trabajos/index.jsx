@@ -10,10 +10,15 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    width: 1460px;
 `
 const Categories = styled.div`
     display: flex;
     gap: 5rem;
+    a {
+        text-decoration: none;
+        color: var(--color-text);
+    }
 `
 const TrabajosTitle = styled(Title)`
     font-weight: 400;
@@ -38,8 +43,12 @@ function Trabajos() {
     return (
         <Wrapper>
             <Categories >
-                <Link to="taller" >TRABAJOS TALLER</Link>
-                <Link to="estudio" >TRABAJOS ESTUDIO</Link>
+                <Link to="taller" >
+                    <TrabajosTitle>TRABAJOS TALLER</TrabajosTitle>
+                </Link>
+                <Link to="estudio" >
+                    <TrabajosTitle>TRABAJOS ESTUDIO</TrabajosTitle>
+                </Link>
             </Categories>
             <Outlet/>
         </Wrapper>
