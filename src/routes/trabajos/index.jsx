@@ -10,20 +10,29 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    width: 1460px;
 `
 const Categories = styled.div`
     display: flex;
-    gap: 5rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem ;
+    width: 90% ;
     a {
         text-decoration: none;
         color: var(--color-text);
     }
+    @media (min-width: 768px) {
+        gap: 2rem;
+        width: 100% ;
+    }
+    @media(min-width: 992px) {
+        gap: 5rem;
+
+    }
 `
 const TrabajosTitle = styled(Title)`
     font-weight: 400;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: clamp(1rem, 2vw, 2.25rem);
     user-select: none;
     :hover {
         cursor: pointer;
@@ -33,7 +42,14 @@ const TrabajosTitle = styled(Title)`
         opacity: 1;
         /* transform: scalex(1); */
     }
+    @media(min-width: 768px) {
+        font-size: 24px;
+    }
 
+    @media(min-width: 992px) {
+        font-size: 26px;
+        line-height: 32px;
+    }
 `
 function Trabajos() {
 

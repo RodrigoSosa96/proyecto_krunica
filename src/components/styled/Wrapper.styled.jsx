@@ -37,7 +37,8 @@ export const Main = styled.main`
     
     margin: 1rem auto;
     /* max-width: 1654px; */
-    width: 95%;
+    /* width: 95%; */
+    max-width: 1464px;
     
     hr {
         width: 100%;

@@ -1,157 +1,97 @@
 import { useEffect, useState } from 'preact/hooks';
 import { useParams } from 'react-router-dom';
-import styled from 'styled-components';
 
-
-import getImageUrl from '../../assets/getImageUrl';
+import {Masonry, PhotoModal, SectionTitle} from "./styled"
 import { trabajos as dataTrabajos } from "../../data.json" 
-
-const Grid = styled.div`
-    //3 columnas
-    display: grid;
-    gap: 2rem;
-    margin-top: 1rem;
-    grid-template-columns: 1fr;
-    width: 100%;
-    article {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        height: 330px;
-        img {
-            //covers the whole article
-            position: absolute;
-            width: 100%;
-            height: 100% ;
-            object-fit: cover;
-            object-position: center;
-            z-index: -1;
-            
-        }
-        :hover div {
-            opacity: 1;
-
-        }
-        div {
-            transition: all 0.3s ease-in-out;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 4rem;
-
-            width: 100%;
-            height: 100%;
-            
-            z-index: 1;
-            opacity: 0 ;
+import getImageUrl from '../../assets/getImageUrl';
 
 
-            background-color:rgba(0, 0, 0, 0.6);
-            color: white;
-            font-family: var(--font-menu);
-            h4 {
-                font-size: 24px;
-                font-weight: 500;
-                width: 60%;
-                text-align: center;
-                line-height: 26px;
-            }
-            p {
-                font-size: 18px;
-                font-weight: 400;
-                width: 80%;
-                line-height: 23px;
-		        white-space: pre-wrap;
-                padding-bottom: 1rem;
-            }
-        }
 
-        &.medium {
-            width: 100%;
-            height: 540px;
-        }
-        &.tall {
-            width: 100%;
-            height: 660%;
-        }
-        &.large {
-            grid-column: span 2;
-        }
-    }
+const breakpointColumnsObj = {
+    default: 3,
+    992: 2,
+    576: 1
+};
 
-
-    @media (min-width: 480px) {
-        grid-template-columns: 1fr 1fr;
-    }
-    @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-`
 
 
 function Trabajos(props) {
     const { category } = useParams()
     const [trabajos, setTrabajos] = useState(dataTrabajos[category])
+    const [selectedItem, setSelectedItem] = useState(null);
+
     useEffect(() => {
         setTrabajos(dataTrabajos[category])
-        console.log(trabajos)
     }, [category])
 
-    const test = {
-    
-        "titulo": "Cuadernos artesanales 80 hojas anillados",
-        "descripcion": "Regalos empresariales. Cuadernos  anillados a pedido. Personalizados.\n\n Cuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador.",
-        "img": [
-            "trabajos/taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-2.jpg",
-        ],
-        "height": "410px" 
+    useEffect(() => {
+        if (selectedItem) {
+            document.body.style.overflow = 'hidden';     
+        }
+        else {
+            document.body.style.overflow = 'auto';
+        }
+        document.onkeydown = function(evt) {
+            evt = evt || window.event;
+            if (evt.key === "Escape") {
+                setSelectedItem(null)
+            }
+        }
+
+    }, [selectedItem])
+
+
+    const handleClickModal = (e) => {
+        e.preventDefault();
+        if(e.target === e.currentTarget) {
+            setSelectedItem(null);
+        }
     }
-    console.log(getImageUrl(test.img[0]))
+    const handleClickArticle = (id) => {
+        const filterData =trabajos.tarjetas.filter(item => item.id === id)
+        setSelectedItem(filterData[0]);
+    }
+    // const link = getImageUrl("trabajos/") // para no llamar en cada tarjeta
     return (
         <>
-            <h3>{trabajos.titulo}</h3>
-            <Grid>
-                {
-                    // trabajos.tarjetas.map((trabajo, index) => {
-                    //     return (
-                    //         <article key={index} className={trabajo.size}>
-                    //             <img src={getImageUrl(trabajo.image)} alt={trabajo.title} />
-                    //         </article>
-                    //     )   
-                    // })
-                    //use test to display data
-                }
-                <article
-                    style={{
-                        height: test.height
-                    }}
-                >
-                    <img src={getImageUrl(test.img[0])} alt={test.titulo} />
-                    <div>
-                        <h4>{test.titulo}</h4>
-                        <p>{test.descripcion}</p>
-                    </div>
-                </article>
-                <article
-                    style={{
-                        height: "300px"
-                    }}
-                >
-                    <img src={getImageUrl(test.img[0])} alt={test.titulo} />
-                    <div>
-                        <h4>{test.titulo}</h4>
-                        <p>{test.descripcion}</p>
-                    </div>
-                </article>
-                
-                
-            </Grid>
+            <SectionTitle>{trabajos.titulo}</SectionTitle>
+            <Masonry
+            breakpointCols={breakpointColumnsObj}
+            columnClassName="my-masonry-grid_column">
+                {trabajos.tarjetas.map(({ id, img, titulo, descripcion, size }) => {
+                    return (
+                        <article onClick={() => handleClickArticle(id)} key={id}
+                            style={{
+                                height: size ?? "330px",
+                            }}
+                        >
+                            {/* <img src={link+ img} loading="lazy" alt="" /> */}
+                            <div>
+                                <h4>{titulo}</h4>
+                                <p>{descripcion}</p>
+                            </div>
+                        </article>
+                    );
+                })}          
+            </Masonry>
+            {selectedItem && (
+                <>
+                    <PhotoModal onClick={handleClickModal}>
+                        {/* <img src={selectedImg} alt="" /> */}
+                        <div className='top'>
+                            <img src={selectedItem.img[0]} alt="" />
+                            <div>
+                                <h5>{selectedItem.titulo}</h5>
+                                <p>{selectedItem.descripcion}</p>
+                            </div>
+                            <div className='slider-fotos'>
+                                TEST
+                                {/* <img src={selectedItem.img[2]} alt="" /> */}
+                            </div>
+                        </div>
+                    </PhotoModal>
+                </>
+            )}
         </>
     )
 }

@@ -42,8 +42,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-/**
- * SPDX-License-Identifier: (EUPL-1.2)
- */

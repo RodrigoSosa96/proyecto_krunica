@@ -1,4 +1,4 @@
-import {  useState } from 'preact/hooks';
+import {  useEffect, useState } from 'preact/hooks';
 
 import { Container, MenuLinks, Social, SocialImg, Link } from './styles';
 import Face from "../../../assets/img/face.svg";
@@ -15,6 +15,13 @@ const scrollWithOffset = (el) => {
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
 
+    useEffect(() => {
+        if(menu) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    })
 
     return (
         <>

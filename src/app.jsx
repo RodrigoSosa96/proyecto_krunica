@@ -10,7 +10,7 @@ import Trabajos from "./components/trabajos";
 
 const App = () => {
 	return (
-		<div id="preact_root">
+		<>
 			<GlobalStyle />
 			<Router>
 				<Header />
@@ -18,7 +18,6 @@ const App = () => {
 				<Routes>
 					<Route exact path="/" element={<Home/>} />
 					<Route path="trabajos" element={<TrabajosMenu/>} >
-						{/* route to :category trabajos */}
 						<Route path=":category" element={<Trabajos/>} />
 					</Route>
 					<Route path="*" element={<Navigate to="/"/>} />
@@ -26,7 +25,7 @@ const App = () => {
 				</Main>
 				<Footer />
 			</Router>
-		</div>
+		</>
 	);
 };
 
