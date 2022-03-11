@@ -44,7 +44,26 @@ export const GlobalStyle = createGlobalStyle`
 
         list-style: none;
         text-decoration: none;
+
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-lines) var(--color-lines);
     }
+    *::-webkit-scrollbar {
+        width: 0.8em;
+
+    }
+    *::-webkit-scrollbar-track {
+        background-color: white;
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: var(--color-primary);
+        border-radius: 0.20rem;
+        /* border: 0.125rem solid var(--color-lines); */
+
+    }
+
     *::after,*::before {
         box-sizing: border-box;
     }

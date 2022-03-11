@@ -2,6 +2,7 @@ import styled from "styled-components";
 import BoxWithText from "./caja.styled";
 import FotosContainer from './barra.styled';
 import { Container as C } from "../styled/Wrapper.styled";
+import { HashLink as L } from "react-router-hash-link";
 
 const Container = styled(C)`
 	justify-content: space-between;
@@ -47,15 +48,28 @@ const BoxContainer = styled.div`
 	}
 	
 `
+const Link = styled(L)`
+	//unset the default styles
+	text-decoration: none;
+	color: inherit;
+
+
+		
+`
 function Landing({ data }) {
 	return (
 		<Container  id="test">
 			<BoxContainer  >
-				<BoxWithText name={data.taller.name} description={data.taller.description} />
+				<Link smooth to="/trabajos/taller"  >
+					<BoxWithText name={data.taller.name} description={data.taller.description} to="/trabajos/taller" />
+				</Link>
 				<FotosContainer fotos={data.taller.fotos} />
 			</BoxContainer>
 			<BoxContainer >
-				<BoxWithText name={data.estudio.name} description={data.estudio.description} />
+				<Link smooth to="/trabajos/estudio"  >
+					<BoxWithText name={data.estudio.name} description={data.estudio.description} />
+				</Link>
+					
 				<FotosContainer fotos={data.estudio.fotos} />
 			</BoxContainer>
 		</Container>

@@ -27,15 +27,20 @@ function Trabajos(props) {
     useEffect(() => {
         if (selectedItem) {
             document.body.style.overflow = 'hidden';     
+            document.onkeydown = function(evt) {
+                console.log(evt.key);
+                evt = evt || window.event;
+                if (evt.key === "Escape") {
+                    setSelectedItem(null)
+                }
+            }
         }
         else {
             document.body.style.overflow = 'auto';
         }
-        document.onkeydown = function(evt) {
-            evt = evt || window.event;
-            if (evt.key === "Escape") {
-                setSelectedItem(null)
-            }
+        return () => {
+            document.onkeydown = null;
+
         }
 
     }, [selectedItem])
@@ -78,15 +83,11 @@ function Trabajos(props) {
                 <>
                     <PhotoModal onClick={handleClickModal}>
                         {/* <img src={selectedImg} alt="" /> */}
-                        <div className='top'>
-                            <img src={selectedItem.img[0]} alt="" />
+                        <div >
                             <div>
-                                <h5>{selectedItem.titulo}</h5>
-                                <p>{selectedItem.descripcion}</p>
-                            </div>
-                            <div className='slider-fotos'>
-                                TEST
-                                {/* <img src={selectedItem.img[2]} alt="" /> */}
+                                {/* <img src={selectedItem.img[0]} alt="" /> */}
+                                <img src="https://source.unsplash.com/random/900×700/?nature  " alt="" srcset="" />
+                                <img src="https://source.unsplash.com/random/500x1000/?nature" alt="" srcset="" />
                             </div>
                         </div>
                     </PhotoModal>

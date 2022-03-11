@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import getImageUrl from '../../assets/getImageUrl';
 
+
 const ImgContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -49,8 +50,9 @@ const VerMas = styled.a`
         width: unset;
     }
     :hover {
-        filter: brightness(45%);
-        text-shadow: 1px 1px 10px #c4c4c4;
+        /* filter: brightness(15%); */
+        /* text-shadow: 1px 1px 10px #c4c4c4; */
+        font-weight: 600;
     }
 `
 

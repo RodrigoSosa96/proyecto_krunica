@@ -34,17 +34,8 @@ const TextBox = styled.div`
     justify-content: center;
     background-color: ${props => props.color ? "var(--color-secondary)": "var(--color-primary)"};
     /* padding: 12px; */
-
-    :hover {
-        cursor: pointer;   
-        box-shadow:0px 0px 0px 3px ${props => props.color ? "var(--color-primary)": "var(--color-secondary)"} inset;
-        p {
-            /* text-shadow: 0px 0px 0px 10px black;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-
-        }
+    cursor: pointer;
     
-    }
     p {
         position: relative;
         display: flex;
@@ -68,9 +59,10 @@ const TextBox = styled.div`
     }
     @media (min-width: 768px) {
         padding: .7rem .7rem .9rem .9rem;
+        padding: .5rem .5rem;
         p {
             line-height: 37px;
-            font-size:1.5rem;
+            font-size:1.2rem;
             ::before {
                 height: 1rem;
                 width: 1rem;

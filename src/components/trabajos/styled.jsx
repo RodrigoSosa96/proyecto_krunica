@@ -89,54 +89,51 @@ export const PhotoModal = styled.div`
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 9999;
-    div.top {
-        //card at center of screen 
-        width: 70%;
-        height: 70%;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    div {
+        width: 60vw;
+        height: 100%; /* relevant part */
+        overflow-y: auto; /* relevant part */
 
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-width: none;
+        scrollbar-color: transparent transparent;
         
-        img {
-            width: 400px;
-            height: 400px;
-            user-select: none ;
-            object-fit: cover;
-            object-position: center;
-            background-color: #c4c4c4 ;
-                
-        }
+        
+
+
         div {
-            h5 {
-                font-size: 24px;
-                font-weight: 500;
-                width: 60%;
-                text-align: center;
-                font-family: var(--font-title);
-            }
-            p {
-                font-size: 18px;
-                font-weight: 400;
-                width: 80%;
-                line-height: 23px;
-                white-space: pre-wrap;
-                padding-bottom: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            
+            height: 100%; /* relevant part */
+            overflow-y: auto; /* relevant part */
+        
 
+
+            /* width: 70%; */
+            /* height: 70%; */
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+    
+            
+            img {
+                width: 100%;
+                user-select: none ;
+                /* object-fit: cover;
+                object-position: center; */
+                /* background-color: #c4c4c4 ; */
+                padding: 1rem 1rem;
             }
+    
         }
-    }
-    div.slider-fotos {
-        width: 100%;
-        height: 50px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border: 1px solid red;
 
     }
+    
 `
 
 export const SectionTitle = styled.h4`

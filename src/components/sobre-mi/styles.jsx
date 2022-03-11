@@ -66,6 +66,8 @@ export const BoldText = styled(Text)`
     width: 100%;
     text-align: center;
     text-align: left;
+    //
+    float: left;
 
     @media (min-width: 992px) {
         
