@@ -1,13 +1,22 @@
 import { useState } from 'preact/hooks';
 import styled from 'styled-components'
-import { CenterDiv } from "../styled/Wrapper.styled";
+import { HashLink as L } from "react-router-hash-link";
 
 
 
 
-const Box = styled(CenterDiv)`
+const Box = styled(L)`
+	text-decoration: none;
+	color: inherit;
+
+    position: relative;
+    display: flex;
+    flex-direction: ${props => props.direction || "row"};
+    align-items: center;
+    justify-content: center;
+
+    
 	background-color: var(--color-primary);
-	position: relative;
 	/* width: max(716px); */
 	border-radius: 4.93px;
 	font-size: 1.3rem;
@@ -97,12 +106,12 @@ function useHover() {
 
 
 
-const BoxWithText = ({ name, description }) => {
+const BoxWithText = ({ name, description, to }) => {
 	const [showText, setShowProperties] = useHover()
 	const titulo = name.split(" ")
 	
 	return (
-		<Box {...setShowProperties}  >
+		<Box {...setShowProperties} smooth to={to} >
 			<h2 className={showText ? "hide" : "show"}>
 				<strong>{titulo[0].toUpperCase()}</strong><br />
 				{titulo[1]}

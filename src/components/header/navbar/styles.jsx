@@ -54,7 +54,7 @@ export const MenuLinks = styled.nav`
         @media(min-width: 768px) {
             flex-direction: row;
             width: unset;
-            height: 27px;
+            height: clamp(calc(.8rem * 1.5), 1.5vw, calc(var(--font-size-main-text) * 1.6));
             gap: 0;
             /* a {
                 color: var(--color-text);
@@ -128,7 +128,9 @@ export const Link = styled(L)`
     color: var(--color-text);
 
     text-decoration: none;
-    width: 100px;
+    /* width: 100px; */
+    padding: 0 .5rem;
+
     height: 100%;
     line-height: 19px;
     font-weight: 500;
@@ -166,11 +168,15 @@ export const Link = styled(L)`
     }
     @media(min-width: 768px) {
         color: var(--color-text);
+        font-size: clamp(.8rem, 1vw, var(--font-size-main-text));
+
 
             
     }
     @media(min-width: 992px) {
-        width: 120px;
+        /* width: 120px; */
+        padding: 0 1rem;
+
     }
     
 

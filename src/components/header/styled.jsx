@@ -16,7 +16,6 @@ export const StyledHeader = styled.header`
 	transition: all 500ms ease-in-out;
 	
 	@media(min-width: 768px) {
-		
 	}
 	@media(min-width: 992px) {
 	
@@ -30,12 +29,13 @@ export const StyledHeader = styled.header`
 
 `
 export const Container = styled.div`
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 2rem;
-    width: min(95vw, 1480px);
+    width: min(90vw, 1480px);
 
 
 
@@ -43,6 +43,7 @@ export const Container = styled.div`
 	/* height: 90px; */
 	height: 100%;
 	@media(min-width: 768px) {
+		gap: unset;
 	}
 
 `

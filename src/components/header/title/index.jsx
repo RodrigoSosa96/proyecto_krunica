@@ -15,7 +15,7 @@ const Container = styled(HashLink)`
 
     h1 {
         
-        font-size: 1.7rem;
+        font-size: clamp(1.7rem, 2.5vw, var(--font-size-title));
         
         font-family: var(--font-title);
         color: var(--color-text);
@@ -24,7 +24,8 @@ const Container = styled(HashLink)`
     }
     svg {
         fill: black;
-        height: 40px;
+        /* height: 40px; */
+        height: 50%;
         /* width: 46px; */
         
 
@@ -32,13 +33,12 @@ const Container = styled(HashLink)`
     }
     @media (min-width: 768px) {
         height: 90px;
+
+        svg {
+            height: clamp(2.4rem, 3vw, calc(var(--font-size-title) * 1.5));
+        }
         
 
-    }
-    @media (min-width: 992px) {
-        h1 {
-            font-size: var(--font-size-title);
-        }
     }
 `
 

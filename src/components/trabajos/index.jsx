@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import {Masonry, PhotoModal, SectionTitle} from "./styled"
 import { trabajos as dataTrabajos } from "../../data.json" 
-import getImageUrl from '../../assets/getImageUrl';
+// import getImageUrl from '../../assets/getImageUrl';
 
 
 
@@ -19,6 +19,24 @@ function Trabajos(props) {
     const { category } = useParams()
     const [trabajos, setTrabajos] = useState(dataTrabajos[category])
     const [selectedItem, setSelectedItem] = useState(null);
+
+
+
+
+    const test = (url, height) => {
+        return (
+            <img 
+            src={`https://ik.imagekit.io/akxdmkcb7g5u/${url}?tr=w-600,c-mfit,f-jpg`}
+            srcSet={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-500/${url} 600w,
+                    https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/${url} 600w,
+                    https://ik.imagekit.io/akxdmkcb7g5u/tr:w-900/${url} 900w`}
+            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, (max-width: 1200px) 33.3vw"
+            alt=""/>
+        )
+    }
+
+
+    
 
     useEffect(() => {
         setTrabajos(dataTrabajos[category])
@@ -63,14 +81,22 @@ function Trabajos(props) {
             <Masonry
             breakpointCols={breakpointColumnsObj}
             columnClassName="my-masonry-grid_column">
-                {trabajos.tarjetas.map(({ id, img, titulo, descripcion, size }) => {
+                {trabajos.tarjetas.map(({ id, img, titulo, descripcion, size, video }) => {
                     return (
                         <article onClick={() => handleClickArticle(id)} key={id}
                             style={{
                                 height: size ?? "330px",
                             }}
                         >
-                            {/* <img src={link+ img} loading="lazy" alt="" /> */}
+                            {img ? <img
+                            src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/Krunica/${img[0]}`}
+                            srcSet={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-500/Krunica/${img[0]} 600w,
+                                    https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/Krunica/${img[0]} 600w,
+                                    https://ik.imagekit.io/akxdmkcb7g5u/tr:w-900/Krunica/${img[0]} 900w`}
+
+                            sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, (max-width: 1200px) 33.3vw"
+                            loading='lazy'
+                            alt=""/> : video ? <img src='https://ik.imagekit.io/akxdmkcb7g5u/Krunica/taller/video-krunica.mp4/ik-thumbnail.jpg'/> : null}
                             <div>
                                 <h4>{titulo}</h4>
                                 <p>{descripcion}</p>
@@ -86,7 +112,6 @@ function Trabajos(props) {
                         <div >
                             <div>
                                 {/* <img src={selectedItem.img[0]} alt="" /> */}
-                                <img src="https://source.unsplash.com/random/900×700/?nature  " alt="" srcset="" />
                                 <img src="https://source.unsplash.com/random/500x1000/?nature" alt="" srcset="" />
                             </div>
                         </div>

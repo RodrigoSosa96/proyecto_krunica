@@ -12,6 +12,8 @@ const CardContainer = styled.div`
     width: 100%;
     gap: .5rem;
     /* padding: 0 1rem; */
+
+
     @media(min-width: 768px) {
         gap: .7rem;
         /* padding: 0 2rem; */
@@ -19,7 +21,7 @@ const CardContainer = styled.div`
     }
     
     @media (min-width: 992px) {
-        gap: 1.6rem;
+        /* gap: 1.6rem; */
 
     }
     
@@ -39,7 +41,9 @@ const TextBox = styled.div`
     p {
         position: relative;
         display: flex;
-        font-size: max(.5rem, 1vw);
+        /* font-size: max(.5rem, 1vw); */
+        font-size: clamp(1rem, 1.8vw, 2rem);
+
         font-family: var(--font-title);
         padding: .2rem .5rem .2rem .2rem;
 
@@ -58,11 +62,12 @@ const TextBox = styled.div`
 
     }
     @media (min-width: 768px) {
-        padding: .7rem .7rem .9rem .9rem;
-        padding: .5rem .5rem;
+        padding: .7rem .2rem .9rem .5rem;
+        /* padding: .5rem .5rem; */
         p {
             line-height: 37px;
-            font-size:1.2rem;
+            /* font-size: 1.2rem; */
+            /* font-size: clamp(1rem, 1.8vw, 2rem); */
             ::before {
                 height: 1rem;
                 width: 1rem;
@@ -71,10 +76,11 @@ const TextBox = styled.div`
         }
     }
     @media (min-width: 992px) {
-        padding: 1rem 1.2rem 1.2rem 0rem;
+        /* padding: 1rem 1.2rem 1.2rem 0rem; */
+        padding-right: 1.2rem;
         
         p {
-            font-size: 2rem;
+            /* font-size: min(2rem, 2vw); */
             text-indent: 2rem;
             ::before {
                 width: 1.5rem;
@@ -121,9 +127,6 @@ function Servicios({ data }) {
                 <TextBox color>
                     <p>BOX</p>
                 </TextBox>
-                <TextBox>
-                    <p>ENCUADERNACIÓN ARTESANAL</p>
-                </TextBox>
                 <TextBox color>
                     <p>CUADROS</p>
                 </TextBox>
@@ -132,6 +135,9 @@ function Servicios({ data }) {
                 </TextBox>
                 <TextBox color>
                     <p>PAPELERÍA</p>
+                </TextBox>
+                <TextBox>
+                    <p>ENCUADERNACIÓN ARTESANAL</p>
                 </TextBox>
             </CardContainer>
         </Container>

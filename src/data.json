@@ -65,16 +65,14 @@
                 {
                     "id": "taller-1",
                     "titulo": "",
-                    "img": [
-                        "taller-creativo/taller-creativo-1.jpg"
-                    ],
+
                     "size": "540px"
                 },
                 {
                     "id": "taller-2",
                     "titulo": "Lettering personalizados",
                     "img": [
-                        "taller-creativo/taller-creativo-2.jpg"
+                        "taller/lettering-personalizado/lettering-5.jpg"
                     ],
                     "size": "330px"
                 },
@@ -82,7 +80,15 @@
                     "id": "taller-3",
                     "titulo": "Cuadernos Artesanales para IBM",
                     "img": [
-                        "taller-creativo/taller-creativo-3.jpg"
+                        "taller/cuadernos-IBM/cuadernos-1.jpg",
+                        "taller/cuadernos-IBM/cuadernos-2.jpg",
+                        "taller/cuadernos-IBM/cuadernos-3.jpg",
+                        "taller/cuadernos-IBM/cuadernos-4.jpg",
+                        "taller/cuadernos-IBM/cuadernos-5.jpg",
+                        "taller/cuadernos-IBM/cuadernos-6.jpg",
+                        "taller/cuadernos-IBM/cuadernos-7.jpg",
+                        "taller/cuadernos-IBM/cuadernos-8.jpg",
+                        "taller/cuadernos-IBM/cuadernos-9.jpg"
                     ],
                     "size": "330px"
                 },
@@ -91,7 +97,19 @@
                     "titulo": "Cuadernos artesanales 80 hojas anillados",
                     "descripcion": "Regalos empresariales. Cuadernos  anillados a pedido. Personalizados.\n\nCuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador.",
                     "img": [
-                        "taller-creativo/taller-creativo-4.jpg"
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-5.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-1.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-7.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-9.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-11.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-12.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-13.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-15.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-16.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-17.jpg",
+                        "taller/cuadernos-anillados/cuadernos-anillados-krunica-tienda-18.jpg"
+
+
                     ],
                     "size": "410px"
 
@@ -99,46 +117,60 @@
                 {
                     "id": "taller-5",
                     "titulo": "VIDEOOOOO",
-                    "img": [
-                        "taller-creativo/taller-creativo-x.jpg"
-                    ],
+
                     "video": [
                         "taller-creativo/video.mp4"
                     ],
                     "size": "330px"
                 },
                 {
-                    "id": "taller-6",
-                    "titulo": "Talleres de encuadernación artesanal",
-                    "descripcion": "Desde 2013 brindamos talleres para todo aquel que quiera aprender el hermoso oficio de la encuadernación y de lettering.",
-                    "img": [
-                        "taller-creativo/taller-creativo-5.jpg"
-                    ],
-                    "size": "351px"
-                },
-                {
                     "id": "taller-7",
                     "titulo": "Lettering para cocina de un dulce hogar",
                     "img": [
-                        "taller-creativo/taller-creativo-6.jpg"
+                        "taller/lettering-personalizado/lettering-12.jpg",
+                        "taller/lettering-personalizado/lettering-1.jpg",
+                        "taller/lettering-personalizado/lettering-2.jpg",
+                        "taller/lettering-personalizado/lettering-3.jpg",
+                        "taller/lettering-personalizado/lettering-4.jpg",
+                        "taller/lettering-personalizado/lettering-5.jpg",
+                        "taller/lettering-personalizado/lettering-6.jpg",
+                        "taller/lettering-personalizado/lettering-7.jpg",
+                        "taller/lettering-personalizado/lettering-8.jpg",
+                        "taller/lettering-personalizado/lettering-9.jpg",
+                        "taller/lettering-personalizado/lettering-10.jpg",
+                        "taller/lettering-personalizado/lettering-11.jpg",
+                        "taller/lettering-personalizado/lettering-13.jpg",
+                        "taller/lettering-personalizado/lettering-14.jpg"
                     ],
                     "size": "723px"
+                },
+                {
+                    "id": "taller-6",
+                    "titulo": "Talleres de encuadernación artesanal",
+                    "descripcion": "Desde 2013 brindamos talleres para todo aquel que quiera aprender el hermoso oficio de la encuadernación y de lettering.",
+
+                    "size": "351px"
                 },
                 {
                     "id": "taller-8",
                     "titulo": "Encuadernación de Tesis",
                     "descripcion": "Tesis encuadernadas para presentaciones  finales. Tamaño A3, impresas, cosidas a mano y forradas en tela.",
                     "img": [
-                        "taller-creativo/taller-creativo-7.jpg"
+                        "taller/encuadernacion-tesis/tesis-1.jpg",
+                        "taller/encuadernacion-tesis/tesis-2.jpg",
+                        "taller/encuadernacion-tesis/tesis-3.jpg",
+                        "taller/encuadernacion-tesis/tesis-4.jpg",
+                        "taller/encuadernacion-tesis/tesis-5.jpg",
+                        "taller/encuadernacion-tesis/tesis-6.jpg",
+                        "taller/encuadernacion-tesis/tesis-7.jpg",
+                        "taller/encuadernacion-tesis/tesis-8.jpg"
                     ],
                     "size": "330px"
                 },
                 {
                     "id" : "taller-9-1",
                     "titulo": "Albumes de fotos para cada país recorrido",
-                    "img": [
-                        "taller-creativo/taller-creativo-9-1.jpg"
-                    ],
+
                     "size": "330px"
                 },
                 {
@@ -146,7 +178,16 @@
                     "titulo": "Kit de prensa para la UIFRA, Unión de Industriales Fideeros de la República Argentina",
                     "descripcion": "El kit era para un congreso en Córdoba. Constaba de 1 cuaderno artesanal, un tarjetero metalizado y una bolsa de lienzo serigrafiada. Todo con el  logo de “Los fideos van con todo”.",
                     "img": [
-                        "taller-creativo/taller-creativo-8.jpg"
+                        "taller/kit-prensa-uifra/prensa-uifra-1.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-2.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-3.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-4.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-5.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-6.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-7.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-8.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-9.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-10.jpg"
                     ],
                     "size": "537px"
                 },
@@ -155,7 +196,21 @@
                     "titulo": "Cuadernos artesanales 80 hojas cosidos a mano",
                     "descripcion": "Regalos empresariales. Cuadernos realizados 100% a mano a pedido. Personalizados con bajo relieve en la tapa.\n\nCuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador.",
                     "img": [
-                        "taller-creativo/taller-creativo-9.jpg"
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-1.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-2.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-3.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-4.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-5.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-6.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-7.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-8.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-9.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-10.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-11.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-12.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-13.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-14.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-15.jpg"
                     ],
                     "size": "550px"
                 },
@@ -164,7 +219,18 @@
                     "titulo": "Cuadernos artesanales ilustrados",
                     "descripcion": "Realización de cuadernos artesanales para los ilustradores: Nico Lasalle, Emilio Rubione, Eva Mastrogiulio, Yanina G. Fernández, Florencia Gavilán y Victoria Franco. ",
                     "img": [
-                        "taller-creativo/taller-creativo-10.jpg"
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-1.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-2.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-3.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-4.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-5.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-6.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-7.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-8.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-9.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-10.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-11.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-12.jpg"
                     ],
                     "size": "590px"
                 },
@@ -173,7 +239,20 @@
                     "titulo": "Cuadernos artesanales para IBM",
                     "descripcion": "Los cuadernos fueron realizados para la promoción de Bluemix, la plataforma de desarrollo de  IBM en la nube para construir, ejecutar y administrar aplicaciones.",
                     "img": [
-                        "taller-creativo/taller-creativo-11.jpg"
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-1.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-2.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-3.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-4.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-5.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-6.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-7.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-8.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-9.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-10.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-11.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-12.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-13.jpg",
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-14.jpg"
                     ],
                     "size": "390px"
                 },
@@ -182,7 +261,10 @@
                     "titulo": "Cuadernos artesanales para IBM",
                     "descripcion": "En esta ocasión se desarrollaron cuadernos artesanales para la iniciativa IBM Think. \n\nCuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador.",
                     "img": [
-                        "taller-creativo/taller-creativo-12.jpg"
+                        "taller/cuadernos-IBM-think/IBM-think-1.jpg",
+                        "taller/cuadernos-IBM-think/IBM-think-2.jpg",
+                        "taller/cuadernos-IBM-think/IBM-think-3.jpg",
+                        "taller/cuadernos-IBM-think/IBM-think-4.jpg"
                     ],
                     "size": "412px"
                 },
@@ -191,7 +273,16 @@
                     "titulo": "Cajas y cuadernos artesanales para la empresa Inclusion Services",
                     "descripcion": "Cajas artesanales con 3 estantes deslizables - interiores con goma espuma cortada - logo en bajo relieve en la parte superior.\n\nCuadernos artesanales 15x21cm hojas lisas con logo en la tapa.",
                     "img": [
-                        "taller-creativo/taller-creativo-13.jpg"
+                        "taller/cajas-inclusion-services/inclusion-services-1.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-2.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-3.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-4.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-5.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-6.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-7.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-8.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-9.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-10.jpg"
                     ],
                     "size": "558px"
                 },
@@ -200,7 +291,12 @@
                     "titulo": "Cajas artesanales para Dell Argentina",
                     "descripcion": "Cajas 100% hechas a mano para premios de la empresa Dell Argentina. Forradas en papel, en los interiores tiene  cuerina y cinta señaladora.",
                     "img": [
-                        "taller-creativo/taller-creativo-14.jpg"
+                        "taller/cajas-DELL/cajas-DELL-1.jpg",
+                        "taller/cajas-DELL/cajas-DELL-2.jpg",
+                        "taller/cajas-DELL/cajas-DELL-3.jpg",
+                        "taller/cajas-DELL/cajas-DELL-4.jpg",
+                        "taller/cajas-DELL/cajas-DELL-5.jpg",
+                        "taller/cajas-DELL/cajas-DELL-6.jpg"
                     ],
                     "size": "558px"
                 },
@@ -208,7 +304,28 @@
                     "id": "taller-16",
                     "titulo": "Cuadernos personalizados. \nDiseños varios.",
                     "img": [
-                        "taller-creativo/taller-creativo-15.jpg"
+                        "taller/cuadernos-varios/varios-1.jpg",
+                        "taller/cuadernos-varios/varios-2.jpg",
+                        "taller/cuadernos-varios/varios-3.jpg",
+                        "taller/cuadernos-varios/varios-4.jpg",
+                        "taller/cuadernos-varios/varios-5.jpg",
+                        "taller/cuadernos-varios/varios-6.jpg",
+                        "taller/cuadernos-varios/varios-7.jpg",
+                        "taller/cuadernos-varios/varios-8.jpg",
+                        "taller/cuadernos-varios/varios-9.jpg",
+                        "taller/cuadernos-varios/varios-10.jpg",
+                        "taller/cuadernos-varios/varios-11.jpg",
+                        "taller/cuadernos-varios/varios-12.jpg",
+                        "taller/cuadernos-varios/varios-13.jpg",
+                        "taller/cuadernos-varios/varios-14.jpg",
+                        "taller/cuadernos-varios/varios-15.jpg",
+                        "taller/cuadernos-varios/varios-16.jpg",
+                        "taller/cuadernos-varios/varios-17.jpg",
+                        "taller/cuadernos-varios/varios-18.jpg",
+                        "taller/cuadernos-varios/varios-19.jpg",
+                        "taller/cuadernos-varios/varios-20.jpg",
+                        "taller/cuadernos-varios/varios-21.jpg",
+                        "taller/cuadernos-varios/varios-22.jpg"
                     ],
                     "size": "242px"
                 },
@@ -217,7 +334,12 @@
                     "titulo": "Carpetas de presentación de artistas y cuaderno personalizado para la Municipalidad de Alte. Brown",
                     "descripcion": "Cuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador. Carpeta A3 con hojas impresas.",
                     "img": [
-                        "taller-creativo/taller-creativo-16.jpg"
+                        "taller/carpeta-almirante-brown/almirante-brown-1.jpg",
+                        "taller/carpeta-almirante-brown/almirante-brown-2.jpg",
+                        "taller/carpeta-almirante-brown/almirante-brown-3.jpg",
+                        "taller/carpeta-almirante-brown/almirante-brown-4.jpg",
+                        "taller/carpeta-almirante-brown/almirante-brown-5.jpg",
+                        "taller/carpeta-almirante-brown/almirante-brown-6.jpg"
                     ],
                     "size": "330px"
                 },
@@ -226,7 +348,13 @@
                     "titulo": "Sobres para fotografía",
                     "descripcion": "Sobres en papel kraft para fotos con filmina al frente y sobre texturado para CD al dorso. Detalle de cintas y logo.\n\nCarpetas encuadernadas para CDs.",
                     "img": [
-                        "taller-creativo/taller-creativo-17.jpg"
+                        "taller/sobres/sobres-1.jpg",
+                        "taller/sobres/sobres-2.jpg",
+                        "taller/sobres/sobres-3.jpg",
+                        "taller/sobres/sobres-4.jpg",
+                        "taller/sobres/sobres-5.jpg",
+                        "taller/sobres/sobres-6.jpg",
+                        "taller/sobres/sobres-7.jpg"
                     ],
                     "size": "363px"
                 },
@@ -235,7 +363,8 @@
                     "titulo": "Carpeta de presentación para la Fundación Landú",
                     "descripcion": "Hojas impresas y encuadernadas tamaño A3  con bajo relieve en la tapa para presentación de proyecto para Mecenazgo.",
                     "img": [
-                        "taller-creativo/taller-creativo-18.jpg"
+                        "taller/carpeta-landu/landru-1.jpg",
+                        "taller/carpeta-landu/landru-2.jpg"
                     ],
                     "size" :"363px"
                 }

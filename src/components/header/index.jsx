@@ -12,7 +12,7 @@ const Header = () => {
         const headerHeight = headerRef.current.offsetHeight;
         const handleScroll = (e) => {
             let headerWidth = window.innerWidth;
-            if (headerWidth > 992) {
+            if (headerWidth > 768) {
                 let scrollpos = window.scrollY;
                 if (scrollpos >= headerHeight) {
                     setShrunk(true);

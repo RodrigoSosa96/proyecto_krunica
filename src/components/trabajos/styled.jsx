@@ -19,7 +19,7 @@ export const Masonry = styled(M)`
             width: 100%;
             height: 330px;
 
-            background-color: var(--color-primary);
+            /* background-color: var(--color-primary); */
 
             cursor: pointer;
             user-select: none;
@@ -104,8 +104,8 @@ export const PhotoModal = styled.div`
 
 
         div {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
             
             height: 100%; /* relevant part */
             overflow-y: auto; /* relevant part */

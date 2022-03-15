@@ -15,6 +15,7 @@ const Info = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 1rem;
     /* h2{
         align-self: center;
         font-size: var(--font-size-title);
@@ -23,9 +24,9 @@ const Info = styled.div`
     } */
     p {
         width: 100%;
-        line-height: 28px;   
+        line-height: clamp(1.2rem, 2vw, 2.25rem);
         font-size: 1.25rem;
-        font-size: clamp(.9rem, 4vw, 1.25rem);
+        font-size: clamp(1rem, 2vw, 1.25rem);
 
         text-align: justify;
 

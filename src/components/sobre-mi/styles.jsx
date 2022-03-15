@@ -7,6 +7,8 @@ export const Container = styled(C)`
         font-size: 1.5rem;
         font-weight: 600;
         text-align: center;
+        margin-bottom: 2rem;
+        margin-top: .5rem;
         span {
             position: relative;
         }

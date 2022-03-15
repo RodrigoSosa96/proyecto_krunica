@@ -60,15 +60,11 @@ function Landing({ data }) {
 	return (
 		<Container  id="test">
 			<BoxContainer  >
-				<Link smooth to="/trabajos/taller"  >
 					<BoxWithText name={data.taller.name} description={data.taller.description} to="/trabajos/taller" />
-				</Link>
 				<FotosContainer fotos={data.taller.fotos} />
 			</BoxContainer>
 			<BoxContainer >
-				<Link smooth to="/trabajos/estudio"  >
-					<BoxWithText name={data.estudio.name} description={data.estudio.description} />
-				</Link>
+					<BoxWithText name={data.estudio.name} description={data.estudio.description} to="/trabajos/estudio" />
 					
 				<FotosContainer fotos={data.estudio.fotos} />
 			</BoxContainer>

@@ -29,15 +29,16 @@ const DivImg = styled.div`
     justify-content: center;
     align-items: center;
     /* height: 50px; */
-    max-width: 100px;
-    
+    /* width: min(100px, auto); */
+    width:  15vw;
+
     @media(min-width: 768px) {
         /* height: 100px; */
+        width: min(250px, 12vw);
 
     }
     @media(min-width: 992px) {
         height: 120px;
-        max-width: 250px;
         
     }
 `

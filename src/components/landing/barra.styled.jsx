@@ -53,7 +53,9 @@ const VerMas = styled.a`
         /* filter: brightness(15%); */
         /* text-shadow: 1px 1px 10px #c4c4c4; */
         font-weight: 600;
-    }
+        //color light black
+        color: #000000e6;
+}
 `
 
 
