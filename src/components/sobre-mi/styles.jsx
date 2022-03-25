@@ -26,8 +26,6 @@ export const Container = styled(C)`
 
 
 export const GifVideo = styled.video`
-    height: 100%;
-    width: 100%;
     object-fit: cover;
     object-position: center;
     aspect-ratio: 0.91/1;
@@ -36,7 +34,7 @@ export const GifVideo = styled.video`
     @media (min-width: 768px) {
         width: min(40vw, 676px);
         /* float: left; */
-        margin-right: min(5rem, 3vw);
+        margin-right: min(5rem, 2vw);
     }
 `;
 

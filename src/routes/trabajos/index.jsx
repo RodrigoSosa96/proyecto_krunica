@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 import { Title } from "../../components/styled/Title.styled";
 
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
+import { useEffect, useState } from "preact/hooks";
 
 const Wrapper = styled.div`
     display: flex;
@@ -42,6 +43,13 @@ const TrabajosTitle = styled(Title)`
         opacity: 1;
         /* transform: scalex(1); */
     }
+    ${props => props.active && `
+        font-weight: 500;
+        ::after {
+            opacity: 1;
+        }
+    `}
+
     @media(min-width: 768px) {
         font-size: 24px;
     }
@@ -52,24 +60,31 @@ const TrabajosTitle = styled(Title)`
     }
 `
 function Trabajos() {
+    const { category } = useParams()
+    const [categorie, setCategorie] = useState("taller")
 
-
-
+    useEffect(() => {
+        console.log(category)
+        setCategorie(category)
+    }, [category])
 
     return (
-        <Wrapper>
-            <Categories >
-                <Link to="taller" >
-                    <TrabajosTitle>TRABAJOS TALLER</TrabajosTitle>
-                </Link>
-                <Link to="estudio" >
-                    <TrabajosTitle>TRABAJOS ESTUDIO</TrabajosTitle>
-                </Link>
-            </Categories>
-            <Outlet/>
-        </Wrapper>
-
-    );
+			<Wrapper>
+				<Categories>
+					<Link to='taller'>
+						<TrabajosTitle active={categorie === "taller" ? true : false}>
+							TRABAJOS TALLER
+						</TrabajosTitle>
+					</Link>
+					<Link to='estudio'>
+						<TrabajosTitle active={categorie === "estudio" ? true : false}>
+							TRABAJOS ESTUDIO
+						</TrabajosTitle>
+					</Link>
+				</Categories>
+				<Outlet />
+			</Wrapper>
+		);
 
 }
 

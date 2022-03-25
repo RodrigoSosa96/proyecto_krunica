@@ -31,6 +31,7 @@ const Imagen = styled.img`
     height: calc((100%/3) - .5rem);
     border-radius: 5px;
     aspect-ratio: 1.27/1;
+    object-fit: cover;      
 
     @media (min-width: 768px) {
         height: auto;
@@ -52,7 +53,7 @@ const VerMas = styled.a`
     :hover {
         /* filter: brightness(15%); */
         /* text-shadow: 1px 1px 10px #c4c4c4; */
-        font-weight: 600;
+        font-weight: 500;
         //color light black
         color: #000000e6;
 }
@@ -60,12 +61,13 @@ const VerMas = styled.a`
 
 
 function FotosContainer({ fotos }) {
+    
     return (
         <>
             <ImgContainer>
 
                 {fotos.map((item, index) => (
-                    <Imagen src={getImageUrl(item)} key={index} />
+                    <Imagen src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-200/Krunica/${item}`} key={index} />
                 ))}
 
             </ImgContainer>

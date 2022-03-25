@@ -5,18 +5,21 @@
                 "name": "Taller Creativo",
                 "description": "Talleres. Lettering.\nEncuadernación artesanal. \nCuadros. Box.",
                 "fotos": [
-                    "home/landing/cuaderno-cosido-krunica-taller-creativo-8.jpg",
-                    "home/landing/lettering-1.jpg",
-                    "home/landing/IBM-bluemix-1.jpg"
+                    "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-8.jpg",
+                    "taller/lettering-personalizado/lettering-12.jpg",
+                    "taller/cuadernos-IBM-bluemix/IBM-bluemix-1.jpg"
                 ]
             },
             "estudio": {
-                "name": "ESTUDIO DISEÑO",
+                "name": "ESTUDIO Diseño",
                 "description": "Branding. Editorial.\nContenido para redes sociales.\nPackaging. Lettering.\nDiseño UX/UI.\nEdición de videos.",
                 "fotos": [
-                    "home/landing/portada.png",
-                    "home/landing/presentacion-meetart-1.jpg",
-                    "home/landing/0-tapa.jpg"
+                    "estudio/uifra-2020/1-portada.jpg",
+
+                    "estudio/estudio-12.jpg",
+
+                    "estudio/uifra-2020/0-tapa.jpg"
+
                 ]
             }
         },
@@ -192,6 +195,7 @@
                     "titulo": "Cuadernos artesanales 80 hojas cosidos a mano",
                     "descripcion": "Regalos empresariales. Cuadernos realizados 100% a mano a pedido. Personalizados con bajo relieve en la tapa.\n\nCuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador.",
                     "img": [
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-8.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-1.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-2.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-3.jpg",
@@ -199,7 +203,6 @@
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-5.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-6.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-7.jpg",
-                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-8.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-9.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-10.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-11.jpg",
@@ -384,7 +387,7 @@
                 {
                     "id": "estudio-1",
                     "img": [
-                        ""
+                        "estudio/alfonso-lugo/main.png"
                     ],
                     "size": "261px"
                 },
@@ -393,25 +396,16 @@
                     "titulo": "Propuesta de diseño e implementaciòn gráfica para oficinas MODO",
                     "descripcion": "Desarrollo de diseño para oficinas Modo basado en los lineamientos gráficos del manual de marca de la empresa. Se plantearon estrategias de comunicación para los diferentes sectores de las oficinas.",
                     "img": [
-                        "estudio/estudio-2.jpg"
+                        ""
                     ],
                     "size": "330px"
                 },
-                {
-                    "id": "estudio-3",
-                    "titulo": "Generación de contenido para redes sociales para el Laboratorio Veterinario Mayors",
-                    "img": [
-                        "estudio/mayors/presentacion-1.jpg",
-                        "estudio/mayors/presentacion-2.jpg",
-                        "estudio/mayors/presentacion-3.jpg"
-                    ],
-                    "size": "330px"
-                },
+
                 {
                     "id": "estudio-4",
                     "titulo": "Branding para El Foco Restaurante Bar Barcelona",
                     "img": [
-                        "estudio/el-foco.jpg"
+                        "estudio/el-foco/el-foco-main.jpg"
                     ],
                     "size": "330px"
                 },
@@ -438,11 +432,21 @@
                     "size": "538px"
                 },
                 {
+                    "id": "estudio-3",
+                    "titulo": "Generación de contenido para redes sociales para el Laboratorio Veterinario Mayors",
+                    "img": [
+                        "estudio/mayors/presentacion-1.jpg",
+                        "estudio/mayors/presentacion-2.jpg",
+                        "estudio/mayors/presentacion-3.jpg"
+                    ],
+                    "size": "330px"
+                },
+                {
                     "id": "estudio-6",
                     "titulo": "Diseño de estación Callao Línea B para Fundación Landrú",
                     "descripcion": "Encargada del diseño, la planificación y el desarrollo de la estación de subte Callao de la Línea B, con dibujos del humorista gráfico Landrú.",
                     "img": [
-                        "estudio/callao-linea-b/ -linea-b-1.jpg",
+                        "estudio/callao-linea-b/callao-linea-b-1.jpg",
                         "estudio/callao-linea-b/callao-linea-b-2.jpg",
                         "estudio/callao-linea-b/callao-linea-b-3.jpg",
                         "estudio/callao-linea-b/callao-linea-b-4.jpg",
@@ -460,6 +464,16 @@
                     "size": "460px"
                 },
                 {
+                    "id": "estudio-9",
+                    "titulo": "Diseño de packaging para Kine Sport",
+                    "descripcion": "Packaging para bolsas de hielo y agua caliente.",
+                    "img": [
+                        "estudio/kine-sport/kine-1.jpg",
+                        "estudio/kine-sport/kine-2.jpg"
+                    ],
+                    "size": "832px"
+                },
+                {
                     "id": "estudio-8",
                     "titulo": "Generación de contenido para redes sociales para Los Fideos van con Todo.",
                     "img": [
@@ -470,16 +484,7 @@
                     ],
                     "size": "400px"
                 },
-                {
-                    "id": "estudio-9",
-                    "titulo": "Diseño de packaging para Kine Sport",
-                    "descripcion": "Packaging para bolsas de hielo y agua caliente.",
-                    "img": [
-                        "estudio/kine-sport/kine-1.jpg",
-                        "estudio/kine-sport/kine-2.jpg"
-                    ],
-                    "size": "832px"
-                },
+
                 {
                     "id": "estudio-10",
                     "titulo": "Branding para Centro Auditivo",
@@ -494,7 +499,15 @@
                     "titulo": "Branding para Kajuna Burger",
                     "descripcion": "Diseño de logo, cartelería, menú, cajas para hamburguesas, lata de cerveza, bolsas, papeles para la comida, stickers, entre otros.",
                     "img": [
-                        "estudio/estudio-11.jpg"
+                        "estudio/kajuna-burger/presentación_kajuna_1.jpg",
+                        "estudio/kajuna-burger/presentación_kajuna_2.jpg",
+                        "estudio/kajuna-burger/presentación_kajuna_3.jpg",
+                        "estudio/kajuna-burger/presentación_kajuna_4.jpg",
+                        "estudio/kajuna-burger/presentación_kajuna_5.jpg",
+                        "estudio/kajuna-burger/presentación_kajuna_6.jpg",
+                        "estudio/kajuna-burger/presentación_kajuna_7.jpg",
+                        "estudio/kajuna-burger/presentación_kajuna_8.jpg",
+                        "estudio/kajuna-burger/presentación_kajuna_9.jpg"
                     ],
                     "size": "523px"
                 },
@@ -503,7 +516,27 @@
                     "titulo": "Proyecto - Diseño UX/UI Aplicación MEETART",
                     "descripcion": "Proyecto de diseño para comunidad de artistas.",
                     "img": [
-                        "estudio/estudio-12.jpg"
+                        "estudio/meetart/presentacion-meetart-1.jpg",
+                        "estudio/meetart/presentacion-meetart-2.jpg",
+                        "estudio/meetart/presentacion-meetart-3.jpg",
+                        "estudio/meetart/presentacion-meetart-4.jpg",
+                        "estudio/meetart/presentacion-meetart-5.jpg",
+                        "estudio/meetart/presentacion-meetart-6.jpg",
+                        "estudio/meetart/presentacion-meetart-7.jpg",
+                        "estudio/meetart/presentacion-meetart-8.jpg",
+                        "estudio/meetart/presentacion-meetart-9.jpg",
+                        "estudio/meetart/presentacion-meetart-10.jpg",
+                        "estudio/meetart/presentacion-meetart-11.jpg",
+                        "estudio/meetart/presentacion-meetart-12.jpg",
+                        "estudio/meetart/presentacion-meetart-13.jpg",
+                        "estudio/meetart/presentacion-meetart-14.jpg",
+                        "estudio/meetart/presentacion-meetart-15.jpg",
+                        "estudio/meetart/presentacion-meetart-16.jpg",
+                        "estudio/meetart/presentacion-meetart-17.jpg",
+                        "estudio/meetart/presentacion-meetart-18.jpg",
+                        "estudio/meetart/presentacion-meetart-19.jpg",
+                        "estudio/meetart/presentacion-meetart-20.jpg",
+                        "estudio/meetart/presentacion-meetart-21.jpg"
                     ],
                     "size": "523px"
                 },
@@ -521,34 +554,44 @@
                     "titulo": "Diseño de tarjetería y contenido digital para Seimi",
                     "descripcion": "Diseño de tarjetería, trato con el cliente. Generación de contenido para redes sociales, newsletter, google adwords, entre otros.",
                     "img": [
-                        "estudio/estudio-17.jpg"
+                        "estudio/seimi/seimi-work_1.jpg",
+                        "estudio/seimi/seimi-work_2.jpg",
+                        "estudio/seimi/seimi-work_3.jpg",
+                        "estudio/seimi/seimi-work_4.jpg",
+                        "estudio/seimi/seimi-work_5.jpg",
+                        "estudio/seimi/seimi-work_6.jpg",
+                        "estudio/seimi/seimi-work_7.jpg",
+                        "estudio/seimi/seimi-work_8.jpg",
+                        "estudio/seimi/seimi-work_9.jpg",
+                        "estudio/seimi/seimi-work_10.jpg"
                     ],
                     "size": "463px"
+                },
+                {   
+                    "id": "estudio-19",
+                    "titulo": "Generación de contenido para redes sociales Odontopediatría - Dra. Luciana Mata",
+                    "img": [
+                        "estudio/odontologa-luciana-mata.jpg"
+                    ],
+                    "size": "290px"
                 },
                 {
                     "id": "estudio-14",
                     "titulo": "Branding para la empresa Rainland",
                     "descripcion": "Diseño de logo, folletos, tarjetas personales, carteles para obra, stickers, gorras, cuadernos, entre otros.",
                     "img": [
-                        "estudio/estudio-14.jpg"
+                        "estudio/rainland/portada.png",
+                        "estudio/rainland/branding-rainland.jpg"
                     ],
                     "size": "471px"
                 },
-                {
-                    "id": "estudio-15",
-                    "titulo": "Lettering para Pasta Argentina",
-                    "descripcion": "Realización de Lettering para la web de Pasta Argentina.",
-                    "img": [
-                        "estudio/estudio-15.jpg"
-                    ],
-                    "size": "471px"
-                },
+
                 {
                     "id": "estudio-16",
                     "titulo": "Branding para la empresa Wink - Skate Shoes",
                     "descripcion": "Diseño de logo, stickers, cajas para zapatos, zapatillas, entre otros.",
                     "img": [
-                        "estudio/estudio-16.jpg"
+                        "estudio/wink.jpg"
                     ],
                     "size": "261px"
                 },
@@ -558,36 +601,41 @@
                     "titulo": "Diseños  para All Method  - All Alternative Language Learning",
                     "descripcion": "Diseños online y offline. Avisos mailing. Folletos. Diseño de portada de libros. Diseño de E-books. Banners y mucho más!",
                     "img": [
-                        "estudio/estudio-21.jpg"
+                        "estudio/presentacion-All.jpg"
                     ],
                     "size": "1005px"
                 },  
 
-                
+                {
+                    "id": "estudio-15",
+                    "titulo": "Lettering para Pasta Argentina",
+                    "descripcion": "Realización de Lettering para la web de Pasta Argentina.",
+                    "img": [
+                        "estudio/pasta-argentina/durum-wheat.jpg",
+                        "estudio/pasta-argentina/we-eat-retocado-coloreado.jpg",
+                        "estudio/pasta-argentina/pampa-español.png",
+                        "estudio/pasta-argentina/pampa-ingles.png",
+                        "estudio/pasta-argentina/pampa-portugues.png"
+                    ],
+                    "size": "471px"
+                },
                 {
                     "id": "estudio-18",
                     "titulo": "Campaña Buenos Hábitos para Fundación Landrú en el Subte de Buenos Aires",
                     "descripcion": "Encargada del diseño de todo el sistema de señalética para la campaña de buenos hábitos en la estación de subte Callao Línea B. Se implementaron gráficas tanto en las paredes y pisos de la estación como dentro de algunos vagones de los subtes.",
                     "img": [
-                        "estudio/estudio-18.jpg"
+                        "estudio/GCU-presentacion.jpg"
                     ],
                     "size": "390px"
                 },
 
-                {   
-                    "id": "estudio-19",
-                    "titulo": "Generación de contenido para redes sociales Odontopediatría - Dra. Luciana Mata",
-                    "img": [
-                        "estudio/estudio-19.jpg"
-                    ],
-                    "size": "290px"
-                },
+
 
                 {
                     "id": "estudio-20",
                     "titulo": "Diseño para piezas gráficas y generación de contenido para redes sociales - Laboratorio de Idiomas Adrogué",
                     "img": [
-                        "estudio/estudio-20.jpg"
+                        "estudio/presentacion-laboratorio-de-Idiomas-adrogue.jpg"
                     ],
                     "size": "502px"
                 }
