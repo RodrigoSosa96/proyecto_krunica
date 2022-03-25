@@ -89,7 +89,7 @@ function Trabajos(props) {
                             }}
                         >
                             {img ? <img
-                            src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/Krunica/${img[0]}`}
+                            src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${img[0]}`}
                             srcSet={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-500/Krunica/${img[0]} 600w,
                                     https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/Krunica/${img[0]} 600w,
                                     https://ik.imagekit.io/akxdmkcb7g5u/tr:w-900/Krunica/${img[0]} 900w`}
