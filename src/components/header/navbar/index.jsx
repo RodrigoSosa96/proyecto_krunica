@@ -37,7 +37,7 @@ const Navbar = () => {
             <Container toggleMenu={menu} >
                 <MenuLinks toggleLinks={menu} onClick={() => setMenu(!menu)}  >
                     <Link smooth to="/#about-me" scroll={scrollWithOffset} activeClassName="active" >SOBRE MÍ</Link>
-                    <Link smooth to="/trabajos" scroll={scrollWithOffset} activeClassName="active" >TRABAJOS</Link>
+                    <Link smooth to="/trabajos/taller" scroll={scrollWithOffset} activeClassName="active" >TRABAJOS</Link>
                     <Link smooth to="/#servicios" scroll={scrollWithOffset} activeClassName="active" >SERVICIOS</Link>
                     <Link smooth to="/#contacto" scroll={scrollWithOffset} activeClassName="active" >CONTACTO</Link>
                 </MenuLinks>

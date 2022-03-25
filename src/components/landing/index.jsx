@@ -58,7 +58,7 @@ const Link = styled(L)`
 `
 function Landing({ data }) {
 	return (
-		<Container  id="test">
+		<Container  id="landing">
 			<BoxContainer  >
 					<BoxWithText name={data.taller.name} description={data.taller.description} to="/trabajos/taller" />
 				<FotosContainer fotos={data.taller.fotos} />

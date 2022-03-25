@@ -1,3 +1,4 @@
+import { memo } from 'preact/compat';
 import styled from "styled-components";
 
 import { Title } from "../styled/Title.styled";
@@ -35,39 +36,42 @@ const TextBox = styled.div`
     align-items: center;
     justify-content: center;
     background-color: ${props => props.color ? "var(--color-secondary)": "var(--color-primary)"};
-    /* padding: 12px; */
     cursor: pointer;
     
     p {
         position: relative;
         display: flex;
         /* font-size: max(.5rem, 1vw); */
-        font-size: clamp(1rem, 1.8vw, 2rem);
-
+        font-size: clamp(1rem, 4vw, 2rem);
         font-family: var(--font-title);
-        padding: .2rem .5rem .2rem .2rem;
-
+        /* padding: .2rem .5rem .2rem .2rem; */
+        
         font-weight: 800;
         text-align: center;
-        line-height: 1rem;
+        line-height: 3rem;
+        line-height: clamp(1.2rem, 4vw, 3rem);
+
+        padding-left: clamp(0.5rem, 4vw, 1.5rem);
+        padding-right: clamp(0.5rem, 4vw, 1.5rem);
         color: white;
 
         ::before {
             content: url(${arrow}); 
             position: relative;
-            height: .5rem;
-            width: .5rem;
+            height: 100%;
+            width: 1.5rem;
+            width: clamp(1rem, 4vw, 1.5rem);
+            /* height: .5rem; */
+            /* width: .5rem; */
 
         }
 
     }
-    @media (min-width: 768px) {
+    /* @media (min-width: 768px) {
         padding: .7rem .2rem .9rem .5rem;
-        /* padding: .5rem .5rem; */
         p {
             line-height: 37px;
-            /* font-size: 1.2rem; */
-            /* font-size: clamp(1rem, 1.8vw, 2rem); */
+
             ::before {
                 height: 1rem;
                 width: 1rem;
@@ -76,22 +80,20 @@ const TextBox = styled.div`
         }
     }
     @media (min-width: 992px) {
-        /* padding: 1rem 1.2rem 1.2rem 0rem; */
         padding-right: 1.2rem;
         
         p {
-            /* font-size: min(2rem, 2vw); */
             text-indent: 2rem;
             ::before {
                 width: 1.5rem;
                 height:1.5rem;
             }
         }
-    }
+    } */
 
 `
 
-function Servicios({ data }) {
+function Servicios() {
 
     return (
         <Container id="servicios">
@@ -144,4 +146,4 @@ function Servicios({ data }) {
     )
 }
 
-export default Servicios;
+export default memo(Servicios);

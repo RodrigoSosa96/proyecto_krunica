@@ -64,7 +64,7 @@
             "tarjetas": [
                 {
                     "id": "taller-1",
-                    "titulo": "",
+                    "titulo": "PONER FOTO",
 
                     "size": "540px"
                 },
@@ -145,13 +145,6 @@
                     "size": "723px"
                 },
                 {
-                    "id": "taller-6",
-                    "titulo": "Talleres de encuadernación artesanal",
-                    "descripcion": "Desde 2013 brindamos talleres para todo aquel que quiera aprender el hermoso oficio de la encuadernación y de lettering.",
-
-                    "size": "351px"
-                },
-                {
                     "id": "taller-8",
                     "titulo": "Encuadernación de Tesis",
                     "descripcion": "Tesis encuadernadas para presentaciones  finales. Tamaño A3, impresas, cosidas a mano y forradas en tela.",
@@ -168,11 +161,13 @@
                     "size": "330px"
                 },
                 {
-                    "id" : "taller-9-1",
-                    "titulo": "Albumes de fotos para cada país recorrido",
+                    "id": "taller-6",
+                    "titulo": "Talleres de encuadernación artesanal",
+                    "descripcion": "Desde 2013 brindamos talleres para todo aquel que quiera aprender el hermoso oficio de la encuadernación y de lettering.",
 
-                    "size": "330px"
+                    "size": "351px"
                 },
+
                 {
                     "id": "taller-9",
                     "titulo": "Kit de prensa para la UIFRA, Unión de Industriales Fideeros de la República Argentina",
@@ -191,6 +186,7 @@
                     ],
                     "size": "537px"
                 },
+                
                 {
                     "id": "taller-10",
                     "titulo": "Cuadernos artesanales 80 hojas cosidos a mano",
@@ -215,25 +211,12 @@
                     "size": "550px"
                 },
                 {
-                    "id": "taller-11",
-                    "titulo": "Cuadernos artesanales ilustrados",
-                    "descripcion": "Realización de cuadernos artesanales para los ilustradores: Nico Lasalle, Emilio Rubione, Eva Mastrogiulio, Yanina G. Fernández, Florencia Gavilán y Victoria Franco. ",
-                    "img": [
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-1.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-2.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-3.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-4.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-5.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-6.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-7.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-8.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-9.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-10.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-11.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-12.jpg"
-                    ],
-                    "size": "590px"
+                    "id" : "taller-9-1",
+                    "titulo": "Albumes de fotos para cada país recorrido",
+
+                    "size": "330px"
                 },
+                
                 {
                     "id": "taller-12",
                     "titulo": "Cuadernos artesanales para IBM",
@@ -268,24 +251,28 @@
                     ],
                     "size": "412px"
                 },
+                
                 {
-                    "id": "taller-14",
-                    "titulo": "Cajas y cuadernos artesanales para la empresa Inclusion Services",
-                    "descripcion": "Cajas artesanales con 3 estantes deslizables - interiores con goma espuma cortada - logo en bajo relieve en la parte superior.\n\nCuadernos artesanales 15x21cm hojas lisas con logo en la tapa.",
+                    "id": "taller-11",
+                    "titulo": "Cuadernos artesanales ilustrados",
+                    "descripcion": "Realización de cuadernos artesanales para los ilustradores: Nico Lasalle, Emilio Rubione, Eva Mastrogiulio, Yanina G. Fernández, Florencia Gavilán y Victoria Franco. ",
                     "img": [
-                        "taller/cajas-inclusion-services/inclusion-services-1.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-2.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-3.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-4.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-5.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-6.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-7.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-8.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-9.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-10.jpg"
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-1.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-2.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-3.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-4.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-5.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-6.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-7.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-8.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-9.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-10.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-11.jpg",
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-12.jpg"
                     ],
-                    "size": "558px"
+                    "size": "590px"
                 },
+
                 {
                     "id": "taller-15",
                     "titulo": "Cajas artesanales para Dell Argentina",
@@ -300,6 +287,7 @@
                     ],
                     "size": "558px"
                 },
+                
                 {
                     "id": "taller-16",
                     "titulo": "Cuadernos personalizados. \nDiseños varios.",
@@ -330,6 +318,35 @@
                     "size": "242px"
                 },
                 {
+                    "id": "taller-14",
+                    "titulo": "Cajas y cuadernos artesanales para la empresa Inclusion Services",
+                    "descripcion": "Cajas artesanales con 3 estantes deslizables - interiores con goma espuma cortada - logo en bajo relieve en la parte superior.\n\nCuadernos artesanales 15x21cm hojas lisas con logo en la tapa.",
+                    "img": [
+                        "taller/cajas-inclusion-services/inclusion-services-1.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-2.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-3.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-4.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-5.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-6.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-7.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-8.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-9.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-10.jpg"
+                    ],
+                    "size": "558px"
+                },
+
+                {
+                    "id": "taller-19",
+                    "titulo": "Carpeta de presentación para la Fundación Landú",
+                    "descripcion": "Hojas impresas y encuadernadas tamaño A3  con bajo relieve en la tapa para presentación de proyecto para Mecenazgo.",
+                    "img": [
+                        "taller/carpeta-landu/landru-1.jpg",
+                        "taller/carpeta-landu/landru-2.jpg"
+                    ],
+                    "size" :"363px"
+                },
+                {
                     "id": "taller-17",
                     "titulo": "Carpetas de presentación de artistas y cuaderno personalizado para la Municipalidad de Alte. Brown",
                     "descripcion": "Cuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador. Carpeta A3 con hojas impresas.",
@@ -357,17 +374,8 @@
                         "taller/sobres/sobres-7.jpg"
                     ],
                     "size": "363px"
-                },
-                {
-                    "id": "taller-19",
-                    "titulo": "Carpeta de presentación para la Fundación Landú",
-                    "descripcion": "Hojas impresas y encuadernadas tamaño A3  con bajo relieve en la tapa para presentación de proyecto para Mecenazgo.",
-                    "img": [
-                        "taller/carpeta-landu/landru-1.jpg",
-                        "taller/carpeta-landu/landru-2.jpg"
-                    ],
-                    "size" :"363px"
                 }
+
             ]
         },
         "estudio": {
@@ -509,6 +517,15 @@
                     "size": "471px"
                 },
                 {
+                    "id": "estudio-17",
+                    "titulo": "Diseño de tarjetería y contenido digital para Seimi",
+                    "descripcion": "Diseño de tarjetería, trato con el cliente. Generación de contenido para redes sociales, newsletter, google adwords, entre otros.",
+                    "img": [
+                        "estudio/estudio-17.jpg"
+                    ],
+                    "size": "463px"
+                },
+                {
                     "id": "estudio-14",
                     "titulo": "Branding para la empresa Rainland",
                     "descripcion": "Diseño de logo, folletos, tarjetas personales, carteles para obra, stickers, gorras, cuadernos, entre otros.",
@@ -535,15 +552,18 @@
                     ],
                     "size": "261px"
                 },
+                
                 {
-                    "id": "estudio-17",
-                    "titulo": "Diseño de tarjetería y contenido digital para Seimi",
-                    "descripcion": "Diseño de tarjetería, trato con el cliente. Generación de contenido para redes sociales, newsletter, google adwords, entre otros.",
+                    "id": "estudio-21",
+                    "titulo": "Diseños  para All Method  - All Alternative Language Learning",
+                    "descripcion": "Diseños online y offline. Avisos mailing. Folletos. Diseño de portada de libros. Diseño de E-books. Banners y mucho más!",
                     "img": [
-                        "estudio/estudio-17.jpg"
+                        "estudio/estudio-21.jpg"
                     ],
-                    "size": "463px"
-                },
+                    "size": "1005px"
+                },  
+
+                
                 {
                     "id": "estudio-18",
                     "titulo": "Campaña Buenos Hábitos para Fundación Landrú en el Subte de Buenos Aires",
@@ -553,6 +573,7 @@
                     ],
                     "size": "390px"
                 },
+
                 {   
                     "id": "estudio-19",
                     "titulo": "Generación de contenido para redes sociales Odontopediatría - Dra. Luciana Mata",
@@ -561,6 +582,7 @@
                     ],
                     "size": "290px"
                 },
+
                 {
                     "id": "estudio-20",
                     "titulo": "Diseño para piezas gráficas y generación de contenido para redes sociales - Laboratorio de Idiomas Adrogué",
@@ -568,15 +590,6 @@
                         "estudio/estudio-20.jpg"
                     ],
                     "size": "502px"
-                },
-                {
-                    "id": "estudio-21",
-                    "titulo": "Diseños  para All Method  - All Alternative Language Learning",
-                    "descripcion": "Diseños online y offline. Avisos mailing. Folletos. Diseño de portada de libros. Diseño de E-books. Banners y mucho más!",
-                    "img": [
-                        "estudio/estudio-21.jpg"
-                    ],
-                    "size": "1005px"
                 }
             ]
         }
