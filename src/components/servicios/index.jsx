@@ -39,30 +39,29 @@ const TextBox = styled.div`
     cursor: pointer;
     
     p {
+        --size: 1.5vw;
+
         position: relative;
         display: flex;
-        /* font-size: max(.5rem, 1vw); */
-        font-size: clamp(1rem, 4vw, 2rem);
         font-family: var(--font-title);
-        /* padding: .2rem .5rem .2rem .2rem; */
         
         font-weight: 800;
         text-align: center;
-        line-height: 3rem;
-        line-height: clamp(1.2rem, 4vw, 3rem);
-
-        padding-left: clamp(0.5rem, 4vw, 1.5rem);
-        padding-right: clamp(0.5rem, 4vw, 1.5rem);
         color: white;
+        
+        font-size: clamp(.5rem, var(--size), 2rem);
 
+        line-height: clamp(1.4rem, 5vw, 3rem);
+        padding-left: clamp(0.5rem, var(--size), 1.5rem);
+        padding-right: clamp(0.5rem, var(--size), 1.5rem);
+        
         ::before {
             content: url(${arrow}); 
             position: relative;
             height: 100%;
             width: 1.5rem;
-            width: clamp(1rem, 4vw, 1.5rem);
-            /* height: .5rem; */
-            /* width: .5rem; */
+            width: clamp(.6rem, var(--size), 1.5rem);
+
 
         }
 
