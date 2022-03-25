@@ -34,6 +34,7 @@ export const Main = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vw;
     
     margin: 1rem auto;
     /* max-width: 1654px; */
