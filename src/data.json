@@ -7,7 +7,11 @@
                 "fotos": [
                     "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-8.jpg",
                     "taller/lettering-personalizado/lettering-12.jpg",
+                    "taller/cuadernos-IBM-bluemix/IBM-bluemix-1.jpg",
+                    "taller/cuadernos-IBM-bluemix/IBM-bluemix-1.jpg",
+                    "taller/cuadernos-IBM-bluemix/IBM-bluemix-1.jpg",
                     "taller/cuadernos-IBM-bluemix/IBM-bluemix-1.jpg"
+
                 ]
             },
             "estudio": {
@@ -18,6 +22,9 @@
 
                     "estudio/estudio-12.jpg",
 
+                    "estudio/uifra-2020/0-tapa.jpg",
+                    "estudio/uifra-2020/0-tapa.jpg",
+                    "estudio/uifra-2020/0-tapa.jpg",
                     "estudio/uifra-2020/0-tapa.jpg"
 
                 ]
@@ -63,13 +70,21 @@
     },
     "trabajos": {
         "taller": {
+            "tamaños": {
+                "XS": "0.52",
+                "S": "0.65",
+                "M": "0.88",
+                "L":"1.10",
+                "XL" :"1.60",
+                "XXL":"2.15"
+        },
             "titulo": "Todos los trabajos realizados en el taller son hechos a mano con mucha dedicación, esfuerzo y amor. Me encantan los detalles y estoy detrás de cada uno de ellos para que cada producto sea único. ",
             "tarjetas": [
                 {
                     "id": "taller-1",
                     "titulo": "PONER FOTO",
 
-                    "size": "540px"
+                    "size": "S"
                 },
                 {
                     "id": "taller-2",
@@ -77,7 +92,7 @@
                     "img": [
                         "taller/lettering-personalizado/lettering-5.jpg"
                     ],
-                    "size": "330px"
+                    "size": "S"
                 },
                 {
                     "id": "taller-3",
@@ -93,7 +108,7 @@
                         "taller/cuadernos-IBM/cuadernos-8.jpg",
                         "taller/cuadernos-IBM/cuadernos-9.jpg"
                     ],
-                    "size": "330px"
+                    "size": "S"
                 },
                 {
                     "id": "taller-4",
@@ -114,7 +129,7 @@
 
 
                     ],
-                    "size": "410px"
+                    "size": "M"
 
                 },
                 {
@@ -122,9 +137,9 @@
                     "titulo": "VIDEOOOOO",
 
                     "video": [
-                        "taller-creativo/video.mp4"
+                        "taller/video-krunica.mp4"
                     ],
-                    "size": "330px"
+                    "size": "S"
                 },
                 {
                     "id": "taller-7",
@@ -145,7 +160,7 @@
                         "taller/lettering-personalizado/lettering-13.jpg",
                         "taller/lettering-personalizado/lettering-14.jpg"
                     ],
-                    "size": "723px"
+                    "size": "XL"
                 },
                 {
                     "id": "taller-8",
@@ -161,14 +176,14 @@
                         "taller/encuadernacion-tesis/tesis-7.jpg",
                         "taller/encuadernacion-tesis/tesis-8.jpg"
                     ],
-                    "size": "330px"
+                    "size": "S"
                 },
                 {
                     "id": "taller-6",
                     "titulo": "Talleres de encuadernación artesanal",
                     "descripcion": "Desde 2013 brindamos talleres para todo aquel que quiera aprender el hermoso oficio de la encuadernación y de lettering.",
 
-                    "size": "351px"
+                    "size": "S"
                 },
 
                 {
@@ -176,8 +191,8 @@
                     "titulo": "Kit de prensa para la UIFRA, Unión de Industriales Fideeros de la República Argentina",
                     "descripcion": "El kit era para un congreso en Córdoba. Constaba de 1 cuaderno artesanal, un tarjetero metalizado y una bolsa de lienzo serigrafiada. Todo con el  logo de “Los fideos van con todo”.",
                     "img": [
-                        "taller/kit-prensa-uifra/prensa-uifra-1.jpg",
                         "taller/kit-prensa-uifra/prensa-uifra-2.jpg",
+                        "taller/kit-prensa-uifra/prensa-uifra-1.jpg",
                         "taller/kit-prensa-uifra/prensa-uifra-3.jpg",
                         "taller/kit-prensa-uifra/prensa-uifra-4.jpg",
                         "taller/kit-prensa-uifra/prensa-uifra-5.jpg",
@@ -187,7 +202,7 @@
                         "taller/kit-prensa-uifra/prensa-uifra-9.jpg",
                         "taller/kit-prensa-uifra/prensa-uifra-10.jpg"
                     ],
-                    "size": "537px"
+                    "size": "L"
                 },
                 
                 {
@@ -195,9 +210,8 @@
                     "titulo": "Cuadernos artesanales 80 hojas cosidos a mano",
                     "descripcion": "Regalos empresariales. Cuadernos realizados 100% a mano a pedido. Personalizados con bajo relieve en la tapa.\n\nCuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador.",
                     "img": [
-                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-8.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-1.jpg",
-                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-2.jpg",
+                        "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-8.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-3.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-4.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-5.jpg",
@@ -211,13 +225,13 @@
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-14.jpg",
                         "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-15.jpg"
                     ],
-                    "size": "550px"
+                    "size": "L"
                 },
                 {
                     "id" : "taller-9-1",
                     "titulo": "Albumes de fotos para cada país recorrido",
 
-                    "size": "330px"
+                    "size": "S"
                 },
                 
                 {
@@ -225,6 +239,7 @@
                     "titulo": "Cuadernos artesanales para IBM",
                     "descripcion": "Los cuadernos fueron realizados para la promoción de Bluemix, la plataforma de desarrollo de  IBM en la nube para construir, ejecutar y administrar aplicaciones.",
                     "img": [
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-14.jpg",
                         "taller/cuadernos-IBM-bluemix/IBM-bluemix-1.jpg",
                         "taller/cuadernos-IBM-bluemix/IBM-bluemix-2.jpg",
                         "taller/cuadernos-IBM-bluemix/IBM-bluemix-3.jpg",
@@ -237,10 +252,9 @@
                         "taller/cuadernos-IBM-bluemix/IBM-bluemix-10.jpg",
                         "taller/cuadernos-IBM-bluemix/IBM-bluemix-11.jpg",
                         "taller/cuadernos-IBM-bluemix/IBM-bluemix-12.jpg",
-                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-13.jpg",
-                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-14.jpg"
+                        "taller/cuadernos-IBM-bluemix/IBM-bluemix-13.jpg"
                     ],
-                    "size": "390px"
+                    "size": "S"
                 },
                 {
                     "id": "taller-13",
@@ -252,7 +266,7 @@
                         "taller/cuadernos-IBM-think/IBM-think-3.jpg",
                         "taller/cuadernos-IBM-think/IBM-think-4.jpg"
                     ],
-                    "size": "412px"
+                    "size": "S"
                 },
                 
                 {
@@ -260,12 +274,12 @@
                     "titulo": "Cuadernos artesanales ilustrados",
                     "descripcion": "Realización de cuadernos artesanales para los ilustradores: Nico Lasalle, Emilio Rubione, Eva Mastrogiulio, Yanina G. Fernández, Florencia Gavilán y Victoria Franco. ",
                     "img": [
+                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-6.jpg",
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-1.jpg",
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-2.jpg",
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-3.jpg",
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-4.jpg",
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-5.jpg",
-                        "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-6.jpg",
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-7.jpg",
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-8.jpg",
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-9.jpg",
@@ -273,7 +287,7 @@
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-11.jpg",
                         "taller/cuaderno-artesanal-ilustrado/cuaderno-ilustrado-12.jpg"
                     ],
-                    "size": "590px"
+                    "size": "L"
                 },
 
                 {
@@ -288,14 +302,14 @@
                         "taller/cajas-DELL/cajas-DELL-5.jpg",
                         "taller/cajas-DELL/cajas-DELL-6.jpg"
                     ],
-                    "size": "558px"
+                    "size": "L"
                 },
                 
                 {
                     "id": "taller-16",
                     "titulo": "Cuadernos personalizados. \nDiseños varios.",
                     "img": [
-                        "taller/cuadernos-varios/varios-1.jpg",
+                        "taller/cuadernos-varios/varios-22.jpg",
                         "taller/cuadernos-varios/varios-2.jpg",
                         "taller/cuadernos-varios/varios-3.jpg",
                         "taller/cuadernos-varios/varios-4.jpg",
@@ -316,16 +330,16 @@
                         "taller/cuadernos-varios/varios-19.jpg",
                         "taller/cuadernos-varios/varios-20.jpg",
                         "taller/cuadernos-varios/varios-21.jpg",
-                        "taller/cuadernos-varios/varios-22.jpg"
+                        "taller/cuadernos-varios/varios-1.jpg"
                     ],
-                    "size": "242px"
+                    "size": "XS"
                 },
                 {
                     "id": "taller-14",
                     "titulo": "Cajas y cuadernos artesanales para la empresa Inclusion Services",
                     "descripcion": "Cajas artesanales con 3 estantes deslizables - interiores con goma espuma cortada - logo en bajo relieve en la parte superior.\n\nCuadernos artesanales 15x21cm hojas lisas con logo en la tapa.",
                     "img": [
-                        "taller/cajas-inclusion-services/inclusion-services-1.jpg",
+                        "taller/cajas-inclusion-services/inclusion-services-10.jpg",
                         "taller/cajas-inclusion-services/inclusion-services-2.jpg",
                         "taller/cajas-inclusion-services/inclusion-services-3.jpg",
                         "taller/cajas-inclusion-services/inclusion-services-4.jpg",
@@ -334,9 +348,9 @@
                         "taller/cajas-inclusion-services/inclusion-services-7.jpg",
                         "taller/cajas-inclusion-services/inclusion-services-8.jpg",
                         "taller/cajas-inclusion-services/inclusion-services-9.jpg",
-                        "taller/cajas-inclusion-services/inclusion-services-10.jpg"
+                        "taller/cajas-inclusion-services/inclusion-services-1.jpg"
                     ],
-                    "size": "558px"
+                    "size": "L"
                 },
 
                 {
@@ -347,21 +361,21 @@
                         "taller/carpeta-landu/landru-1.jpg",
                         "taller/carpeta-landu/landru-2.jpg"
                     ],
-                    "size" :"363px"
+                    "size" :"S"
                 },
                 {
                     "id": "taller-17",
                     "titulo": "Carpetas de presentación de artistas y cuaderno personalizado para la Municipalidad de Alte. Brown",
                     "descripcion": "Cuadernos 15 x 21 cm. - 80 hojas lisas con bajo relieve en la tapa y elástico sujetador. Carpeta A3 con hojas impresas.",
                     "img": [
-                        "taller/carpeta-almirante-brown/almirante-brown-1.jpg",
                         "taller/carpeta-almirante-brown/almirante-brown-2.jpg",
+                        "taller/carpeta-almirante-brown/almirante-brown-1.jpg",
                         "taller/carpeta-almirante-brown/almirante-brown-3.jpg",
                         "taller/carpeta-almirante-brown/almirante-brown-4.jpg",
                         "taller/carpeta-almirante-brown/almirante-brown-5.jpg",
                         "taller/carpeta-almirante-brown/almirante-brown-6.jpg"
                     ],
-                    "size": "330px"
+                    "size": "S"
                 },
                 {
                     "id": "taller-18",
@@ -376,7 +390,7 @@
                         "taller/sobres/sobres-6.jpg",
                         "taller/sobres/sobres-7.jpg"
                     ],
-                    "size": "363px"
+                    "size": "S"
                 }
 
             ]
@@ -389,16 +403,14 @@
                     "img": [
                         "estudio/alfonso-lugo/main.png"
                     ],
-                    "size": "261px"
+                    "size": "XS"
                 },
                 {
                     "id": "estudio-2",
                     "titulo": "Propuesta de diseño e implementaciòn gráfica para oficinas MODO",
                     "descripcion": "Desarrollo de diseño para oficinas Modo basado en los lineamientos gráficos del manual de marca de la empresa. Se plantearon estrategias de comunicación para los diferentes sectores de las oficinas.",
-                    "img": [
-                        ""
-                    ],
-                    "size": "330px"
+
+                    "size": "S"
                 },
 
                 {
@@ -407,7 +419,7 @@
                     "img": [
                         "estudio/el-foco/el-foco-main.jpg"
                     ],
-                    "size": "330px"
+                    "size": "S"
                 },
                 {
                     "id": "estudio-5",
@@ -429,7 +441,7 @@
                         "estudio/uifra-2020/11-mercadosinternacionales.jpg",
                         "estudio/uifra-2020/12-testimonio.jpg"
                     ],
-                    "size": "538px"
+                    "size": "L"
                 },
                 {
                     "id": "estudio-3",
@@ -439,7 +451,7 @@
                         "estudio/mayors/presentacion-2.jpg",
                         "estudio/mayors/presentacion-3.jpg"
                     ],
-                    "size": "330px"
+                    "size": "S"
                 },
                 {
                     "id": "estudio-6",
@@ -452,16 +464,14 @@
                         "estudio/callao-linea-b/callao-linea-b-4.jpg",
                         "estudio/callao-linea-b/callao-linea-b-5.jpg"
                     ],
-                    "size": "330px"
+                    "size": "S"
                 },
                 {
                     "id": "estudio-7",
                     "titulo": "Anuario 2021 para UIFRA (Unión de Industriales Fideeros de la Rep. Argentina",
                     "descripcion": "Diseño editorial y desarrollo de la revista interactiva para la Unión de Industriales Fideeros de la República Argentina. Un anuario innovador.",
-                    "img": [
-                        ""
-                    ],
-                    "size": "460px"
+                    "video" : "estudio/uifra-2021/tapa-anuario_1.mp4",
+                    "size": "S"
                 },
                 {
                     "id": "estudio-9",
@@ -471,7 +481,7 @@
                         "estudio/kine-sport/kine-1.jpg",
                         "estudio/kine-sport/kine-2.jpg"
                     ],
-                    "size": "832px"
+                    "size": "XL"
                 },
                 {
                     "id": "estudio-8",
@@ -482,7 +492,7 @@
                         "estudio/fideos-van-con-todo/van-con-todo-presentacion-3.jpg",
                         "estudio/fideos-van-con-todo/van-con-todo-presentacion-4.jpg"
                     ],
-                    "size": "400px"
+                    "size": "S"
                 },
 
                 {
@@ -490,9 +500,10 @@
                     "titulo": "Branding para Centro Auditivo",
                     "descripcion": "Diseño de logotipo y papelería impresa. Carpetas de presentación, tarjetas personales, sobres, hojas membretadas, recetarios, stickers, entre otros.",
                     "img": [
-                        "estudio/branding-centro-auditivo.jpg"
+                        "estudio/centro-auditivo/branding-centro-auditivo_main.jpg",
+                        "estudio/centro-auditivo/branding-centro-auditivo.jpg"
                     ],
-                    "size": "558px"
+                    "size": "L"
                 },
                 {
                     "id": "estudio-11",
@@ -509,7 +520,7 @@
                         "estudio/kajuna-burger/presentación_kajuna_8.jpg",
                         "estudio/kajuna-burger/presentación_kajuna_9.jpg"
                     ],
-                    "size": "523px"
+                    "size": "L"
                 },
                 {
                     "id": "estudio-12",
@@ -538,16 +549,16 @@
                         "estudio/meetart/presentacion-meetart-20.jpg",
                         "estudio/meetart/presentacion-meetart-21.jpg"
                     ],
-                    "size": "523px"
+                    "size": "L"
                 },
                 {
                     "id": "estudio-13",
                     "titulo": "GCU - Gente Como Uno - Landrú",
                     "descripcion": "Diseño de cuadernos. Redibujo de los chistes de landrù con tableta digital (wacom). Generación de contenido para redes sociales. Diseño de vidriera para librería, y más...",
                     "img": [
-                        "estudio/estudio-13.jpg"
+                        "estudio/GCU-presentacion.jpg"
                     ],
-                    "size": "471px"
+                    "size": "M"
                 },
                 {
                     "id": "estudio-17",
@@ -565,15 +576,16 @@
                         "estudio/seimi/seimi-work_9.jpg",
                         "estudio/seimi/seimi-work_10.jpg"
                     ],
-                    "size": "463px"
+                    "size": "M"
                 },
                 {   
                     "id": "estudio-19",
                     "titulo": "Generación de contenido para redes sociales Odontopediatría - Dra. Luciana Mata",
                     "img": [
-                        "estudio/odontologa-luciana-mata.jpg"
+                        "estudio/odontologa/odontologa-luciana-mata_main.jpg",
+                        "estudio/odontologa/odontologa-luciana-mata.jpg"
                     ],
-                    "size": "290px"
+                    "size": "XS"
                 },
                 {
                     "id": "estudio-14",
@@ -583,7 +595,7 @@
                         "estudio/rainland/portada.png",
                         "estudio/rainland/branding-rainland.jpg"
                     ],
-                    "size": "471px"
+                    "size": "L"
                 },
 
                 {
@@ -591,9 +603,10 @@
                     "titulo": "Branding para la empresa Wink - Skate Shoes",
                     "descripcion": "Diseño de logo, stickers, cajas para zapatos, zapatillas, entre otros.",
                     "img": [
-                        "estudio/wink.jpg"
+                        "estudio/wink/wink_main.jpg",
+                        "estudio/wink/wink.jpg"
                     ],
-                    "size": "261px"
+                    "size": "XS"
                 },
                 
                 {
@@ -603,7 +616,7 @@
                     "img": [
                         "estudio/presentacion-All.jpg"
                     ],
-                    "size": "1005px"
+                    "size": "XXL"
                 },  
 
                 {
@@ -617,16 +630,18 @@
                         "estudio/pasta-argentina/pampa-ingles.png",
                         "estudio/pasta-argentina/pampa-portugues.png"
                     ],
-                    "size": "471px"
+                    "size": "M"
                 },
                 {
                     "id": "estudio-18",
                     "titulo": "Campaña Buenos Hábitos para Fundación Landrú en el Subte de Buenos Aires",
                     "descripcion": "Encargada del diseño de todo el sistema de señalética para la campaña de buenos hábitos en la estación de subte Callao Línea B. Se implementaron gráficas tanto en las paredes y pisos de la estación como dentro de algunos vagones de los subtes.",
                     "img": [
-                        "estudio/GCU-presentacion.jpg"
+                        "estudio/campaña-buenos-habitos/Landru_-_campaña_buenos_habitos_00.jpg",
+                        "estudio/campaña-buenos-habitos/Landru_-_campaña_buenos_habitos_01.jpg",
+                        "estudio/campaña-buenos-habitos/Landru_-_campaña_buenos_habitos_02.jpg"
                     ],
-                    "size": "390px"
+                    "size": "M"
                 },
 
 
@@ -635,9 +650,10 @@
                     "id": "estudio-20",
                     "titulo": "Diseño para piezas gráficas y generación de contenido para redes sociales - Laboratorio de Idiomas Adrogué",
                     "img": [
-                        "estudio/presentacion-laboratorio-de-Idiomas-adrogue.jpg"
+                        "estudio/laboratorio-adrogue/presentacion-laboratorio-de-Idiomas-adrogue_main.jpg",
+                        "estudio/laboratorio-adrogue/presentacion-laboratorio-de-Idiomas-adrogue.jpg"
                     ],
-                    "size": "502px"
+                    "size": "M"
                 }
             ]
         }

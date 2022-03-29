@@ -34,6 +34,7 @@ export const Masonry = styled(M)`
                 align-items: center;
                 justify-content: center;
                 gap: 4rem;
+                gap: clamp(1rem, 1vw, 4rem);
                 
                 height: 100%;
                 width: 100%;
@@ -44,20 +45,24 @@ export const Masonry = styled(M)`
                 font-family: var(--font-menu);
                 
                 transition: all 0.3s ease-in-out;
-                opacity:0;
+                opacity:1;
                 
                 h4 {
-                    font-size: 24px;
+                    font-size: 1.5rem;
+                    font-size: clamp(1rem, 2vw, 1.5rem);
                     font-weight: 500;
                     width: 60%;
                     text-align: center;
-                    line-height: 26px;
+                    line-height: 1.625rem;
+                    line-height: clamp(1.1rem, 2vw, 1.625rem);
                 }
                 p {
-                    font-size: 18px;
+                    font-size: 1rem;
+                    font-size: clamp(.8rem, 1vw, 1rem);
                     font-weight: 400;
                     width: 80%;
-                    line-height: 23px;
+                    line-height: 1.2rem;
+                    line-height: clamp(1rem, 1vw, 1.2rem);
                     white-space: pre-wrap;
                     padding-bottom: 1rem;
                 }
