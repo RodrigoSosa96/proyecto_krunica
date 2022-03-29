@@ -14,7 +14,6 @@ const Box = styled(L)`
     flex-direction: ${props => props.direction || "row"};
     align-items: center;
     justify-content: center;
-
     
 	background-color: var(--color-primary);
 	/* width: max(716px); */
@@ -22,7 +21,8 @@ const Box = styled(L)`
 	font-size: 1.3rem;
 	transition: all 0.5s ease-in-out;
 	
-	width: 77%;
+	width: 100%;
+    aspect-ratio: 1.50/1;
 	/* height: 100%; */
 
 	

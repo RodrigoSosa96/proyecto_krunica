@@ -25,18 +25,18 @@ const BoxContainer = styled.div`
 	flex-wrap: wrap;
 
     
-	width: 100%;
+	width: 80%;
+	gap: 1rem;
 	/* width: 500px; */
 	/* padding: .5rem; */
-	flex-direction: row;
+	//flex-direction: row;
+	flex-direction: column;
 	@media (min-width: 768px) {
 		width: calc(50% - .5rem);
 
-		flex-direction: column;
 		/* width: 50%; */
 		/* margin-bottom: 2rem; */
 		height: unset;
-		gap: 1rem;
 	}
 
 	@media (min-width: 992px) {

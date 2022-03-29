@@ -7,6 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@trendyol-js/react-carousel": "^2.0.1",
     "preact": "^10.6.6",
     "preact-router": "^4.0.1",
     "react-masonry-css": "^1.0.16",

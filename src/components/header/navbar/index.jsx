@@ -16,7 +16,7 @@ const Navbar = () => {
     const [menu, setMenu] = useState(false);
     useEffect(() => {
         const windowWidth = window.innerWidth;
-        if (windowWidth < 992) {
+        if (windowWidth < 768) {
             if(menu) {
                 document.body.style.overflow = 'hidden';
             } else {

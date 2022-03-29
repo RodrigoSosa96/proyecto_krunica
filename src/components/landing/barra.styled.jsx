@@ -1,41 +1,18 @@
 import styled from "styled-components";
 import getImageUrl from '../../assets/getImageUrl';
+import { Carousel } from '@trendyol-js/react-carousel';
 
 
-const ImgContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;    
-    height: 100%;
-    
-    width: 22%;
-    margin-left: auto;
-    @media (min-width: 768px) {
-        flex-direction: row;
-        width: 100%;
-        height: unset;
-        justify-content: space-between;
-    }
-
-    @media (min-width: 992px) {
-        /* gap: 1rem; */
-    }
-`
 const Imagen = styled.img`
-    /* width: 217px; */
-    /* height: 171px; */
-    width: 100%;
-    
-    /* height: 100%; */
-    height: calc((100%/3) - .5rem);
     border-radius: 5px;
+    width: 95%;
     aspect-ratio: 1.27/1;
-    object-fit: cover;      
-
+    object-fit: cover; 
+    
     @media (min-width: 768px) {
+        width: min(10.2vw, 200px);
         height: auto;
-        width: calc((100% / 3) - .5rem);
+
     }
 
 `
@@ -60,17 +37,48 @@ const VerMas = styled.a`
 `
 
 
+
+const  StyledCarousel = styled(Carousel)`
+    //display: none;
+    position: relative;
+    width: 100%;
+    div {
+        position: relative;
+        display: flex;
+        align-items: center;
+        button[data-direction] {
+            //top: calc(40% - 17px);
+            top: -10px;
+            width: 20px;
+            height: 20px;
+            display: block;
+            cursor: pointer;
+            // position: absolute;
+            border: none;
+           background: url(${getImageUrl('arrow-landing.svg')}) no-repeat center;
+        }
+        button[data-direction='left'] { 
+            left: -55px;
+        }
+        button[data-direction='right'] { 
+            right: -55px;
+            transform: rotateZ(180deg);
+        }
+
+    }
+`
 function FotosContainer({ fotos }) {
-    
+
+
+
     return (
         <>
-            <ImgContainer>
-
-                {fotos.map((item, index) => (
-                    <Imagen src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-200/Krunica/${item}`} key={index} />
-                ))}
-
-            </ImgContainer>
+            
+            <StyledCarousel  show={3.5} slide={2} swiping={true} responsive={true} dynamic={true}>
+                    {fotos.map((item, index) => (
+                            <Imagen src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-200/Krunica/${item}`} key={index} />
+                    ))}
+            </StyledCarousel>
             <VerMas href="#">
                 VER +
             </VerMas>
