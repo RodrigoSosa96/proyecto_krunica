@@ -1,3 +1,5 @@
+import { Article } from "./styled";
+
 function Tarjetas({items, handleClickArticle}) {
     const sizes = {
 		"XS" : 0.52,
@@ -9,10 +11,9 @@ function Tarjetas({items, handleClickArticle}) {
 	}
 	const tarjetas = items.map(({ id, img, titulo, descripcion, size, video }) => {
 		return (
-			<article onClick={() => handleClickArticle(id)} key={id}
-				style={{
-					height: `${sizes[size] * 33}vw`,					
-				}}
+			<Article onClick={() => handleClickArticle(id)} key={id}
+
+				height= {sizes[size]}
 			>
 				{img ? <img
 				src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${img[0]}`}
@@ -28,7 +29,7 @@ function Tarjetas({items, handleClickArticle}) {
 					<h4>{titulo}</h4>
 					<p>{descripcion}</p>
 				</div>
-			</article>
+			</Article>
 		);
 	})  
     return tarjetas

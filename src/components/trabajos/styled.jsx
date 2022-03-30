@@ -1,7 +1,72 @@
 import styled from 'styled-components';
 import  M from 'react-masonry-css'
 
+export const Article = styled.article`
+    position: relative;
+    margin-bottom: 2rem; // gap
 
+    width: 100%;
+    //height: 330px;
+    // height: ${(props) => props.height * 33}vw;
+    //height: ${(props) => props.height * 90}vw;
+    aspect-ratio: 1/${(props) => props.height};
+
+
+    cursor: pointer;
+    user-select: none;
+
+    :hover div {
+        opacity: 1;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        gap: clamp(1rem, 1vw, 4rem);
+
+        height: 100%;
+        width: 100%;
+
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        font-family: var(--font-menu);
+
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+
+        h4 {
+        font-size: 1.5rem;
+        //font-size: clamp(1.2rem, 2vw, 1.5rem);
+        font-weight: 500;
+        width: 60%;
+        text-align: center;
+        line-height: 1.625rem;
+        //line-height: clamp(1.1rem, 2vw, 1.625rem);
+        }
+        p {
+        font-size: 1rem;
+        //font-size: clamp(0.8rem, 1vw, 1rem);
+        font-weight: 400;
+        width: 80%;
+        line-height: 1.2rem;
+        //line-height: clamp(1rem, 1vw, 1.2rem);
+        white-space: pre-wrap;
+        padding-bottom: 1rem;
+        }
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+    }
+
+
+`;
 export const Masonry = styled(M)`
     display: flex;
     margin-left: -2rem; // gap
@@ -12,71 +77,7 @@ export const Masonry = styled(M)`
     .my-masonry-grid_column {
         padding-left: 2rem; // gap
         background-clip: padding-box;
-        article {
-            position: relative;
-            margin-bottom: 2rem; // gap
-            
-            width: 100%;
-            height: 330px;
 
-            /* background-color: var(--color-primary); */
-
-            cursor: pointer;
-            user-select: none;
-
-
-            :hover div {
-                opacity: 1;
-            }
-            div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 4rem;
-                gap: clamp(1rem, 1vw, 4rem);
-                
-                height: 100%;
-                width: 100%;
-                
-                
-                background-color:rgba(0, 0, 0, 0.6);
-                color: white;
-                font-family: var(--font-menu);
-                
-                transition: all 0.3s ease-in-out;
-                opacity:1;
-                
-                h4 {
-                    font-size: 1.5rem;
-                    font-size: clamp(1rem, 2vw, 1.5rem);
-                    font-weight: 500;
-                    width: 60%;
-                    text-align: center;
-                    line-height: 1.625rem;
-                    line-height: clamp(1.1rem, 2vw, 1.625rem);
-                }
-                p {
-                    font-size: 1rem;
-                    font-size: clamp(.8rem, 1vw, 1rem);
-                    font-weight: 400;
-                    width: 80%;
-                    line-height: 1.2rem;
-                    line-height: clamp(1rem, 1vw, 1.2rem);
-                    white-space: pre-wrap;
-                    padding-bottom: 1rem;
-                }
-            }
-            img {
-                position: absolute;
-                width: 100%;
-                height: 100% ;
-                object-fit: cover;
-                object-position: center;
-                z-index: -1;
-            }
-            
-        }
     }
     
 `
