@@ -30,7 +30,7 @@ const Box = styled(L)`
 	h2 {
 		font-size: 30px;
 		font-family: var(--font-title);
-		font-weight: 400;	
+		font-weight: 500;	
 		white-space: pre-wrap;
 		text-align: center;
 		line-height: 36px;
