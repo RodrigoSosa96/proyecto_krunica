@@ -11,12 +11,12 @@ const CardContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: .5rem;
+    gap: .7rem;
     /* padding: 0 1rem; */
 
 
     @media(min-width: 768px) {
-        gap: .7rem;
+        gap: 1.2rem;
         /* padding: 0 2rem; */
 
     }

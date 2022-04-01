@@ -18,10 +18,11 @@ function Footer() {
                     <h2>KRUNICA</h2>
                 </Titulo>
                 <FooterNav>
-                    <Link to="#sobre-mi">SOBRE MÍ</Link>
-                    <Link to="/trabajos">TRABAJOS</Link>
-                    <Link to="#servicios">SERVICIOS</Link>
-                    <Link to="#contacto">CONTACTO</Link>
+                    <Link to="/trabajos/taller">TRABAJOS</Link>
+                    <Link to="/#sobre-mi">SOBRE MÍ</Link>
+                    <Link to="/#servicios">SERVICIOS</Link>
+                    <Link to="/#servicios">CLIENTES</Link>
+                    <Link to="/#contacto">CONTACTO</Link>
                 </FooterNav>
             </MainFooter>
             <Social>

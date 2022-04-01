@@ -53,13 +53,18 @@ export const Titulo = styled.div`
         font-weight: 700;
         text-align: center;
         font-size: 2.2rem;
-        font-size: clamp(1.5rem, 3vw, 2.9rem);
+        font-size: clamp(1.5rem, 2vw, 2.9rem);
         line-height: 56px;
-        line-height: clamp(2rem, 3vw, 3.2rem);
+        line-height: clamp(2rem, 2vw, 3.2rem);
+    }
+    svg {
+        height: 4rem;
+        width: 4rem;
+        height: clamp(3rem, 3vw, 5rem);
+        width: clamp(3rem, 3vw, 5rem);
+            
     }
     @media(min-width: 768px) {
-        
-
         h2 {
             /* font-size: 2rem; */
         }
@@ -69,13 +74,7 @@ export const Titulo = styled.div`
 
         padding-right: 2rem;
 
-        svg {
-            height: 4rem;
-            width: 4rem;
-            height: clamp(3rem, 4vw, 5rem);
-            width: clamp(3rem, 4vw, 5rem);
-            
-        }
+
         h2 {
             /* font-size: 40px; */
             /* font-size: 45.91px;
@@ -107,7 +106,7 @@ export const Link = styled(L)`
     display: none;
     text-decoration: none;
 
-    @media(min-width: 768px) {
+    @media(min-width: 850px) {
         position: relative;
         display: flex;
         

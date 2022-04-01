@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import getImageUrl from '../../assets/getImageUrl';
 import { Carousel } from '@trendyol-js/react-carousel';
-
+import { HashLink as L } from "react-router-hash-link";
 
 const Imagen = styled.img`
     border-radius: 5px;
@@ -16,7 +16,7 @@ const Imagen = styled.img`
     }
 
 `
-const VerMas = styled.a`
+const VerMas = styled(L)`
     font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
     color: var(--color-lines);
@@ -67,9 +67,9 @@ const  StyledCarousel = styled(Carousel)`
 
     }
 `
-function FotosContainer({ fotos }) {
+function FotosContainer({ fotos, categoria }) {
 
-
+    
 
     return (
         <>
@@ -79,7 +79,7 @@ function FotosContainer({ fotos }) {
                             <Imagen src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-200/Krunica/${item}`} key={index} />
                     ))}
             </StyledCarousel>
-            <VerMas href="#">
+            <VerMas smooth to={`/trabajos/${categoria}`}>
                 VER +
             </VerMas>
         </>

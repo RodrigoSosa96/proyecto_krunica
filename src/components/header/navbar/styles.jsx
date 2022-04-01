@@ -18,7 +18,7 @@ export const Container = styled.nav`
 
     @media (min-width: 768px) {
         display: flex;
-        gap: 1rem;
+        gap: 0rem;
         flex-direction: row;
         overflow: hidden;
         
@@ -26,6 +26,10 @@ export const Container = styled.nav`
         height: unset;
         
         
+    }
+    @media(min-width: 800px) {
+        gap: 1rem;
+
     }
     @media(min-width: 992px) {
         gap: 2rem;
@@ -86,11 +90,14 @@ export const Social = styled.div`
 
         @media(min-width: 768px) {
             position: relative;
-            gap: .5rem;
+            gap: .2rem;
             margin-top: 0;
             bottom: unset;
             
 
+        }
+        @media(min-width: 800px) {
+            gap: .5rem;
         }
 
         @media (min-width: 992px) {

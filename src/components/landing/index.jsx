@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import BoxWithText from "./caja.styled";
-import FotosContainer from './barra.styled';
+import FotosContainer from './FotosContainer.styled';
 import { Container as C } from "../styled/Wrapper.styled";
 import { HashLink as L } from "react-router-hash-link";
 
@@ -61,12 +61,11 @@ function Landing({ data }) {
 		<Container  id="landing">
 			<BoxContainer  >
 					<BoxWithText name={data.taller.name} description={data.taller.description} to="/trabajos/taller" />
-				<FotosContainer fotos={data.taller.fotos} />
+				<FotosContainer fotos={data.taller.fotos} categoria="taller" />
 			</BoxContainer>
 			<BoxContainer >
 					<BoxWithText name={data.estudio.name} description={data.estudio.description} to="/trabajos/estudio" />
-					
-				<FotosContainer fotos={data.estudio.fotos} />
+				<FotosContainer fotos={data.estudio.fotos} categoria="estudio" />
 			</BoxContainer>
 		</Container>
 	)
