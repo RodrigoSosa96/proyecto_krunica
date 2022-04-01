@@ -9,27 +9,27 @@ import { useEffect, useRef } from "preact/hooks";
 function SobreMi({ data }) {
 	const { name, description, description_bold, img, video } = data;
 	const videoRef = useRef();
-	useEffect(() => {
-		const video = videoRef.current;
-		let playPromise = video.play();
-		if (playPromise !== undefined) {
-			playPromise.then((_) => {
-				let observer = new IntersectionObserver((entries) => {
-					entries.forEach(
-						(entry) => {
-							if (entry.intersectionRatio !== 1 && !video.paused) {
-								video.pause();
-							} else if (video.paused) {
-								video.play();
-							}
-						},
-						{ threshold: 0.2 }
-					);
-				});
-				observer.observe(video);
-			});
-		}
-	}, []);
+	// useEffect(() => {
+	// 	const video = videoRef.current;
+	// 	let playPromise = video.play();
+	// 	if (playPromise !== undefined) {
+	// 		playPromise.then((_) => {
+	// 			let observer = new IntersectionObserver((entries) => {
+	// 				entries.forEach(
+	// 					(entry) => {
+	// 						if (entry.intersectionRatio !== 1 && !video.paused) {
+	// 							video.pause();
+	// 						} else if (video.paused) {
+	// 							video.play();
+	// 						}
+	// 					},
+	// 					{ threshold: 0.2 }
+	// 				);
+	// 			});
+	// 			observer.observe(video);
+	// 		});
+	// 	}
+	// }, [ videoRef ]);
 
 	return (
 		<Container id='about-me'>
