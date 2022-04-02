@@ -1,4 +1,4 @@
-//import { useRef, useEffect } from "preact/hooks";
+import { useRef, useEffect } from "preact/hooks";
 import { PhotoModal } from "./styled";
 
 function Modal({ selectedItems, setSelectedItems }) {
@@ -10,9 +10,9 @@ function Modal({ selectedItems, setSelectedItems }) {
         }
     }
 
-    //const ModalRef = useRef(null);
+    const ModalRef = useRef(null);
 
-    /* useEffect(() => {
+    useEffect(() => {
 
         const ele = ModalRef.current;
         ele.cursor = 'grab';
@@ -53,12 +53,12 @@ function Modal({ selectedItems, setSelectedItems }) {
         ele.addEventListener('mousedown', mouseDownHandler);
 
 
-    }, []) */
+    }, [])
 
   return (
     <PhotoModal onClick={handleClickModal}>
       <div>
-        <div>
+        <div ref={ModalRef} >
           {selectedItems.map((item) => (
             <img
               src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${item}`}

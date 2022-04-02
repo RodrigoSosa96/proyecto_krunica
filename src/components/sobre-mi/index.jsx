@@ -2,13 +2,13 @@ import { Container, Text, BoldText, GifVideo } from "./styles"
 import { Title } from "../styled/Title.styled";
 
 import getImageUrl from "../../assets/getImageUrl";
-import { useEffect, useRef } from "preact/hooks";
+// import { useEffect, useRef } from "preact/hooks";
 
 
 
 function SobreMi({ data }) {
 	const { name, description, description_bold, img, video } = data;
-	const videoRef = useRef();
+	// const videoRef = useRef();
 	// useEffect(() => {
 	// 	const video = videoRef.current;
 	// 	let playPromise = video.play();
@@ -33,7 +33,7 @@ function SobreMi({ data }) {
 
 	return (
 		<Container id='about-me'>
-			<GifVideo src={getImageUrl(video)} autoPlay loop muted ref={videoRef} />
+			<GifVideo src={getImageUrl(video)} autoPlay loop muted  />
 			<div>
 				<h2>
 					<Title as='span'>{name} </Title>

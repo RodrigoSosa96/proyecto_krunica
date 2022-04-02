@@ -116,7 +116,7 @@ export const PhotoModal = styled.div`
             height: 100%; /* relevant part */
             overflow-y: auto; /* relevant part */
         
-
+            
 
             /* width: 70%; */
             /* height: 70%; */
@@ -130,6 +130,13 @@ export const PhotoModal = styled.div`
             img {
                 width: 100%;
                 user-select: none ;
+                //Block image dragging
+                -webkit-user-drag: none;
+                -khtml-user-drag: none;
+                -moz-user-drag: none;
+                -o-user-drag: none;
+                user-drag: none;
+                
                 /* object-fit: cover;
                 object-position: center; */
                 /* background-color: #c4c4c4 ; */
