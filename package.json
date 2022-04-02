@@ -18,5 +18,8 @@
   "devDependencies": {
     "@preact/preset-vite": "^2.1.5",
     "vite": "^2.7.2"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
