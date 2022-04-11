@@ -27,7 +27,6 @@ function Trabajos() {
 
     useEffect(() => {
         if (selectedItems) {
-			console.log(selectedItems)
             document.body.style.overflow = 'hidden';     
             document.onkeydown = function(evt) {
                 evt = evt || window.event;
@@ -50,7 +49,6 @@ function Trabajos() {
 
     const handleClickArticle = (id) => {
         const filterData =trabajos.tarjetas.filter(item => item.id === id)
-		console.log(filterData);
         setSelectedItems(filterData[0].img);
     }
 
