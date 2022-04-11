@@ -71,11 +71,9 @@ export const Article = styled.article`
         font-family: var(--font-menu);
 
         transition: all 0.3s ease-in-out;
-        opacity: 1;
-        border: 1px solid red;
+        opacity: 0;
 
         h4 {
-        border: 1px solid red;
 
         font-size: 1.5rem;
 
@@ -85,7 +83,6 @@ export const Article = styled.article`
         line-height: 1.625rem;
         }
         p {
-            border: 1px solid red;
 
             font-size: 1rem;
             font-weight: 400;
