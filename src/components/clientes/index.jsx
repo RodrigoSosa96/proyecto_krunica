@@ -58,7 +58,7 @@ const Imagen = styled.img`
 
 function Clientes({ data }) {
     return (
-        <Container>
+        <Container id="clientes">
             <Title>CLIENTES</Title>
             <GridContainer>
                 {
