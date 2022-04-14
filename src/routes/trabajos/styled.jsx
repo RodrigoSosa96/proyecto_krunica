@@ -30,15 +30,16 @@ export const Categories = styled.div`
 `
 export const TrabajosTitle = styled(Title)`
     font-weight: 400;
-    font-size: clamp(1rem, 2vw, 2.25rem);
+    font-size: clamp(.9rem, 2vw, 2.25rem);
     user-select: none;
     :hover {
         cursor: pointer;
         font-weight: 500;
     }
-    :hover::after {
-        opacity: 1;
-        /* transform: scalex(1); */
+    @media(hover: none) {
+        :after {
+            opacity: 0
+        }
     }
     ${props => props.active && `
         font-weight: 500;

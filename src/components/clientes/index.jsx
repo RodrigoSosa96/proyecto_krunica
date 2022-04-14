@@ -28,9 +28,7 @@ const DivImg = styled.div`
     justify-items: center;
     justify-content: center;
     align-items: center;
-    /* height: 50px; */
-    /* width: min(100px, auto); */
-    width:  15vw;
+    width: min(25vw, 100px);
 
     @media(min-width: 768px) {
         /* height: 100px; */

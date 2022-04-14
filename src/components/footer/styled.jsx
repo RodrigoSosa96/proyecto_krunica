@@ -53,15 +53,15 @@ export const Titulo = styled.div`
         font-weight: 700;
         text-align: center;
         font-size: 2.2rem;
-        font-size: clamp(1.5rem, 2vw, 2.9rem);
+        font-size: clamp(1rem, 2vw, 2.9rem);
         line-height: 56px;
-        line-height: clamp(2rem, 2vw, 3.2rem);
+        line-height: clamp(1rem, 2vw, 3.2rem);
     }
     svg {
         height: 4rem;
         width: 4rem;
-        height: clamp(3rem, 3vw, 5rem);
-        width: clamp(3rem, 3vw, 5rem);
+        height: clamp(2rem, 3vw, 5rem);
+        width: clamp(2rem, 3vw, 5rem);
             
     }
     @media(min-width: 768px) {
@@ -150,10 +150,10 @@ export const Social = styled.div`
         font-weight: 300;
 
         font-size: 2.8rem;
-        font-size: clamp(1.3rem, 2vw, 2.8rem); 
+        font-size: clamp(1.1rem, 2vw, 2.8rem); 
 
         line-height: 54.22px;
-        line-height: clamp(1.5rem, 2vw, 3.3rem);
+        line-height: clamp(1rem, 2vw, 3.3rem);
         text-align: center;
     }
     .footer-redes {
@@ -179,8 +179,8 @@ export const SocialImg = styled.a`
         background-position: center;
 
 
-        width: clamp(1.9rem, 2vw, 2.125rem);
-        height: clamp(1.9rem, 2vw, 2.125rem);
+        width: clamp(1.5rem, 2vw, 2.125rem);
+        height: clamp(1.5rem, 2vw, 2.125rem);
 
         @media(min-width: 768px) {
         }

@@ -7,7 +7,11 @@ import Face from "../../assets/img/face.svg";
 import Insta from "../../assets/img/insta.svg";
 import {FooterContainer, MainFooter, Titulo, FooterNav, Link, Social, SocialImg} from "./styled"
 
-
+const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -125; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
 
 function Footer() {
     return (
@@ -18,11 +22,11 @@ function Footer() {
                     <h2>KRUNICA</h2>
                 </Titulo>
                 <FooterNav>
-                    <Link to="/trabajos/taller">TRABAJOS</Link>
-                    <Link to="/#sobre-mi">SOBRE MÍ</Link>
-                    <Link to="/#servicios">SERVICIOS</Link>
-                    <Link to="/#servicios">CLIENTES</Link>
-                    <Link to="/#contacto">CONTACTO</Link>
+                    <Link to="/trabajos/estudio#">TRABAJOS</Link>
+                    <Link scroll={scrollWithOffset} to="/#about-me">SOBRE MÍ</Link>
+                    <Link scroll={scrollWithOffset} to="/#servicios">SERVICIOS</Link>
+                    <Link scroll={scrollWithOffset} to="/#servicios">CLIENTES</Link>
+                    <Link scroll={scrollWithOffset} to="/#contacto">CONTACTO</Link>
                 </FooterNav>
             </MainFooter>
             <Social>

@@ -39,7 +39,7 @@ const TextBox = styled.div`
     cursor: pointer;
     
     p {
-        --size: 1.5vw;
+        --size: 2vw;
 
         position: relative;
         display: flex;
@@ -49,7 +49,7 @@ const TextBox = styled.div`
         text-align: center;
         color: white;
         
-        font-size: clamp(.5rem, var(--size), 2rem);
+        font-size: clamp(.8rem, var(--size), 2rem);
 
         line-height: clamp(1.4rem, 5vw, 3rem);
         padding-left: clamp(0.5rem, var(--size), 1.5rem);
@@ -66,29 +66,6 @@ const TextBox = styled.div`
         }
 
     }
-    /* @media (min-width: 768px) {
-        padding: .7rem .2rem .9rem .5rem;
-        p {
-            line-height: 37px;
-
-            ::before {
-                height: 1rem;
-                width: 1rem;
-
-            }
-        }
-    }
-    @media (min-width: 992px) {
-        padding-right: 1.2rem;
-        
-        p {
-            text-indent: 2rem;
-            ::before {
-                width: 1.5rem;
-                height:1.5rem;
-            }
-        }
-    } */
 
 `
 
