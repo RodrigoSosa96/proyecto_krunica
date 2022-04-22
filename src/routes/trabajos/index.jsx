@@ -5,23 +5,23 @@ import {Wrapper, TrabajosTitle, Categories } from "./styled";
 
 function Trabajos() {
     const { category } = useParams()
-    const [categorie, setCategorie] = useState("taller")
+    const [categoria, setCategoria] = useState("taller")
 
     useEffect(() => {
         console.log(category)
-        setCategorie(category)
+        setCategoria(category)
     }, [category])
 
     return (
 			<Wrapper>
 				<Categories>
-					<Link to='taller'>
-						<TrabajosTitle active={categorie === "taller" ? true : false}>
+					<Link to='/taller'>
+						<TrabajosTitle active={categoria === "taller" ? true : false}>
 							TRABAJOS TALLER
 						</TrabajosTitle>
 					</Link>
-					<Link to='estudio'>
-						<TrabajosTitle active={categorie === "estudio" ? true : false}>
+					<Link to='/estudio'>
+						<TrabajosTitle active={categoria === "estudio" ? true : false}>
 							TRABAJOS ESTUDIO
 						</TrabajosTitle>
 					</Link>
