@@ -1,4 +1,4 @@
-import { useEffect, useState } from "preact/hooks";
+import { useEffect, useState } from "react";
 import { Link, Outlet, useParams } from "react-router-dom";
 import {Wrapper, TrabajosTitle, Categories } from "./styled";
 

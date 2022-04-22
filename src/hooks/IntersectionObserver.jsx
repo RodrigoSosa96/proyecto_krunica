@@ -1,4 +1,4 @@
-import { useEffect } from "preact/hooks";
+import { useEffect } from "react";
 
 let listenerCallbacks = new WeakMap();
 
@@ -28,16 +28,16 @@ function getIntersectionObserver() {
     return observer;
 }
 
-export function useIntersection(elem, callback) {
-    useEffect(() => {
-        let target = elem.current;
-        let observer = getIntersectionObserver();
-        listenerCallbacks.set(target, callback);
-        observer.observe(target);
+// export function useIntersection(elem, callback) {
+//     useEffect(() => {
+//         let target = elem.current;
+//         let observer = getIntersectionObserver();
+//         listenerCallbacks.set(target, callback);
+//         observer.observe(target);
 
-        return () => {
-            listenerCallbacks.delete(target);
-            observer.unobserve(target);
-        };
-    }, []);
-}
+//         return () => {
+//             listenerCallbacks.delete(target);
+//             observer.unobserve(target);
+//         };
+//     }, []);
+// }

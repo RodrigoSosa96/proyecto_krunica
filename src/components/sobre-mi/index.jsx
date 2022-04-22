@@ -2,7 +2,6 @@ import { Container, Text, BoldText, GifVideo } from "./styles"
 import { Title } from "../styled/Title.styled";
 
 import getImageUrl from "../../assets/getImageUrl";
-// import { useEffect, useRef } from "preact/hooks";
 
 
 

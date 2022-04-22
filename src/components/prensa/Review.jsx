@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-// import getImageUrl from "../../assets/getImageUrl"
 
 const Container = styled.div`
     display: flex;

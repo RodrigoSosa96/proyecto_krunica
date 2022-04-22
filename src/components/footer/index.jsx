@@ -1,8 +1,4 @@
-import styled from "styled-components";
-import { HashLink as L } from "react-router-hash-link";
-
 import Logo from "../header/title/Logo"
-// import { Social, SocialImg } from "../header/navbar/styles";
 import Face from "../../assets/img/face.svg";
 import Insta from "../../assets/img/insta.svg";
 import {FooterContainer, MainFooter, Titulo, FooterNav, Link, Social, SocialImg} from "./styled"
@@ -25,7 +21,7 @@ function Footer() {
                     <Link to="/trabajos/estudio#">TRABAJOS</Link>
                     <Link scroll={scrollWithOffset} to="/#about-me">SOBRE MÍ</Link>
                     <Link scroll={scrollWithOffset} to="/#servicios">SERVICIOS</Link>
-                    <Link scroll={scrollWithOffset} to="/#servicios">CLIENTES</Link>
+                    <Link scroll={scrollWithOffset} to="/#clientes">CLIENTES</Link>
                     <Link scroll={scrollWithOffset} to="/#contacto">CONTACTO</Link>
                 </FooterNav>
             </MainFooter>

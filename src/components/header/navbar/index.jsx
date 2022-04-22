@@ -1,5 +1,3 @@
-import {  useEffect, useState } from 'preact/hooks';
-
 import { Container, MenuLinks, Social, SocialImg, Link } from './styles';
 import Face from "../../../assets/img/face.svg";
 import Insta from "../../../assets/img/insta.svg";
@@ -25,11 +23,11 @@ const Navbar = ({toggle}) => {
 
             <Container toggleMenu={menu} >
                 <MenuLinks toggleLinks={menu} onClick={() => setMenu(!menu)}  >
-                    <Link smooth to="/trabajos/estudio#" scroll={scrollWithOffset} activeClassName="active" >TRABAJOS</Link>
-                    <Link smooth to="/#about-me" scroll={scrollWithOffset} activeClassName="active" >SOBRE MÍ</Link>
-                    <Link smooth to="/#servicios" scroll={scrollWithOffset} activeClassName="active" >SERVICIOS</Link>
-                    <Link smooth to="/#clientes" scroll={scrollWithOffset} activeClassName="active" >CLIENTES</Link>
-                    <Link smooth to="/#contacto" scroll={scrollWithOffset} activeClassName="active" >CONTACTO</Link>
+                    <Link smooth to="/trabajos/estudio#" scroll={scrollWithOffset} className={(navData) => (navData.isActive ? "active" : 'none')} >TRABAJOS</Link>
+                    <Link smooth to="/#about-me" scroll={scrollWithOffset} className={(navData) => (navData.isActive ? "active" : 'none')}>SOBRE MÍ</Link>
+                    <Link smooth to="/#servicios" scroll={scrollWithOffset} className={(navData) => (navData.isActive ? "active" : 'none')} >SERVICIOS</Link>
+                    <Link smooth to="/#clientes" scroll={scrollWithOffset} className={(navData) => (navData.isActive ? "active" : 'none')} >CLIENTES</Link>
+                    <Link smooth to="/#contacto" scroll={scrollWithOffset} className={(navData) => (navData.isActive ? "active" : 'none')} >CONTACTO</Link>
                 </MenuLinks>
                 <Social toggleSocial={menu}>
                     <SocialImg href="https://www.instagram.com" src={Insta} />

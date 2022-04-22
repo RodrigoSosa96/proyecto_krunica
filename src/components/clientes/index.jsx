@@ -1,5 +1,5 @@
-import { Title } from "../styled/Title.styled";
 import styled from "styled-components";
+import { Title } from "../styled/Title.styled";
 import getImageUrl from "../../assets/getImageUrl";
 import { Container } from "../styled/Wrapper.styled";
 
@@ -55,15 +55,17 @@ const Imagen = styled.img`
 
 
 function Clientes({ data }) {
+    console.log("render");
     return (
         <Container id="clientes">
             <Title>CLIENTES</Title>
             <GridContainer>
                 {
                     data.map((cliente, index) => {
+                        // console.log(index)
                         return (
-                            <DivImg>
-                                <Imagen key={index} src={getImageUrl(cliente)} alt="" />
+                            <DivImg key={index}>
+                                <Imagen src={getImageUrl(cliente)} alt="" />
                             </DivImg>
                         )
                     })

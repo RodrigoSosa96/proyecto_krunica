@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "preact/hooks";
+import { useRef, useEffect } from "react";
 import { PhotoModal } from "./styled";
 
 function Modal({ selectedItems, setSelectedItems }) {

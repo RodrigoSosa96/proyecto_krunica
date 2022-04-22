@@ -1,4 +1,3 @@
-import { memo } from 'preact/compat';
 import styled from "styled-components";
 
 import { Title } from "../styled/Title.styled";
@@ -35,7 +34,7 @@ const TextBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${props => props.color ? "var(--color-secondary)": "var(--color-primary)"};
+    background-color: ${props => props.$color ? "var(--color-secondary)": "var(--color-primary)"};
     cursor: pointer;
     
     p {
@@ -78,40 +77,40 @@ function Servicios() {
                 <TextBox>
                     <p>BRANDING</p>
                 </TextBox>
-                <TextBox color>
+                <TextBox $color>
                     <p>DISEÑO UX/UI</p>
                 </TextBox>
                 <TextBox>
                     <p>EDITORIAL</p>
                 </TextBox>
-                <TextBox color>
+                <TextBox $color>
                     <p>REDES SOCIALES</p>
                 </TextBox>
                 <TextBox>
                     <p>PACKAGING</p>
                 </TextBox>
-                <TextBox color>
+                <TextBox $color>
                     <p>EDICIÓN DE VIDEOS</p>
                 </TextBox>
                 <TextBox>
                     <p>ILUSTRACIÓN</p>
                 </TextBox>
-                <TextBox color>
+                <TextBox $color>
                     <p>DISEÑO WEB</p>
                 </TextBox>
                 <TextBox>
                     <p>LETTERING</p>
                 </TextBox>
-                <TextBox color>
+                <TextBox $color>
                     <p>BOX</p>
                 </TextBox>
-                <TextBox color>
+                <TextBox $color>
                     <p>CUADROS</p>
                 </TextBox>
                 <TextBox>
                     <p>TALLERES</p>
                 </TextBox>
-                <TextBox color>
+                <TextBox $color>
                     <p>PAPELERÍA</p>
                 </TextBox>
                 <TextBox>
@@ -122,4 +121,4 @@ function Servicios() {
     )
 }
 
-export default memo(Servicios);
+export default Servicios;

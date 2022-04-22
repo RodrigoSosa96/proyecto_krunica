@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 
 import Navbar from './navbar';
 import { Container, StyledHeader } from './styled';
