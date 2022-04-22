@@ -7,6 +7,7 @@ import { trabajos as dataTrabajos } from "../../data.json"
 import Tarjetas from './Tarjetas';
 import Modal from './Modal';
 
+import { Draggable } from "react-drag-reorder";
 
 
 
@@ -52,30 +53,37 @@ function Trabajos() {
         setSelectedItems(filterData[0]);
     }
 
-    //TEMP
-    const shuffle = (array) => {
-        let currentIndex = array.length, temporaryValue, randomIndex;
+    
+    const handlePositionChange = (curr, newpos) => {
+        console.log(curr, newpos)
+        const element = trabajos.tarjetas.splice(curr, 1)[0]
+        const newTarjetas = trabajos.tarjetas.splice(newpos, 0, element)
+        // setTrabajos({...trabajos, tarjetas: newTarjetas})
+        // console.log(trabajos)
+        
 
-        while (0 !== currentIndex) {
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
-
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        }
-
-        return array;
     }
 
+    useEffect(() => {
+        setTrabajos({...trabajos, tarjetas: trabajos.tarjetas})
 
+    }, [handlePositionChange])
+
+    
 
 	return (
         <>
             <SectionTitle>{trabajos.titulo}</SectionTitle>
+            <Draggable onPosChange={handlePositionChange}>
+                {
+                    trabajos.tarjetas.map((item, i) => {
+                        return <li key={i}>{item.id}</li>
+                    })
+                }
+            </Draggable>
             <Masonry
             breakpointCols={breakpointColumnsObj}
-            columnClassName="my-masonry-grid_column">
+            columnClassName="my-masonry-grid_column" >
                 {Tarjetas( {items: trabajos.tarjetas, handleClickArticle})}
             </Masonry>
             {selectedItems && (
