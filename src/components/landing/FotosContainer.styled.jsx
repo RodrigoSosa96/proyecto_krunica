@@ -48,22 +48,24 @@ const  StyledCarousel = styled(Carousel)`
         align-items: center;
         button[data-direction] {
             //top: calc(40% - 17px);
-            top: -10px;
+            
+            /* top: -10px;
             width: 20px;
             height: 20px;
             display: block;
             cursor: pointer;
             // position: absolute;
             border: none;
-           background: url(${getImageUrl('arrow-landing.svg')}) no-repeat center;
+           background: url(${getImageUrl('arrow-landing.svg')}) no-repeat center; */
         }
-        button[data-direction='left'] { 
+        /* button[data-direction='left'] { 
             left: -55px;
+
         }
         button[data-direction='right'] { 
             right: -55px;
             transform: rotateZ(180deg);
-        }
+        } */
 
     }
 `
@@ -74,7 +76,7 @@ function FotosContainer({ fotos, categoria }) {
     return (
         <>
             
-            <StyledCarousel  show={3.5} slide={2} swiping={true} responsive={true} dynamic={true}>
+            <StyledCarousel  show={3.5} slide={3} swiping={true} responsive={true} dynamic={true}>
                     {fotos.map((item, index) => (
                             <Imagen src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-200/Krunica/${item}`} key={index} />
                     ))}
