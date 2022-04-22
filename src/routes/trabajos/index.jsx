@@ -15,12 +15,12 @@ function Trabajos() {
     return (
 			<Wrapper>
 				<Categories>
-					<Link to='/taller'>
+					<Link to='taller'>
 						<TrabajosTitle active={categoria === "taller" ? true : false}>
 							TRABAJOS TALLER
 						</TrabajosTitle>
 					</Link>
-					<Link to='/estudio'>
+					<Link to='estudio'>
 						<TrabajosTitle active={categoria === "estudio" ? true : false}>
 							TRABAJOS ESTUDIO
 						</TrabajosTitle>
