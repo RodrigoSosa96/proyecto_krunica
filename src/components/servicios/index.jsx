@@ -35,7 +35,8 @@ const TextBox = styled.div`
     align-items: center;
     justify-content: center;
     background-color: ${props => props.$color ? "var(--color-secondary)": "var(--color-primary)"};
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: default;
     
     p {
         --size: 2vw;

@@ -39,15 +39,16 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 	flex-wrap: wrap;
-	gap: 2rem;
+	gap: 1rem;
     width: min(90vw, 1480px);
 
 
 
-	
+
 	/* height: 90px; */
-	height: 100%;
+	/* height: 50vh; */
 	@media(min-width: 768px) {
+		height: unset;
 		gap: unset;
 	}
 

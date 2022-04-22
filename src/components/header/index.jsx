@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from 'react';
 import Navbar from './navbar';
 import { Container, StyledHeader } from './styled';
 import Title from './title';
+import { StyledHamburger } from './styled';
+
 
 const Header = () => {
     const [shrunk, setShrunk] = useState(false);
@@ -63,6 +65,11 @@ const Header = () => {
         <StyledHeader ref={headerRef} shrunk={shrunk} toggle={menu} >
             <Container>
                 <Title />
+                <StyledHamburger onClick={() => setMenu(!menu)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </StyledHamburger>
                 <Navbar toggle={{menu, setMenu}}/>
             </Container>
         </StyledHeader>

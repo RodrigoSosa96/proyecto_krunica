@@ -13,7 +13,7 @@ export const Container = styled.nav`
 
 
     transition: all 500ms ease-in-out;
-    height: calc(100vh - 60px - 2rem);
+    height: calc(50vh - 60px - 2rem);
     width: 100%;
 
     @media (min-width: 768px) {
@@ -44,13 +44,13 @@ export const MenuLinks = styled.nav`
         display: flex;
         
         align-items: center;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         font-family: var(--font-menu);
 
 
         flex-direction: column;
         width: 100vw;
-        gap: 3rem;
+        gap: .9rem;
 
 
 
@@ -110,8 +110,8 @@ export const SocialImg = styled.a`
         background-image: url(${props => props.src});
         background-size: cover;
         background-position: center;
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
         @media(min-width: 768px) {
             width: 27px;
             height: 27px;

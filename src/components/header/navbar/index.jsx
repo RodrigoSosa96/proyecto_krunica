@@ -1,7 +1,6 @@
 import { Container, MenuLinks, Social, SocialImg, Link } from './styles';
 import Face from "../../../assets/img/face.svg";
 import Insta from "../../../assets/img/insta.svg";
-import { StyledHamburger } from '../styled';
 
 
 const scrollWithOffset = (el) => {
@@ -15,12 +14,6 @@ const Navbar = ({toggle}) => {
 
     return (
         <>
-            <StyledHamburger onClick={() => setMenu(!menu)}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </StyledHamburger>
-
             <Container toggleMenu={menu} >
                 <MenuLinks toggleLinks={menu} onClick={() => setMenu(!menu)}  >
                     <Link smooth to="/trabajos/estudio#" scroll={scrollWithOffset} className={(navData) => (navData.isActive ? "active" : 'none')} >TRABAJOS</Link>
@@ -30,8 +23,8 @@ const Navbar = ({toggle}) => {
                     <Link smooth to="/#contacto" scroll={scrollWithOffset} className={(navData) => (navData.isActive ? "active" : 'none')} >CONTACTO</Link>
                 </MenuLinks>
                 <Social toggleSocial={menu}>
-                    <SocialImg href="https://www.instagram.com" src={Insta} />
-                    <SocialImg href="https://www.facebook.com" src={Face} />
+                    <SocialImg href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" src={Insta} />
+                    <SocialImg href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" src={Face} />
                 </Social>
             </Container>
 

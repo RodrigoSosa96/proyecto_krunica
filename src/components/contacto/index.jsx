@@ -56,7 +56,7 @@ const Form = styled.form`
     align-items: center;
     justify-content: center;
 
-    width: 90%;
+    width: 95%;
 
     height: 100%;  
     
