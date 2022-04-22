@@ -77,7 +77,7 @@ function Trabajos() {
             <Draggable onPosChange={handlePositionChange}>
                 {
                     trabajos.tarjetas.map((item, i) => {
-                        return <li key={i}>{item.id}</li>
+                        return <li key={i}>{item.titulo}</li>
                     })
                 }
             </Draggable>

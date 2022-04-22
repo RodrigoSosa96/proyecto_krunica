@@ -156,7 +156,7 @@ export const Link = styled(L)`
         opacity: 0;
         position: absolute;
         width: 80%;
-        height: 5px;
+        height: 4px;
         bottom: -5px;
         background-color: var(--color-primary);
 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, Outlet, useParams } from "react-router-dom";
 import {Wrapper, TrabajosTitle, Categories } from "./styled";
-
+import Contacto from "../../components/contacto";
 
 function Trabajos() {
     const { category } = useParams()
@@ -27,6 +27,7 @@ function Trabajos() {
 					</Link>
 				</Categories>
 				<Outlet />
+				<Contacto/>
 			</Wrapper>
 		);
 

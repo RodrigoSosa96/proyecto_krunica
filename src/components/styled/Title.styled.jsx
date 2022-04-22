@@ -22,7 +22,7 @@ export const Title = styled.h2`
         content: '';
         position: absolute;
         width: 100%;
-        height: 3px;
+        height: 2px;
         bottom: -5px;
         left: 0;
         background-color: var(--color-primary);
@@ -35,7 +35,7 @@ export const Title = styled.h2`
             opacity: 0;
             bottom: -6px;
 
-            height: 4px;
+            height: 3px;
             
         }
     }
@@ -43,7 +43,7 @@ export const Title = styled.h2`
         margin-bottom: 4rem;
         /* font-size: 2.25rem; */
         :after {
-            height: 5px;
+            height: 4px;
         }
 
     }
