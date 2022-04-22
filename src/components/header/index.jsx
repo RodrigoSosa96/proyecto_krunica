@@ -6,6 +6,7 @@ import Title from './title';
 
 const Header = () => {
     const [shrunk, setShrunk] = useState(false);
+    const [menu, setMenu] = useState(false);
 
     const headerRef = useRef(null);
     useEffect(() => {
@@ -27,14 +28,42 @@ const Header = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
-    })
+    }, [headerRef])
+
+    useEffect(() => {
+        const headerWidth = window.innerWidth;
+        const handleResize = () => {
+            if (headerWidth > 768) {
+                setMenu(false);
+            }
+        }
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, [])
+
+    useEffect(() => {
+        const headerWidth = window.innerWidth; 
+        if (headerWidth < 768) {
+            if(menu) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+        return () => {
+            document.body.style.overflow = 'auto';
+        }
+    }, [menu])
+
 
 
     return (
-        <StyledHeader ref={headerRef} shrunk={shrunk} >
+        <StyledHeader ref={headerRef} shrunk={shrunk} toggle={menu} >
             <Container>
                 <Title />
-                <Navbar/>
+                <Navbar toggle={{menu, setMenu}}/>
             </Container>
         </StyledHeader>
 

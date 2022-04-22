@@ -76,15 +76,49 @@
             "tarjetas": [
                 {
                     "id": "taller-1",
-                    "titulo": "PONER FOTO",
-
+                    "titulo": "Box de los 5 sentidos",
+                    "descripcion": "Es más que un regalo, es una experiencia donde van a poner en juego todos los sentidos. Las boxes ofrecen además de diseños exclusivos: música, sabores, fragancias, textuas y despierta el deseo visual. Una experiencia innovadora que quedará en tu memoria. Para regalar o regalarte.",
+                    "img": [
+                        "taller/BOX/1_box-regalo-krunica.jpg",
+                        "taller/BOX/2_box-regalo-krunica.jpg",
+                        "taller/BOX/3_box-regalo-krunica.jpg",
+                        "taller/BOX/4_box-regalo-krunica.jpg",
+                        "taller/BOX/5_box-regalo-krunica.jpg",
+                        "taller/BOX/6_box-regalo-krunica.jpg",
+                        "taller/BOX/7_box-regalo-krunica.jpg",
+                        "taller/BOX/8_box-regalo-krunica.jpg",
+                        "taller/BOX/9_box-regalo-krunica.jpg",
+                        "taller/BOX/10_box-regalo-krunica.jpg",
+                        "taller/BOX/11_box-regalo-krunica.jpg",
+                        "taller/BOX/12_box-regalo-krunica.jpg"
+                    ],
+                    "video": "taller/BOX/0_box-de-los-sentidos-krunica-taller.mp4",
                     "size": "S"
                 },
                 {
                     "id": "taller-2",
                     "titulo": "Lettering personalizados",
                     "img": [
-                        "taller/lettering-personalizado/lettering-5.jpg"
+                        "taller/lettering-personalizado/lettering-5.jpg",
+                        "taller/lettering-personalizado/lettering-1.jpg",
+                        "taller/lettering-personalizado/lettering-2.jpg",
+                        "taller/lettering-personalizado/lettering-3.jpg",
+                        "taller/lettering-personalizado/lettering-4.jpg",
+                        "taller/lettering-personalizado/lettering-6.jpg",
+                        "taller/lettering-personalizado/lettering-7.jpg",
+                        "taller/lettering-personalizado/lettering-8.jpg",
+                        "taller/lettering-personalizado/lettering-9.jpg",
+                        "taller/lettering-personalizado/lettering-10.jpg",
+                        "taller/lettering-personalizado/lettering-11.jpg",
+                        "taller/lettering-personalizado/lettering-12.jpg",
+                        "taller/lettering-personalizado/lettering-13.jpg",
+                        "taller/lettering-personalizado/lettering-14.jpg"
+
+
+
+
+
+                        
                     ],
                     "size": "S"
                 },
@@ -128,11 +162,8 @@
                 },
                 {
                     "id": "taller-5",
-                    "titulo": "VIDEOOOOO",
-
-                    "video": [
-                        "taller/video-krunica.mp4"
-                    ],
+                    "titulo": "",
+                    "video": "taller/video-krunica.mp4",
                     "size": "S"
                 },
                 {
@@ -176,7 +207,26 @@
                     "id": "taller-6",
                     "titulo": "Talleres de encuadernación artesanal",
                     "descripcion": "Desde 2013 brindamos talleres para todo aquel que quiera aprender el hermoso oficio de la encuadernación y de lettering.",
-
+                    "img": [
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_1.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_2.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_3.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_4.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_5.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_6.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_7.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_8.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_9.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_10.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_11.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_12.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_13.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_14.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_15.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_16.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_17.jpg",
+                        "taller/taller-encuadernacion-artesanal/encuadernacion_18.jpg"
+                    ],
                     "size": "S"
                 },
 
@@ -224,7 +274,9 @@
                 {
                     "id" : "taller-9-1",
                     "titulo": "Albumes de fotos para cada país recorrido",
-
+                    "img": [
+                        ""
+                    ],
                     "size": "S"
                 },
                 
@@ -394,6 +446,8 @@
             "tarjetas": [
                 {
                     "id": "estudio-1",
+                    "titulo": "Diseño y contenido para el artista latinoamericano Alfonso Lugo",
+                    "descripcion": "Diseño de portadas para singles. Videos para youtube. Canvas spotify. Redes sociales. Diseño de contenido variado para todos sus proyectos.",
                     "img": [
                         "estudio/alfonso-lugo/main.png"
                     ],
@@ -403,7 +457,9 @@
                     "id": "estudio-2",
                     "titulo": "Propuesta de diseño e implementaciòn gráfica para oficinas MODO",
                     "descripcion": "Desarrollo de diseño para oficinas Modo basado en los lineamientos gráficos del manual de marca de la empresa. Se plantearon estrategias de comunicación para los diferentes sectores de las oficinas.",
-
+                    "img": [
+                        ""
+                    ],
                     "size": "S"
                 },
 
@@ -423,16 +479,16 @@
                         "estudio/uifra-2020/0-tapa.jpg",
                         "estudio/uifra-2020/1.1-indice.jpg",
                         "estudio/uifra-2020/1-portada.jpg",
-                        "estudio/uifra-2020/2-notatapa.jpg",
-                        "estudio/uifra-2020/3-especialcovid.jpg",
-                        "estudio/uifra-2020/4-especialcovid.jpg",
-                        "estudio/uifra-2020/5-especialcovid.jpg",
-                        "estudio/uifra-2020/6-especialcovid.jpg",
-                        "estudio/uifra-2020/7-especialcovid.jpg",
-                        "estudio/uifra-2020/8-especialcovid.jpg",
-                        "estudio/uifra-2020/9-marcoregulatorio.jpg",
-                        "estudio/uifra-2020/10-marcoregulatorio.jpg",
-                        "estudio/uifra-2020/11-mercadosinternacionales.jpg",
+                        "estudio/uifra-2020/2-nota-tapa.jpg",
+                        "estudio/uifra-2020/3-especial-covid.jpg",
+                        "estudio/uifra-2020/4-especial-covid.jpg",
+                        "estudio/uifra-2020/5-especial-covid.jpg",
+                        "estudio/uifra-2020/6-especial-covid.jpg",
+                        "estudio/uifra-2020/7-especial-covid.jpg",
+                        "estudio/uifra-2020/8-especial-covid.jpg",
+                        "estudio/uifra-2020/9-marco-regulatorio.jpg",
+                        "estudio/uifra-2020/10-marco-regulatorio.jpg",
+                        "estudio/uifra-2020/11-mercados-internacionales.jpg",
                         "estudio/uifra-2020/12-testimonio.jpg"
                     ],
                     "size": "L"
@@ -464,8 +520,8 @@
                     "id": "estudio-7",
                     "titulo": "Anuario 2021 para UIFRA (Unión de Industriales Fideeros de la Rep. Argentina",
                     "descripcion": "Diseño editorial y desarrollo de la revista interactiva para la Unión de Industriales Fideeros de la República Argentina. Un anuario innovador.",
-                    "video" : "estudio/uifra-2021/tapa-anuario_1.mp4",
-                    "size": "S"
+                    "video": "estudio/uifra-2021/tapa-anuario.mp4",
+                    "size": "M"
                 },
                 {
                     "id": "estudio-9",
@@ -570,7 +626,7 @@
                         "estudio/seimi/seimi-work_9.jpg",
                         "estudio/seimi/seimi-work_10.jpg"
                     ],
-                    "size": "M"
+                    "size": "S"
                 },
                 {   
                     "id": "estudio-19",

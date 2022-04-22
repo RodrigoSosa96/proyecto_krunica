@@ -154,9 +154,9 @@ export const PhotoModal = styled.div`
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 9999;
     div {
-        width: 60vw;
-        height: 100%; /* relevant part */
-        overflow-y: auto; /* relevant part */
+        width: 85vw;
+        height: 98vh;
+        overflow-y: auto;
 
         ::-webkit-scrollbar {
             display: none;
@@ -188,7 +188,6 @@ export const PhotoModal = styled.div`
             img {
                 width: 100%;
                 user-select: none ;
-                //Block image dragging
                 -webkit-user-drag: none;
                 -khtml-user-drag: none;
                 -moz-user-drag: none;
@@ -200,10 +199,41 @@ export const PhotoModal = styled.div`
                 /* background-color: #c4c4c4 ; */
                 padding: 1rem 1rem;
             }
+            video {
+                width: 100%;
+                user-select: none ;
+                -webkit-user-drag: none;
+                -khtml-user-drag: none;
+                -moz-user-drag: none;
+                -o-user-drag: none;
+                user-drag: none;
+                
+                padding: 1rem 1rem;
+            }
+            iframe {
+                width: 100%;
+                user-select: none ;
+                //Block image dragging
+                -webkit-user-drag: none;
+                -khtml-user-drag: none;
+                -moz-user-drag: none;
+                -o-user-drag: none;
+                user-drag: none;
+
+                padding: 1rem 1rem;
+            }
     
         }
 
     }
-    
+
+    @media(min-width: 768px) {
+        div {
+            width: 60vw;
+        }
+
+    }
+    @media(min-width: 992px) {
+    }    
 `
 

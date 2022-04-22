@@ -15,6 +15,8 @@ const Container = styled.div`
     img {
         width: 90vw;
         height: 90vw;   
+        object-fit: contain;
+        object-position: center;
 
     }
     .review-text {

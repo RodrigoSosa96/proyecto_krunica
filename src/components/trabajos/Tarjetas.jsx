@@ -24,7 +24,7 @@ function Tarjetas({items, handleClickArticle}) {
 				sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, (max-width: 1200px) 33.3vw"
 				loading='lazy'
 				alt=""/>  :
-				video ? <img src={`https://ik.imagekit.io/akxdmkcb7g5u/Krunica/${video}/ik-thumbnail.jpg`}/> : null}
+				video ? <img src={`https://ik.imagekit.io/akxdmkcb7g5u/Krunica/${video}/ik-thumbnail.jpg`}/> : <div />}
 				<div>
 					<h4>{titulo}</h4>
 					<p>{descripcion}</p>

@@ -37,6 +37,7 @@ function Modal({ selectedItems, setSelectedItems }) {
             document.removeEventListener('mouseup', mouseUpHandler);
         };
         const  mouseDownHandler = function (e) {
+          if(e.buttons !== 1) return
             ele.style.cursor = 'grabbing';
             ele.style.userSelect = 'none';
             pos.x = e.clientX;
@@ -55,23 +56,38 @@ function Modal({ selectedItems, setSelectedItems }) {
 
     }, [])
 
+  function createItems(item) {
+    // if(!item.img) return null;
+    const ItemsArray = [];
+    if (item.video || item.iframe) {
+      if (item.video) {
+        ItemsArray.push(<video src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${item.video}?tr=f-webm`} controls />);
+      }
+      if (item.iframe) {
+        ItemsArray.push(<iframe src={item.iframe} />);
+      }
+    }
+    if(!item.img) return ItemsArray;
+    item.img.forEach((img, i) => {
+      ItemsArray.push(<img
+        src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${img}`}
+        srcSet={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-500/Krunica/${img} 400w,
+									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/Krunica/${img} 600w,
+									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-700/Krunica/${img} 700w,
+									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-900/Krunica/${img} 900w,
+									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1400/Krunica/${img} 1400w
+									`}
+        alt=""
+        key={i}
+      />)
+    });
+    return ItemsArray;
+  }
   return (
     <PhotoModal onClick={handleClickModal}>
       <div>
         <div ref={ModalRef} >
-          {selectedItems.map((item) => (
-            <img
-              src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${item}`}
-              srcSet={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-500/Krunica/${item} 400w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/Krunica/${item} 600w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-700/Krunica/${item} 700w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-900/Krunica/${item} 900w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1400/Krunica/${item} 1400w
-									`}
-              alt=""
-              key={item}
-            />
-          ))}
+          {createItems(selectedItems)}
         </div>
       </div>
     </PhotoModal>

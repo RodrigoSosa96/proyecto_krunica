@@ -12,19 +12,8 @@ const scrollWithOffset = (el) => {
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
 }
 
-const Navbar = () => {
-    const [menu, setMenu] = useState(false);
-    useEffect(() => {
-        const windowWidth = window.innerWidth;
-        if (windowWidth < 768) {
-            if(menu) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
-            
-    }, [menu])
+const Navbar = ({toggle}) => {
+    const { menu, setMenu } = toggle
 
     return (
         <>

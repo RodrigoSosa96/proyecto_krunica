@@ -9,13 +9,18 @@ export const StyledHeader = styled.header`
 	justify-content: center;
 	/* margin-bottom: 2rem; */
 
-
-	background-color: var(--color-background);
+	background-color: rgba(255, 255, 255);
+	${props => props.toggle && `
+		background-color: rgba(255, 255, 255, 0.7);
+		backdrop-filter: blur(5px);
+	`}
 	font-family: var(--font-menu);
 	z-index: 1000;
 	transition: all 500ms ease-in-out;
 	
 	@media(min-width: 768px) {
+		background-color: rgba(255, 255, 255);
+		
 	}
 	@media(min-width: 992px) {
 	
