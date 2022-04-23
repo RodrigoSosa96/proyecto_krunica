@@ -7,9 +7,6 @@ import { trabajos as dataTrabajos } from "../../data.json"
 import Tarjetas from './Tarjetas';
 import Modal from './Modal';
 
-import { Draggable } from "react-drag-reorder";
-
-
 
 
 function Trabajos() {
@@ -54,33 +51,11 @@ function Trabajos() {
     }
 
     
-    const handlePositionChange = (curr, newpos) => {
-        console.log(curr, newpos)
-        const element = trabajos.tarjetas.splice(curr, 1)[0]
-        const newTarjetas = trabajos.tarjetas.splice(newpos, 0, element)
-        // setTrabajos({...trabajos, tarjetas: newTarjetas})
-        // console.log(trabajos)
-        
-
-    }
-
-    useEffect(() => {
-        setTrabajos({...trabajos, tarjetas: trabajos.tarjetas})
-
-    }, [handlePositionChange])
-
-    
 
 	return (
         <>
             <SectionTitle>{trabajos.titulo}</SectionTitle>
-            <Draggable onPosChange={handlePositionChange}>
-                {
-                    trabajos.tarjetas.map((item, i) => {
-                        return <li key={i}>{item.titulo}</li>
-                    })
-                }
-            </Draggable>
+
             <Masonry
             breakpointCols={breakpointColumnsObj}
             columnClassName="my-masonry-grid_column" >
