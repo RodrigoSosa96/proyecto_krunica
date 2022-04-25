@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Title = styled.h2`
     font-family: var(--font-menu);
     font-size: 2rem;
-    font-size: clamp(1.3rem, 3vw, 2.25rem);
+    font-size: clamp(1.3rem, 2vw, 2rem);
     width: fit-content;
     align-self: center;
     font-weight: 500;

@@ -1,23 +1,32 @@
 import styled from "styled-components";
 import getImageUrl from '../../assets/getImageUrl';
-import { Carousel } from '@trendyol-js/react-carousel';
 import { HashLink as L } from "react-router-hash-link";
 
+const  StyledCarousel = styled.div`
+    //display: none;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+`
 const Imagen = styled.img`
     border-radius: 5px;
-    width: 95%;
+    width: 100%;
+    object-fit: cover;
+    
     aspect-ratio: 1.27/1;
     object-fit: cover; 
     
     @media (min-width: 768px) {
-        width: min(10.2vw, 200px);
-        height: auto;
+        /* width: min(10.2vw, 200px); */
 
     }
 
 `
 const VerMas = styled(L)`
     font-size: 1.25rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-family: 'Montserrat', sans-serif;
     color: var(--color-lines);
     width: 100%;
@@ -38,37 +47,7 @@ const VerMas = styled(L)`
 
 
 
-const  StyledCarousel = styled(Carousel)`
-    //display: none;
-    position: relative;
-    width: 100%;
-    div {
-        position: relative;
-        display: flex;
-        align-items: center;
-        button[data-direction] {
-            //top: calc(40% - 17px);
-            
-            /* top: -10px;
-            width: 20px;
-            height: 20px;
-            display: block;
-            cursor: pointer;
-            // position: absolute;
-            border: none;
-           background: url(${getImageUrl('arrow-landing.svg')}) no-repeat center; */
-        }
-        /* button[data-direction='left'] { 
-            left: -55px;
 
-        }
-        button[data-direction='right'] { 
-            right: -55px;
-            transform: rotateZ(180deg);
-        } */
-
-    }
-`
 function FotosContainer({ fotos, categoria }) {
 
     
@@ -76,7 +55,7 @@ function FotosContainer({ fotos, categoria }) {
     return (
         <>
             
-            <StyledCarousel  show={3.5} slide={3} swiping={true} responsive={true} dynamic={true}>
+            <StyledCarousel >
                     {fotos.map((item, index) => (
                             <Imagen src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-200/Krunica/${item}`} key={index} />
                     ))}
