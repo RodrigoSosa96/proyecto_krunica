@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useId } from "react";
 import { PhotoModal } from "./styled";
 
 function Modal({ selectedItems, setSelectedItems }) {
@@ -61,30 +61,42 @@ function Modal({ selectedItems, setSelectedItems }) {
     const ItemsArray = [];
     if (item.video || item.iframe) {
       if (item.video) {
-        ItemsArray.push(<video src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${item.video}?tr=f-webm`} controls />);
+        item.video.forEach((src) => {
+          ItemsArray.push(<video muted key={useId()} src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${src}?tr=f-webm`} controls />);
+        });
       }
       if (item.iframe) {
-        ItemsArray.push(<iframe src={item.iframe} />);
+        ItemsArray.push(
+          <iframe
+            key={useId()}
+            src={item.iframe} 
+            frameBorder="0"
+            allowFullScreen={true}
+          />
+        );
       }
     }
+    
     if(!item.img) return ItemsArray;
     item.img.forEach((img, i) => {
+      if(i === 0 && item.portada) return 
       ItemsArray.push(<img
         src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${img}`}
-        srcSet={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-500/Krunica/${img} 400w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/Krunica/${img} 600w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-700/Krunica/${img} 700w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-900/Krunica/${img} 900w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1400/Krunica/${img} 1400w
+        srcSet={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-700/Krunica/${img} 500w,
+									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-800/Krunica/${img} 600w,
+									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-900/Krunica/${img} 700w,
+									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${img} 900w,
+									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1600/Krunica/${img} 1400w
 									`}
         alt=""
-        key={i}
+        // key={i}
+        key={useId()}
       />)
     });
     return ItemsArray;
   }
   return (
-    <PhotoModal onClick={handleClickModal}>
+    <PhotoModal onClick={handleClickModal} $nogap={selectedItems.gap === false}>
       <div>
         <div ref={ModalRef} >
           {createItems(selectedItems)}

@@ -1,6 +1,7 @@
 import { Article } from "./styled";
 
 function Tarjetas({items, handleClickArticle}) {
+	// Tamaños estandar, pero se pueden agregar Customs
     const sizes = {
 		"XS" : 0.52,
 		"S" : 0.65,
@@ -10,10 +11,11 @@ function Tarjetas({items, handleClickArticle}) {
 		"XXL" : 2.00
 	}
 	const tarjetas = items.map(({ id, img, titulo, descripcion, size, video }) => {
+		const sizeValue = sizes[size] ?? size;
 		return (
 			<Article onClick={() => handleClickArticle(id)} key={id}
 
-				height= {sizes[size]}
+				height= {sizeValue}
 			>
 				{img ? <img
 				src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${img[0]}`}

@@ -149,11 +149,12 @@ export const Social = styled.div`
         font-family: var(--font-title);
         font-weight: 300;
 
-        font-size: 2.8rem;
-        font-size: clamp(1.1rem, 2vw, 2.8rem); 
+        /* font-size: 2.8rem; */
+        /* font-size: clamp(1.1rem, 2vw, 2.8rem);  */
+        font-size: clamp(1.1rem, 2vw, 1.5rem);
 
-        line-height: 54.22px;
-        line-height: clamp(1rem, 2vw, 3.3rem);
+        /* line-height: 54.22px; */
+        /* line-height: clamp(1rem, 2vw, 3.3rem); */
         text-align: center;
     }
     .footer-redes {
@@ -179,8 +180,8 @@ export const SocialImg = styled.a`
         background-position: center;
 
 
-        width: clamp(1.5rem, 2vw, 2.125rem);
-        height: clamp(1.5rem, 2vw, 2.125rem);
+        width: clamp(1.3rem, 2vw, 1.7rem);
+        height: clamp(1.3rem, 2vw, 1.7rem);
 
         @media(min-width: 768px) {
         }

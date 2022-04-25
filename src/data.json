@@ -25,7 +25,7 @@
             }
         },
         "about_me": {
-            "video": "home/sobre-mi/sobre-mi.webm",
+            "video": ["home/sobre-mi/sobre-mi.webm"],
             "img": "home/sobre-mi/thumbnail.png",
             "name": "SOBRE MÍ",
             "description": "¡Hola soy Clara! Creadora de Krunica. Soy diseñadora gráfica recibida en la UBA. Hace más de 15 años que me dedico al diseño. En estos años trabajé y sigo trabajando de manera freelance para diferentes empresas.\n\nSoy una persona muy activa, si bien mi trabajo es bastante sedentario porque paso horas frente a la computadora mi cabeza trabaja a 220v. Amo el mundo digital, es por eso que siempre sigo estudiando porque la tecnología avanza de manera muy veloz y uno tiene que estar siempre a la vanguardia. Estudié diseño UX/UI y conocí un mundo increíble el cual me abrió puertas para seguir creciendo en lo mío. También amo el mundo manual, el lettering es una de mis pasiones... dibujar letras me divierte y relaja. \n    \nSoy encuadernadora artesanal hace muchos años, doy talleres y también hago producciones para empresas o pedidos personalizados. Encuadernar es mi cable a tierra. Me gusta mucho escapar un rato de la compu y crear desde otro lugar, el diseño está en todos lados y sobretodo en mis venas jeje.",
@@ -63,17 +63,39 @@
         ]
     },
     "trabajos": {
-        "taller": {
-            "tamaños": {
-                "XS": "0.52",
-                "S": "0.65",
-                "M": "0.88",
-                "L":"1.10",
-                "XL" :"1.60",
-                "XXL":"2.15"
+        "tamaños": {
+            "XS": "0.52",
+            "S": "0.65",
+            "M": "0.88",
+            "L":"1.10",
+            "XL" :"1.60",
+            "XXL":"2.15"
         },
+        "props": {
+            "gap": true,
+            "portada": "link",
+            "size": "M"
+        },
+        "taller": {
             "titulo": "Todos los trabajos realizados en el taller son hechos a mano con mucha dedicación, esfuerzo y amor. Me encantan los detalles y estoy detrás de cada uno de ellos para que cada producto sea único. ",
             "tarjetas": [
+                {
+                    "id": "taller-lettering",
+                    "titulo": "Frases con Lettering",
+                    "img": [
+                        "taller/LETTERING/lettering_1.jpg",
+                        "taller/LETTERING/lettering_2.jpg",
+                        "taller/LETTERING/lettering_3.jpg",
+                        "taller/LETTERING/lettering_4.jpg",
+                        "taller/LETTERING/lettering_5.jpg",
+                        "taller/LETTERING/lettering_6.jpg",
+                        "taller/LETTERING/lettering_7.jpg",
+                        "taller/LETTERING/lettering_8.jpg",
+                        "taller/LETTERING/lettering_9.jpg",
+                        "taller/LETTERING/lettering_10.jpg"
+                    ],
+                    "size": "M"
+                },
                 {
                     "id": "taller-1",
                     "titulo": "Box de los 5 sentidos",
@@ -92,7 +114,7 @@
                         "taller/BOX/11_box-regalo-krunica.jpg",
                         "taller/BOX/12_box-regalo-krunica.jpg"
                     ],
-                    "video": "taller/BOX/0_box-de-los-sentidos-krunica-taller.mp4",
+                        "video": ["taller/BOX/0_box-de-los-sentidos-krunica-taller.mp4"],
                     "size": "S"
                 },
                 {
@@ -163,7 +185,7 @@
                 {
                     "id": "taller-5",
                     "titulo": "",
-                    "video": "taller/video-krunica.mp4",
+                    "video": ["taller/video-krunica.mp4"],
                     "size": "S"
                 },
                 {
@@ -275,7 +297,18 @@
                     "id" : "taller-9-1",
                     "titulo": "Albumes de fotos para cada país recorrido",
                     "img": [
-                        ""
+                        "taller/album-cada-pais/pais_recorrido-1.JPG",
+                        "taller/album-cada-pais/pais_recorrido-2.JPG",
+                        "taller/album-cada-pais/pais_recorrido-3.JPG",
+                        "taller/album-cada-pais/pais_recorrido-4.JPG",
+                        "taller/album-cada-pais/pais_recorrido-5.JPG",
+                        "taller/album-cada-pais/pais_recorrido-6.JPG",
+                        "taller/album-cada-pais/pais_recorrido-7.JPG",
+                        "taller/album-cada-pais/pais_recorrido-8.JPG",
+                        "taller/album-cada-pais/pais_recorrido-9.JPG",
+                        "taller/album-cada-pais/pais_recorrido-10.JPG",
+                        "taller/album-cada-pais/pais_recorrido-11.jpg",
+                        "taller/album-cada-pais/pais_recorrido-12.jpg"
                     ],
                     "size": "S"
                 },
@@ -449,8 +482,18 @@
                     "titulo": "Diseño y contenido para el artista latinoamericano Alfonso Lugo",
                     "descripcion": "Diseño de portadas para singles. Videos para youtube. Canvas spotify. Redes sociales. Diseño de contenido variado para todos sus proyectos.",
                     "img": [
-                        "estudio/alfonso-lugo/main.png"
+                        "estudio/alfonso-lugo/main.png",
+                        "estudio/alfonso-lugo/contenido-alfonso-lugo.jpg"
                     ],
+                    "video": [
+                        "estudio/alfonso-lugo/StoryPerro.mp4",
+                        "estudio/alfonso-lugo/StoryPaloma.mp4",
+                        "estudio/alfonso-lugo/Disponible_ya_-_Latinas.mp4",
+                        "estudio/alfonso-lugo/Canvas_Spotify_-_Latinas.mp4",
+                        "estudio/alfonso-lugo/Canvas_Spotify_-_Dame_Mas.mp4",
+                        "estudio/alfonso-lugo/Canvas_Spotify_-_Baila.mp4"
+                    ],
+                    "portada": true,
                     "size": "XS"
                 },
                 {
@@ -458,7 +501,7 @@
                     "titulo": "Propuesta de diseño e implementaciòn gráfica para oficinas MODO",
                     "descripcion": "Desarrollo de diseño para oficinas Modo basado en los lineamientos gráficos del manual de marca de la empresa. Se plantearon estrategias de comunicación para los diferentes sectores de las oficinas.",
                     "img": [
-                        ""
+                        "estudio/MODO/pared_sector_2.jpg"
                     ],
                     "size": "S"
                 },
@@ -467,8 +510,12 @@
                     "id": "estudio-4",
                     "titulo": "Branding para El Foco Restaurante Bar Barcelona",
                     "img": [
-                        "estudio/el-foco/el-foco-main.jpg"
+                        "estudio/el-foco/El_foco-1.jpg",
+                        "estudio/el-foco/El_foco-2.jpg",
+                        "estudio/el-foco/El_foco-3.jpg",
+                        "estudio/el-foco/El_foco-4.jpg"
                     ],
+                    "gap": false,
                     "size": "S"
                 },
                 {
@@ -520,8 +567,11 @@
                     "id": "estudio-7",
                     "titulo": "Anuario 2021 para UIFRA (Unión de Industriales Fideeros de la Rep. Argentina",
                     "descripcion": "Diseño editorial y desarrollo de la revista interactiva para la Unión de Industriales Fideeros de la República Argentina. Un anuario innovador.",
-                    "video": "estudio/uifra-2021/tapa-anuario.mp4",
-                    "size": "M"
+                    "video": ["estudio/uifra-2021/tapa-anuario.mp4"],
+                    "img": ["estudio/uifra-2021/tapa_anuario_final_1.jpg"],
+                    "iframe": "https://indd.adobe.com/embed/5ea11e83-745e-45b0-9b7f-8b56063976c5?startpage=1&allowFullscreen=true",
+                    "portada": true,
+                    "size": "L"
                 },
                 {
                     "id": "estudio-9",
@@ -553,6 +603,7 @@
                         "estudio/centro-auditivo/branding-centro-auditivo_main.jpg",
                         "estudio/centro-auditivo/branding-centro-auditivo.jpg"
                     ],
+                    "portada": true,
                     "size": "L"
                 },
                 {
@@ -576,6 +627,7 @@
                     "id": "estudio-12",
                     "titulo": "Proyecto - Diseño UX/UI Aplicación MEETART",
                     "descripcion": "Proyecto de diseño para comunidad de artistas.",
+                    "gap": true,
                     "img": [
                         "estudio/meetart/presentacion-meetart-1.jpg",
                         "estudio/meetart/presentacion-meetart-2.jpg",
@@ -635,6 +687,7 @@
                         "estudio/odontologa/odontologa-luciana-mata_main.jpg",
                         "estudio/odontologa/odontologa-luciana-mata.jpg"
                     ],
+                    "portada": true,
                     "size": "XS"
                 },
                 {
@@ -645,6 +698,7 @@
                         "estudio/rainland/portada.png",
                         "estudio/rainland/branding-rainland.jpg"
                     ],
+                    "portada": true,
                     "size": "L"
                 },
 
@@ -656,6 +710,7 @@
                         "estudio/wink/wink_main.jpg",
                         "estudio/wink/wink.jpg"
                     ],
+                    "portada": true,
                     "size": "XS"
                 },
                 
@@ -664,8 +719,10 @@
                     "titulo": "Diseños  para All Method  - All Alternative Language Learning",
                     "descripcion": "Diseños online y offline. Avisos mailing. Folletos. Diseño de portada de libros. Diseño de E-books. Banners y mucho más!",
                     "img": [
-                        "estudio/presentacion-All.jpg"
+                        "estudio/all-method/all-method-main.jpg",
+                        "estudio/all-method/presentacion-All.jpg"
                     ],
+                    "portada": true,
                     "size": "XXL"
                 },  
 
@@ -691,6 +748,7 @@
                         "estudio/campaña-buenos-habitos/Landru_-_campaña_buenos_habitos_01.jpg",
                         "estudio/campaña-buenos-habitos/Landru_-_campaña_buenos_habitos_02.jpg"
                     ],
+                    "portada": true,
                     "size": "M"
                 },
 
@@ -703,6 +761,7 @@
                         "estudio/laboratorio-adrogue/presentacion-laboratorio-de-Idiomas-adrogue_main.jpg",
                         "estudio/laboratorio-adrogue/presentacion-laboratorio-de-Idiomas-adrogue.jpg"
                     ],
+                    "portada": true,
                     "size": "M"
                 }
             ]

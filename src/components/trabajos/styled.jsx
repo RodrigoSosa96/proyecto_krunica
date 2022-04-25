@@ -179,11 +179,14 @@ export const PhotoModal = styled.div`
             /* width: 70%; */
             /* height: 70%; */
             background-color: white;
-            display: flex;
+            /* display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center; */
             /* justify-content: center; */
-    
+            & > * {
+                padding: 1rem 1rem;
+                ${props => props.$nogap && "padding: 0rem 1rem"}
+            }
             
             img {
                 width: 100%;
@@ -197,10 +200,10 @@ export const PhotoModal = styled.div`
                 /* object-fit: cover;
                 object-position: center; */
                 /* background-color: #c4c4c4 ; */
-                padding: 1rem 1rem;
             }
             video {
                 width: 100%;
+                height: 100%;
                 user-select: none ;
                 -webkit-user-drag: none;
                 -khtml-user-drag: none;
@@ -208,10 +211,12 @@ export const PhotoModal = styled.div`
                 -o-user-drag: none;
                 user-drag: none;
                 
-                padding: 1rem 1rem;
             }
             iframe {
+                /* width: 600px; */
+                /* height: 500px; */
                 width: 100%;
+                height: 100%;
                 user-select: none ;
                 //Block image dragging
                 -webkit-user-drag: none;
@@ -220,7 +225,7 @@ export const PhotoModal = styled.div`
                 -o-user-drag: none;
                 user-drag: none;
 
-                padding: 1rem 1rem;
+                /* padding: 1rem 1rem; */
             }
     
         }

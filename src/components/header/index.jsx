@@ -45,24 +45,24 @@ const Header = () => {
         }
     }, [])
 
-    useEffect(() => {
-        const headerWidth = window.innerWidth; 
-        if (headerWidth < 768) {
-            if(menu) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
-        return () => {
-            document.body.style.overflow = 'auto';
-        }
-    }, [menu])
+    // useEffect(() => {
+    //     const headerWidth = window.innerWidth; 
+    //     if (headerWidth < 768) {
+    //         if(menu) {
+    //             document.body.style.overflow = 'hidden';
+    //         } else {
+    //             document.body.style.overflow = 'auto';
+    //         }
+    //     }
+    //     return () => {
+    //         document.body.style.overflow = 'auto';
+    //     }
+    // }, [menu])
 
 
 
     return (
-        <StyledHeader ref={headerRef} shrunk={shrunk} toggle={menu} >
+        <StyledHeader ref={headerRef} shrunk={shrunk} >
             <Container>
                 <Title />
                 <StyledHamburger onClick={() => setMenu(!menu)}>

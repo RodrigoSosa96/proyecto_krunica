@@ -1,6 +1,6 @@
 import { Container, MenuLinks, Social, SocialImg, Link } from './styles';
-import Face from "../../../assets/img/face.svg";
-import Insta from "../../../assets/img/insta.svg";
+import Face from "../../../assets/img/icons8-facebook.svg";
+import Insta from "../../../assets/img/icons8-instagram.svg";
 
 
 const scrollWithOffset = (el) => {

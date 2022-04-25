@@ -1,6 +1,6 @@
 import Logo from "../header/title/Logo"
-import Face from "../../assets/img/face.svg";
-import Insta from "../../assets/img/insta.svg";
+import Face from "../../assets/img/icons8-facebook.svg";
+import Insta from "../../assets/img/icons8-instagram.svg";
 import {FooterContainer, MainFooter, Titulo, FooterNav, Link, Social, SocialImg} from "./styled"
 
 const scrollWithOffset = (el) => {
@@ -26,7 +26,7 @@ function Footer() {
                 </FooterNav>
             </MainFooter>
             <Social>
-                <h3>seguinos</h3>
+                <h3>SEGUINOS</h3>
                 <div className="footer-redes">
                     <SocialImg href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" src={Insta}/>
                     <SocialImg href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" src={Face}/>
