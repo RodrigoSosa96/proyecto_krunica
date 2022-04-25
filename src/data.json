@@ -187,6 +187,22 @@
                     "size": "S"
                 },
                 {
+                    "id": "taller-8",
+                    "titulo": "Encuadernación de Tesis",
+                    "descripcion": "Tesis encuadernadas para presentaciones  finales. Tamaño A3, impresas, cosidas a mano y forradas en tela.",
+                    "img": [
+                        "taller/encuadernacion-tesis/tesis-1.jpg",
+                        "taller/encuadernacion-tesis/tesis-2.jpg",
+                        "taller/encuadernacion-tesis/tesis-3.jpg",
+                        "taller/encuadernacion-tesis/tesis-4.jpg",
+                        "taller/encuadernacion-tesis/tesis-5.jpg",
+                        "taller/encuadernacion-tesis/tesis-6.jpg",
+                        "taller/encuadernacion-tesis/tesis-7.jpg",
+                        "taller/encuadernacion-tesis/tesis-8.jpg"
+                    ],
+                    "size": "S"
+                },
+                {
                     "id": "taller-7",
                     "titulo": "Lettering para cocina de un dulce hogar",
                     "img": [
@@ -206,22 +222,6 @@
                         "taller/lettering-personalizado/lettering-14.jpg"
                     ],
                     "size": "XL"
-                },
-                {
-                    "id": "taller-8",
-                    "titulo": "Encuadernación de Tesis",
-                    "descripcion": "Tesis encuadernadas para presentaciones  finales. Tamaño A3, impresas, cosidas a mano y forradas en tela.",
-                    "img": [
-                        "taller/encuadernacion-tesis/tesis-1.jpg",
-                        "taller/encuadernacion-tesis/tesis-2.jpg",
-                        "taller/encuadernacion-tesis/tesis-3.jpg",
-                        "taller/encuadernacion-tesis/tesis-4.jpg",
-                        "taller/encuadernacion-tesis/tesis-5.jpg",
-                        "taller/encuadernacion-tesis/tesis-6.jpg",
-                        "taller/encuadernacion-tesis/tesis-7.jpg",
-                        "taller/encuadernacion-tesis/tesis-8.jpg"
-                    ],
-                    "size": "S"
                 },
                 {
                     "id": "taller-6",
