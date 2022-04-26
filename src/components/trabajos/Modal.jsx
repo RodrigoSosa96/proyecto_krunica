@@ -1,5 +1,6 @@
 import { useRef, useEffect, useId } from "react";
 import { PhotoModal } from "./styled";
+import ReactPlayer from 'react-player'
 
 function Modal({ selectedItems, setSelectedItems }) {
 
@@ -59,23 +60,22 @@ function Modal({ selectedItems, setSelectedItems }) {
   function createItems(item) {
     // if(!item.img) return null;
     const ItemsArray = [];
-    if (item.video || item.iframe) {
-      if (item.video) {
-        item.video.forEach((src) => {
-          ItemsArray.push(<video muted key={useId()} src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${src}?tr=f-webm`} controls />);
-        });
-      }
-      if (item.iframe) {
-        ItemsArray.push(
-          <iframe
-            key={useId()}
-            src={item.iframe} 
-            frameBorder="0"
-            allowFullScreen={true}
-          />
-        );
-      }
+    if (item.video) {
+      item.video.forEach((src) => {
+        ItemsArray.push(<ReactPlayer className="react-player" height="100%" controls  volume={0.2} key={useId()} url={`https://ik.imagekit.io/akxdmkcb7g5u/Krunica/${src}?tr=f-webm`}  />);
+      });
     }
+    if (item.iframe) {
+      ItemsArray.push(
+        <iframe
+          key={useId()}
+          src={item.iframe} 
+          frameBorder="0"
+          allowFullScreen={true}
+        />
+      );
+    }
+    
     
     if(!item.img) return ItemsArray;
     item.img.forEach((img, i) => {

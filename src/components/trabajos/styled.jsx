@@ -53,14 +53,15 @@ export const Article = styled.article`
     user-select: none;
 
     :hover div {
-        opacity: 1;
+        opacity: 0;
     }
     div {
+        opacity: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: min(4rem, 10vw);
+        gap: min(3rem, 5vw);
 
 
         height: 100%;
@@ -71,23 +72,36 @@ export const Article = styled.article`
         font-family: var(--font-menu);
 
         transition: all 0.3s ease-in-out;
-        opacity: 0;
+
+        .play-button {
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+            margin-left: auto;
+            margin-right: auto;
+            /* no transition this */
+            opacity: .5;
+        }
 
         h4 {
 
-        font-size: 1.5rem;
+            font-size: 1.3rem;
+        font-size: clamp(1rem, 1vw, 1.5rem);
 
         font-weight: 500;
-        width: 70%;
+        width: 80%;
         text-align: center;
         line-height: 1.625rem;
+        line-height: clamp(1.1rem, 3vw, 1.625rem);
         }
         p {
 
             font-size: 1rem;
+            font-size: clamp(.8rem, 1vw, 1rem);
             font-weight: 400;
             width: 80%;
             line-height: 1.2rem;
+            line-height: clamp(1rem, 1.5vw, 1.2rem);
             white-space: pre-wrap;
             padding-bottom: 1rem;
         }
@@ -153,21 +167,21 @@ export const PhotoModal = styled.div`
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 9999;
-    div {
+    & > div {
         width: 85vw;
         height: 98vh;
-        overflow-y: auto;
-
-        ::-webkit-scrollbar {
-            display: none;
-        }
-        scrollbar-width: none;
-        scrollbar-color: transparent transparent;
         
         
-
-
-        div {
+        
+        
+        & >div {
+            overflow-y: auto;
+    
+            ::-webkit-scrollbar {
+                display: none;
+            }
+            scrollbar-width: none;
+            scrollbar-color: transparent transparent;
             padding-top: 2rem;
             padding-bottom: 2rem;
             
@@ -201,16 +215,22 @@ export const PhotoModal = styled.div`
                 object-position: center; */
                 /* background-color: #c4c4c4 ; */
             }
-            video {
-                width: 100%;
-                height: 100%;
-                user-select: none ;
-                -webkit-user-drag: none;
-                -khtml-user-drag: none;
-                -moz-user-drag: none;
-                -o-user-drag: none;
-                user-drag: none;
-                
+            .react-player {
+                margin-left: auto;
+                margin-right: auto;
+                video {
+                    width: 100%;
+                    height: 100%;   
+                    user-select: none ;
+                    -webkit-user-drag: none;
+                    -khtml-user-drag: none;
+                    -moz-user-drag: none;
+                    -o-user-drag: none;
+                    user-drag: none;
+                    object-fit: cover;  
+                    background-color: unset;
+                    
+                }
             }
             iframe {
                 /* width: 600px; */

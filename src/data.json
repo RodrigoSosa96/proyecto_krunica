@@ -184,6 +184,7 @@
                     "id": "taller-5",
                     "titulo": "",
                     "video": ["taller/video-krunica.mp4"],
+                    "playbutton": true,
                     "size": "S"
                 },
                 {
