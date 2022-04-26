@@ -1,6 +1,7 @@
 import { useRef, useEffect, useId } from "react";
 import { PhotoModal } from "./styled";
 import ReactPlayer from 'react-player'
+import getImageUrl from "../../assets/getImageUrl";
 
 function Modal({ selectedItems, setSelectedItems }) {
 
@@ -12,6 +13,9 @@ function Modal({ selectedItems, setSelectedItems }) {
     }
 
     const ModalRef = useRef(null);
+
+    //! URL de la imagen
+    const url = getImageUrl("https://ik.imagekit.io/akxdmkcb7g5u/Krunica/")
 
     useEffect(() => {
 
@@ -56,13 +60,13 @@ function Modal({ selectedItems, setSelectedItems }) {
 
 
     }, [])
-
+  
   function createItems(item) {
     // if(!item.img) return null;
     const ItemsArray = [];
     if (item.video) {
       item.video.forEach((src) => {
-        ItemsArray.push(<ReactPlayer className="react-player" height="100%" controls  volume={0.2} key={useId()} url={`https://ik.imagekit.io/akxdmkcb7g5u/Krunica/${src}?tr=f-webm`}  />);
+        ItemsArray.push(<ReactPlayer className="react-player" height="100%" controls  volume={0.2} key={useId()} url={`${url(src, "f-webm")}`}  />);
       });
     }
     if (item.iframe) {
@@ -81,13 +85,13 @@ function Modal({ selectedItems, setSelectedItems }) {
     item.img.forEach((img, i) => {
       if(i === 0 && item.portada) return 
       ItemsArray.push(<img
-        src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${img}`}
-        srcSet={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-700/Krunica/${img} 500w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-800/Krunica/${img} 600w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-900/Krunica/${img} 700w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1200/Krunica/${img} 900w,
-									https://ik.imagekit.io/akxdmkcb7g5u/tr:w-1600/Krunica/${img} 1400w
-									`}
+        src={url(img, "w-1200")}
+        srcSet={`${url(img, "w-700")} 500w,
+                ${url(img, "w-800")} 600w,
+                ${url(img, "w-900")} 700w,
+                ${url(img, "w-1000")} 800w,
+                ${url(img, "w-1200")} 1000w,
+                ${url(img, "w-1400")} 1200w`}
         alt=""
         // key={i}
         key={useId()}

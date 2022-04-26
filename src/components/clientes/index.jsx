@@ -55,7 +55,7 @@ const Imagen = styled.img`
 
 
 function Clientes({ data }) {
-    console.log("render");
+    const url = getImageUrl("local")
     return (
         <Container id="clientes">
             <Title>CLIENTES</Title>
@@ -65,7 +65,7 @@ function Clientes({ data }) {
                         // console.log(index)
                         return (
                             <DivImg key={index}>
-                                <Imagen src={getImageUrl(cliente)} alt="" />
+                                <Imagen src={url(cliente)} alt="" />
                             </DivImg>
                         )
                     })

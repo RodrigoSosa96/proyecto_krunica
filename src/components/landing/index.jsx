@@ -48,14 +48,7 @@ const BoxContainer = styled.div`
 	}
 	
 `
-const Link = styled(L)`
-	//unset the default styles
-	text-decoration: none;
-	color: inherit;
 
-
-		
-`
 function Landing({ data }) {
 	return (
 		<Container  id="landing">

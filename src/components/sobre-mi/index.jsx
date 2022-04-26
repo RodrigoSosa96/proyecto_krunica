@@ -29,10 +29,10 @@ function SobreMi({ data }) {
 	// 		});
 	// 	}
 	// }, [ videoRef ]);
-
+	const url = getImageUrl("local")
 	return (
 		<Container id='about-me'>
-			<GifVideo src={getImageUrl(video)} autoPlay loop muted  />
+			<GifVideo src={url(video)} autoPlay loop muted  />
 			<div>
 				<h2>
 					<Title as='span'>{name} </Title>

@@ -27,7 +27,8 @@ const CardContainer = styled.div`
     
     
 `
-const arrow = getImageUrl("arrow.svg");
+const url = getImageUrl("local")
+const arrow = url("arrow.svg");
 
 const TextBox = styled.div`
     position: relative;
