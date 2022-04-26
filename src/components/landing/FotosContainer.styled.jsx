@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import getImageUrl from '../../assets/getImageUrl';
+import { getRemoteUrl } from "../../assets/getImageUrl";
 import { HashLink as L } from "react-router-hash-link";
 
 const  StyledCarousel = styled.div`
@@ -50,14 +50,14 @@ const VerMas = styled(L)`
 
 function FotosContainer({ fotos, categoria }) {
 
-    
+    const url = getRemoteUrl("https://ik.imagekit.io/akxdmkcb7g5u/Krunica/")
 
     return (
         <>
             
             <StyledCarousel >
                     {fotos.map((item, index) => (
-                            <Imagen src={`https://ik.imagekit.io/akxdmkcb7g5u/tr:w-200/Krunica/${item}`} key={index} />
+                            <Imagen src={`${url(item, "w-200")}`} key={index} />
                     ))}
             </StyledCarousel>
             <VerMas smooth to={`/trabajos/${categoria}`}>
