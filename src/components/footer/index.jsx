@@ -28,8 +28,8 @@ function Footer() {
             <Social>
                 <h3>SEGUINOS</h3>
                 <div className="footer-redes">
-                    <SocialImg href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" src={Insta}/>
-                    <SocialImg href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" src={Face}/>
+                    <SocialImg href="https://www.instagram.com/krunica.taller.creativo/" target="_blank" rel="noreferrer noopener" src={Insta}/>
+                    <SocialImg href="https://www.facebook.com/krunica.taller.creativo/" target="_blank" rel="noreferrer noopener" src={Face}/>
                 </div>
             </Social>
         </FooterContainer>

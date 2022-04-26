@@ -105,7 +105,7 @@ const Form = styled.form`
     }
     input[type="submit"] {
         width: 50%;
-        height: 51px;
+        /* height: 51px; */
         font-size: 1.2rem;
         text-indent: unset;
         background: #C4C4C4;
@@ -123,8 +123,10 @@ const Form = styled.form`
         }
         input[type="submit"] {
             /* align-self: baseline; */
-            width: 132px;
-            font-size: 1.4rem;
+
+            font-size: 1rem;
+            /* line-height: 1rem; */
+
 
         }
         textarea {
@@ -134,7 +136,12 @@ const Form = styled.form`
 
     }
     @media (min-width: 768px) {
+        
         width: 75%;
+        input[type="submit"] {
+            width: fit-content;
+            padding: 0 1.2rem;
+        }
 
     }
     @media (min-width: 992px) {
@@ -146,6 +153,7 @@ const Form = styled.form`
         }
         input[type="submit"] {
             align-self: baseline;
+            height: 2.5rem;
 
         }
         textarea {

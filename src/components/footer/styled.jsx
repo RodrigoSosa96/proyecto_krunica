@@ -151,7 +151,7 @@ export const Social = styled.div`
 
         /* font-size: 2.8rem; */
         /* font-size: clamp(1.1rem, 2vw, 2.8rem);  */
-        font-size: clamp(1.1rem, 2vw, 1.5rem);
+        font-size: clamp(1rem, 2vw, 1.2rem);
 
         /* line-height: 54.22px; */
         /* line-height: clamp(1rem, 2vw, 3.3rem); */

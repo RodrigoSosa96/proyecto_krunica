@@ -23,8 +23,8 @@ const Navbar = ({toggle}) => {
                     <Link smooth to="/#contacto" scroll={scrollWithOffset} className={(navData) => (navData.isActive ? "active" : 'none')} >CONTACTO</Link>
                 </MenuLinks>
                 <Social toggleSocial={menu}>
-                    <SocialImg href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" src={Insta} />
-                    <SocialImg href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" src={Face} />
+                    <SocialImg href="https://www.instagram.com/krunica.taller.creativo/" target="_blank" rel="noreferrer noopener" src={Insta} />
+                    <SocialImg href="https://www.facebook.com/krunica.taller.creativo/" target="_blank" rel="noreferrer noopener" src={Face} />
                 </Social>
             </Container>
 
