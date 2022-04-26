@@ -6,7 +6,7 @@
                 "description": "Talleres. Lettering.\nEncuadernación artesanal. \nCuadros. Box.",
                 "fotos": [
                     "taller/cuaderno-cosido-mano/cuaderno-cosido-krunica-taller-creativo-8.jpg",
-                    "taller/lettering-personalizado/lettering-12.jpg",
+                    "taller/LETTERING/lettering_1.jpg",
                     "taller/cuadernos-IBM-bluemix/IBM-bluemix-1.jpg",
                     "taller/kit-prensa-uifra/prensa-uifra-2.jpg"
                 ]
@@ -184,7 +184,6 @@
                     "id": "taller-5",
                     "titulo": "",
                     "video": ["taller/video-krunica.mp4"],
-                    "playbutton": true,
                     "size": "S"
                 },
                 {

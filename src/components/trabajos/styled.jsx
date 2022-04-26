@@ -53,10 +53,10 @@ export const Article = styled.article`
     user-select: none;
 
     :hover div {
-        opacity: 0;
+        opacity: 1;
     }
     div {
-        opacity: 1;
+        opacity: 0;
         display: flex;
         flex-direction: column;
         align-items: center;

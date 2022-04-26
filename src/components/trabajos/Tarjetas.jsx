@@ -11,7 +11,7 @@ function Tarjetas({items, handleClickArticle}) {
 		"XL" : 1.60,
 		"XXL" : 2.00
 	}
-	const tarjetas = items.map(({ id, img, titulo, descripcion, size, video, playbutton }) => {
+	const tarjetas = items.map(({ id, img, titulo, descripcion, size, video }) => {
 		const sizeValue = sizes[size] ?? size;
 		return (
 			<Article onClick={() => handleClickArticle(id)} key={id}
@@ -29,7 +29,6 @@ function Tarjetas({items, handleClickArticle}) {
 				alt=""/>  :
 				video ? <img src={`https://ik.imagekit.io/akxdmkcb7g5u/Krunica/${video}/ik-thumbnail.jpg`}/> : <div />}
 				<div>
-					{playbutton ? <img className="play-button" src={PlayButtonTest}/> : null}
 					<h4>{titulo}</h4>
 					<p>{descripcion}</p>
 				</div>
