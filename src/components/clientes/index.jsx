@@ -55,7 +55,6 @@ const Imagen = styled.img`
 
 
 function Clientes({ data }) {
-    console.log("render");
     return (
         <Container id="clientes">
             <Title>CLIENTES</Title>

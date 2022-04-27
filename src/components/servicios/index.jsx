@@ -27,7 +27,6 @@ const CardContainer = styled.div`
     
     
 `
-const arrow = getImageUrl("arrow.svg");
 
 const TextBox = styled.div`
     position: relative;
@@ -56,7 +55,7 @@ const TextBox = styled.div`
         padding-right: clamp(0.5rem, var(--size), 1.5rem);
         
         ::before {
-            content: url(${arrow}); 
+            content: url(${getImageUrl("arrow.svg")}); 
             position: relative;
             height: 100%;
             width: 1.5rem;

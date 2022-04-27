@@ -15,9 +15,7 @@ function Tarjetas({items, handleClickArticle}) {
 	// en caso de local images, no usar transformaciones, o mejor, comentar srcSet
 
 	const url = getRemoteUrl("https://ik.imagekit.io/akxdmkcb7g5u/Krunica/");
-	let imgTotal = 0
 	const tarjetas = items.map(({ id, img, titulo, descripcion, size, video }) => {
-		if (img)imgTotal += img.length
 		const sizeValue = sizes[size] ?? size;
 		return (
 			<Article onClick={() => handleClickArticle(id)} key={id}
@@ -41,7 +39,6 @@ function Tarjetas({items, handleClickArticle}) {
 			</Article>
 		);
 	})  
-	console.log(imgTotal)
     return tarjetas
 }
 
