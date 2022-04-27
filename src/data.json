@@ -624,29 +624,23 @@
                     "id": "estudio-12",
                     "titulo": "Proyecto - Diseño UX/UI Aplicación MEETART",
                     "descripcion": "Proyecto de diseño para comunidad de artistas.",
-                    "gap": false,
+                    "gap": true,
                     "img": [
                         "estudio/meetart/presentacion-meetart-1.jpg",
                         "estudio/meetart/presentacion-meetart-2.jpg",
                         "estudio/meetart/presentacion-meetart-3.jpg",
-                        "estudio/meetart/presentacion-meetart-4.jpg",
                         "estudio/meetart/presentacion-meetart-5.jpg",
-                        "estudio/meetart/presentacion-meetart-7.jpg",
-                        "estudio/meetart/presentacion-meetart-8.jpg",
-                        "estudio/meetart/presentacion-meetart-9.jpg",
-                        "estudio/meetart/presentacion-meetart-10.jpg",
-                        "estudio/meetart/presentacion-meetart-11.jpg",
-                        "estudio/meetart/presentacion-meetart-12.jpg",
-                        "estudio/meetart/presentacion-meetart-13.jpg",
+                        "estudio/meetart/presentacion-meetart-6.jpg",
+
                         "estudio/meetart/presentacion-meetart-14.jpg",
                         "estudio/meetart/presentacion-meetart-15.jpg",
                         "estudio/meetart/presentacion-meetart-16.jpg",
+                        "estudio/meetart/presentacion-meetart-17.jpg",
                         "estudio/meetart/presentacion-meetart-18.jpg",
                         "estudio/meetart/presentacion-meetart-19.jpg",
                         "estudio/meetart/presentacion-meetart-20.jpg",
                         "estudio/meetart/presentacion-meetart-21.jpg"
                     ],
-                    
                     "size": "L"
                 },
                 {
