@@ -565,7 +565,6 @@
                     "id": "estudio-7",
                     "titulo": "Anuario 2021 para UIFRA (Unión de Industriales Fideeros de la Rep. Argentina",
                     "descripcion": "Diseño editorial y desarrollo de la revista interactiva para la Unión de Industriales Fideeros de la República Argentina. Un anuario innovador.",
-                    "video": ["estudio/uifra-2021/tapa-anuario.mp4"],
                     "img": ["estudio/uifra-2021/tapa_anuario_final_1.jpg"],
                     "iframe": "https://indd.adobe.com/embed/5ea11e83-745e-45b0-9b7f-8b56063976c5?startpage=1&allowFullscreen=true",
                     "portada": true,
@@ -625,14 +624,13 @@
                     "id": "estudio-12",
                     "titulo": "Proyecto - Diseño UX/UI Aplicación MEETART",
                     "descripcion": "Proyecto de diseño para comunidad de artistas.",
-                    "gap": true,
+                    "gap": false,
                     "img": [
                         "estudio/meetart/presentacion-meetart-1.jpg",
                         "estudio/meetart/presentacion-meetart-2.jpg",
                         "estudio/meetart/presentacion-meetart-3.jpg",
                         "estudio/meetart/presentacion-meetart-4.jpg",
                         "estudio/meetart/presentacion-meetart-5.jpg",
-                        "estudio/meetart/presentacion-meetart-6.jpg",
                         "estudio/meetart/presentacion-meetart-7.jpg",
                         "estudio/meetart/presentacion-meetart-8.jpg",
                         "estudio/meetart/presentacion-meetart-9.jpg",
@@ -643,12 +641,12 @@
                         "estudio/meetart/presentacion-meetart-14.jpg",
                         "estudio/meetart/presentacion-meetart-15.jpg",
                         "estudio/meetart/presentacion-meetart-16.jpg",
-                        "estudio/meetart/presentacion-meetart-17.jpg",
                         "estudio/meetart/presentacion-meetart-18.jpg",
                         "estudio/meetart/presentacion-meetart-19.jpg",
                         "estudio/meetart/presentacion-meetart-20.jpg",
                         "estudio/meetart/presentacion-meetart-21.jpg"
                     ],
+                    
                     "size": "L"
                 },
                 {
