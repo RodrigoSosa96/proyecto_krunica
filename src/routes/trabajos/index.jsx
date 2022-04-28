@@ -8,7 +8,6 @@ function Trabajos() {
     const [categoria, setCategoria] = useState("taller")
 
     useEffect(() => {
-        console.log(category)
         setCategoria(category)
     }, [category])
 

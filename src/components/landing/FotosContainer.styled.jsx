@@ -50,14 +50,15 @@ const VerMas = styled(L)`
 
 function FotosContainer({ fotos, categoria }) {
 
-    const url = getRemoteUrl("https://ik.imagekit.io/akxdmkcb7g5u/Krunica/")
+	const url = getRemoteUrl("https://res.cloudinary.com/dl0stx6ye/");
+
 
     return (
         <>
             
             <StyledCarousel >
                     {fotos.map((item, index) => (
-                            <Imagen src={`${url(item, "w-200")}`} key={index} />
+                            <Imagen src={`${url(item)}`} key={index} />
                     ))}
             </StyledCarousel>
             <VerMas smooth to={`/trabajos/${categoria}`}>

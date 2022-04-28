@@ -14,11 +14,10 @@ function getRemoteUrl(location) {
     let base = location;
 
     return function (name, transformations) {
-        let url = new URL(`./${name}`, base);
         if (transformations) {
-            url.searchParams.append("tr", transformations);
-        }
-        return url.href;
+            return new URL(`./f_auto,${transformations}/Krunica/${name}`, base).href;
+        } 
+        return new URL(`./f_auto/Krunica/${name}`, base).href
     }
 }
 

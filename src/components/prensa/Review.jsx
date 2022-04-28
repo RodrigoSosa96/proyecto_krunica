@@ -76,7 +76,7 @@ function Review() {
 ¡Hola soy Clara! Creadora de Krunica. Soy diseñadora gráfica recibida en la UBA. Hace más de 15 años que me dedico al diseño. En estos años trabajé y sigo trabajando de manera freelance para diferentes empresas.`
     return (
         <Container  >
-            <img src="https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/Krunica/prensarevista.png" alt="" />
+            {/* <img src="https://ik.imagekit.io/akxdmkcb7g5u/tr:w-600/Krunica/prensarevista.png" alt="" />     !Actualizar a cloudnary */}
             <div className="review-text">
                 <h3>Revista Para Ti - 2013</h3>
                 <p>{text}</p>
